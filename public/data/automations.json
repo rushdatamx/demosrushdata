@@ -1,0 +1,1310 @@
+{
+  "kpis": {
+    "presupuesto_total": 108500000,
+    "ejercido_total": 74500000,
+    "avance_promedio": 54.2,
+    "alertas_activas": 5,
+    "proyectos_activos": 4
+  },
+  "proyectos": [
+    {
+      "id": 1,
+      "nombre": "Residencial Cumbres Elite",
+      "tipo": "Residencial",
+      "unidades": 48,
+      "avance_pct": 67,
+      "presupuesto": 28500000,
+      "ejercido": 21200000,
+      "variacion_presupuesto": 11.0,
+      "fecha_inicio": "2025-09-20",
+      "fecha_estimada_fin": "2026-05-24"
+    },
+    {
+      "id": 2,
+      "nombre": "Villas del Poniente",
+      "tipo": "Residencial",
+      "unidades": 32,
+      "avance_pct": 45,
+      "presupuesto": 19800000,
+      "ejercido": 10500000,
+      "variacion_presupuesto": 17.8,
+      "fecha_inicio": "2025-08-21",
+      "fecha_estimada_fin": "2026-10-10"
+    },
+    {
+      "id": 3,
+      "nombre": "Torre Monterrey Business",
+      "tipo": "Comercial",
+      "unidades": 1,
+      "avance_pct": 82,
+      "presupuesto": 45000000,
+      "ejercido": 38700000,
+      "variacion_presupuesto": 4.9,
+      "fecha_inicio": "2025-06-04",
+      "fecha_estimada_fin": "2026-11-05"
+    },
+    {
+      "id": 4,
+      "nombre": "Plaza San Agustin",
+      "tipo": "Comercial",
+      "unidades": 12,
+      "avance_pct": 23,
+      "presupuesto": 15200000,
+      "ejercido": 4100000,
+      "variacion_presupuesto": 17.3,
+      "fecha_inicio": "2025-09-26",
+      "fecha_estimada_fin": "2026-10-12"
+    }
+  ],
+  "materiales": [
+    {
+      "nombre": "Cemento Portland",
+      "unidad": "ton",
+      "precio_actual": 2850,
+      "precios_6m": [
+        {
+          "semana": "2025-08-12",
+          "precio": 2633.7
+        },
+        {
+          "semana": "2025-08-19",
+          "precio": 2568.54
+        },
+        {
+          "semana": "2025-08-26",
+          "precio": 3134.53
+        },
+        {
+          "semana": "2025-09-02",
+          "precio": 3138.88
+        },
+        {
+          "semana": "2025-09-09",
+          "precio": 3100.7
+        },
+        {
+          "semana": "2025-09-16",
+          "precio": 2830.82
+        },
+        {
+          "semana": "2025-09-23",
+          "precio": 2771.57
+        },
+        {
+          "semana": "2025-09-30",
+          "precio": 2852.4
+        },
+        {
+          "semana": "2025-10-07",
+          "precio": 2725.67
+        },
+        {
+          "semana": "2025-10-14",
+          "precio": 3159.41
+        },
+        {
+          "semana": "2025-10-21",
+          "precio": 3184.83
+        },
+        {
+          "semana": "2025-10-28",
+          "precio": 3036.71
+        },
+        {
+          "semana": "2025-11-04",
+          "precio": 2535.75
+        },
+        {
+          "semana": "2025-11-11",
+          "precio": 2683.96
+        },
+        {
+          "semana": "2025-11-18",
+          "precio": 3162.54
+        },
+        {
+          "semana": "2025-11-25",
+          "precio": 2858.86
+        },
+        {
+          "semana": "2025-12-02",
+          "precio": 2517.95
+        },
+        {
+          "semana": "2025-12-09",
+          "precio": 2825.73
+        },
+        {
+          "semana": "2025-12-16",
+          "precio": 2661.04
+        },
+        {
+          "semana": "2025-12-23",
+          "precio": 2766.99
+        },
+        {
+          "semana": "2025-12-30",
+          "precio": 2568.59
+        },
+        {
+          "semana": "2026-01-06",
+          "precio": 2948.7
+        },
+        {
+          "semana": "2026-01-13",
+          "precio": 2800.9
+        },
+        {
+          "semana": "2026-01-20",
+          "precio": 2663.02
+        },
+        {
+          "semana": "2026-01-27",
+          "precio": 2648.4
+        },
+        {
+          "semana": "2026-02-03",
+          "precio": 2624.34
+        }
+      ],
+      "variacion_semanal": -0.9,
+      "variacion_mensual": -6.3
+    },
+    {
+      "nombre": "Varilla 3/8\"",
+      "unidad": "ton",
+      "precio_actual": 18500,
+      "precios_6m": [
+        {
+          "semana": "2025-08-12",
+          "precio": 17746.5
+        },
+        {
+          "semana": "2025-08-19",
+          "precio": 16316.92
+        },
+        {
+          "semana": "2025-08-26",
+          "precio": 19946.98
+        },
+        {
+          "semana": "2025-09-02",
+          "precio": 18101.13
+        },
+        {
+          "semana": "2025-09-09",
+          "precio": 17722.02
+        },
+        {
+          "semana": "2025-09-16",
+          "precio": 19028.68
+        },
+        {
+          "semana": "2025-09-23",
+          "precio": 17347.71
+        },
+        {
+          "semana": "2025-09-30",
+          "precio": 17057.79
+        },
+        {
+          "semana": "2025-10-07",
+          "precio": 17008.59
+        },
+        {
+          "semana": "2025-10-14",
+          "precio": 17652.29
+        },
+        {
+          "semana": "2025-10-21",
+          "precio": 16999.51
+        },
+        {
+          "semana": "2025-10-28",
+          "precio": 17209.55
+        },
+        {
+          "semana": "2025-11-04",
+          "precio": 19105.29
+        },
+        {
+          "semana": "2025-11-11",
+          "precio": 19953.13
+        },
+        {
+          "semana": "2025-11-18",
+          "precio": 19469.86
+        },
+        {
+          "semana": "2025-11-25",
+          "precio": 19946.09
+        },
+        {
+          "semana": "2025-12-02",
+          "precio": 18881.21
+        },
+        {
+          "semana": "2025-12-09",
+          "precio": 19570.69
+        },
+        {
+          "semana": "2025-12-16",
+          "precio": 18053.31
+        },
+        {
+          "semana": "2025-12-23",
+          "precio": 19199.63
+        },
+        {
+          "semana": "2025-12-30",
+          "precio": 16630.14
+        },
+        {
+          "semana": "2026-01-06",
+          "precio": 16528.92
+        },
+        {
+          "semana": "2026-01-13",
+          "precio": 19392.03
+        },
+        {
+          "semana": "2026-01-20",
+          "precio": 17437.31
+        },
+        {
+          "semana": "2026-01-27",
+          "precio": 17674.68
+        },
+        {
+          "semana": "2026-02-03",
+          "precio": 16837.21
+        }
+      ],
+      "variacion_semanal": -4.7,
+      "variacion_mensual": -13.2
+    },
+    {
+      "nombre": "Block 15cm",
+      "unidad": "millar",
+      "precio_actual": 8200,
+      "precios_6m": [
+        {
+          "semana": "2025-08-12",
+          "precio": 8396.3
+        },
+        {
+          "semana": "2025-08-19",
+          "precio": 8771.46
+        },
+        {
+          "semana": "2025-08-26",
+          "precio": 8193.66
+        },
+        {
+          "semana": "2025-09-02",
+          "precio": 7350.95
+        },
+        {
+          "semana": "2025-09-09",
+          "precio": 7731.95
+        },
+        {
+          "semana": "2025-09-16",
+          "precio": 7915.24
+        },
+        {
+          "semana": "2025-09-23",
+          "precio": 7769.4
+        },
+        {
+          "semana": "2025-09-30",
+          "precio": 7988.0
+        },
+        {
+          "semana": "2025-10-07",
+          "precio": 8048.62
+        },
+        {
+          "semana": "2025-10-14",
+          "precio": 8377.49
+        },
+        {
+          "semana": "2025-10-21",
+          "precio": 8466.85
+        },
+        {
+          "semana": "2025-10-28",
+          "precio": 7328.41
+        },
+        {
+          "semana": "2025-11-04",
+          "precio": 7684.7
+        },
+        {
+          "semana": "2025-11-11",
+          "precio": 8469.4
+        },
+        {
+          "semana": "2025-11-18",
+          "precio": 9175.96
+        },
+        {
+          "semana": "2025-11-25",
+          "precio": 8856.09
+        },
+        {
+          "semana": "2025-12-02",
+          "precio": 7851.58
+        },
+        {
+          "semana": "2025-12-09",
+          "precio": 7911.26
+        },
+        {
+          "semana": "2025-12-16",
+          "precio": 8990.51
+        },
+        {
+          "semana": "2025-12-23",
+          "precio": 7223.65
+        },
+        {
+          "semana": "2025-12-30",
+          "precio": 7914.67
+        },
+        {
+          "semana": "2026-01-06",
+          "precio": 8530.21
+        },
+        {
+          "semana": "2026-01-13",
+          "precio": 8178.18
+        },
+        {
+          "semana": "2026-01-20",
+          "precio": 8138.61
+        },
+        {
+          "semana": "2026-01-27",
+          "precio": 7789.57
+        },
+        {
+          "semana": "2026-02-03",
+          "precio": 8257.61
+        }
+      ],
+      "variacion_semanal": 6.0,
+      "variacion_mensual": 1.0
+    },
+    {
+      "nombre": "Arena",
+      "unidad": "m3",
+      "precio_actual": 380,
+      "precios_6m": [
+        {
+          "semana": "2025-08-12",
+          "precio": 358.81
+        },
+        {
+          "semana": "2025-08-19",
+          "precio": 379.1
+        },
+        {
+          "semana": "2025-08-26",
+          "precio": 394.49
+        },
+        {
+          "semana": "2025-09-02",
+          "precio": 412.75
+        },
+        {
+          "semana": "2025-09-09",
+          "precio": 351.18
+        },
+        {
+          "semana": "2025-09-16",
+          "precio": 353.43
+        },
+        {
+          "semana": "2025-09-23",
+          "precio": 424.84
+        },
+        {
+          "semana": "2025-09-30",
+          "precio": 365.96
+        },
+        {
+          "semana": "2025-10-07",
+          "precio": 387.38
+        },
+        {
+          "semana": "2025-10-14",
+          "precio": 378.97
+        },
+        {
+          "semana": "2025-10-21",
+          "precio": 398.49
+        },
+        {
+          "semana": "2025-10-28",
+          "precio": 338.79
+        },
+        {
+          "semana": "2025-11-04",
+          "precio": 343.38
+        },
+        {
+          "semana": "2025-11-11",
+          "precio": 380.43
+        },
+        {
+          "semana": "2025-11-18",
+          "precio": 350.99
+        },
+        {
+          "semana": "2025-11-25",
+          "precio": 353.67
+        },
+        {
+          "semana": "2025-12-02",
+          "precio": 395.4
+        },
+        {
+          "semana": "2025-12-09",
+          "precio": 421.1
+        },
+        {
+          "semana": "2025-12-16",
+          "precio": 372.95
+        },
+        {
+          "semana": "2025-12-23",
+          "precio": 360.11
+        },
+        {
+          "semana": "2025-12-30",
+          "precio": 413.18
+        },
+        {
+          "semana": "2026-01-06",
+          "precio": 406.82
+        },
+        {
+          "semana": "2026-01-13",
+          "precio": 336.96
+        },
+        {
+          "semana": "2026-01-20",
+          "precio": 391.42
+        },
+        {
+          "semana": "2026-01-27",
+          "precio": 377.26
+        },
+        {
+          "semana": "2026-02-03",
+          "precio": 386.03
+        }
+      ],
+      "variacion_semanal": 2.3,
+      "variacion_mensual": 14.6
+    },
+    {
+      "nombre": "Grava",
+      "unidad": "m3",
+      "precio_actual": 420,
+      "precios_6m": [
+        {
+          "semana": "2025-08-12",
+          "precio": 431.42
+        },
+        {
+          "semana": "2025-08-19",
+          "precio": 447.21
+        },
+        {
+          "semana": "2025-08-26",
+          "precio": 448.62
+        },
+        {
+          "semana": "2025-09-02",
+          "precio": 372.23
+        },
+        {
+          "semana": "2025-09-09",
+          "precio": 413.8
+        },
+        {
+          "semana": "2025-09-16",
+          "precio": 379.0
+        },
+        {
+          "semana": "2025-09-23",
+          "precio": 405.34
+        },
+        {
+          "semana": "2025-09-30",
+          "precio": 424.95
+        },
+        {
+          "semana": "2025-10-07",
+          "precio": 469.74
+        },
+        {
+          "semana": "2025-10-14",
+          "precio": 452.81
+        },
+        {
+          "semana": "2025-10-21",
+          "precio": 377.29
+        },
+        {
+          "semana": "2025-10-28",
+          "precio": 454.07
+        },
+        {
+          "semana": "2025-11-04",
+          "precio": 383.35
+        },
+        {
+          "semana": "2025-11-11",
+          "precio": 384.45
+        },
+        {
+          "semana": "2025-11-18",
+          "precio": 378.73
+        },
+        {
+          "semana": "2025-11-25",
+          "precio": 423.61
+        },
+        {
+          "semana": "2025-12-02",
+          "precio": 375.19
+        },
+        {
+          "semana": "2025-12-09",
+          "precio": 449.33
+        },
+        {
+          "semana": "2025-12-16",
+          "precio": 441.55
+        },
+        {
+          "semana": "2025-12-23",
+          "precio": 444.41
+        },
+        {
+          "semana": "2025-12-30",
+          "precio": 440.4
+        },
+        {
+          "semana": "2026-01-06",
+          "precio": 374.52
+        },
+        {
+          "semana": "2026-01-13",
+          "precio": 434.67
+        },
+        {
+          "semana": "2026-01-20",
+          "precio": 433.79
+        },
+        {
+          "semana": "2026-01-27",
+          "precio": 376.61
+        },
+        {
+          "semana": "2026-02-03",
+          "precio": 424.07
+        }
+      ],
+      "variacion_semanal": 12.6,
+      "variacion_mensual": -2.4
+    },
+    {
+      "nombre": "Acero Estructural",
+      "unidad": "ton",
+      "precio_actual": 22000,
+      "precios_6m": [
+        {
+          "semana": "2025-08-12",
+          "precio": 20638.05
+        },
+        {
+          "semana": "2025-08-19",
+          "precio": 19474.45
+        },
+        {
+          "semana": "2025-08-26",
+          "precio": 21715.49
+        },
+        {
+          "semana": "2025-09-02",
+          "precio": 19556.21
+        },
+        {
+          "semana": "2025-09-09",
+          "precio": 21623.35
+        },
+        {
+          "semana": "2025-09-16",
+          "precio": 23678.57
+        },
+        {
+          "semana": "2025-09-23",
+          "precio": 23686.73
+        },
+        {
+          "semana": "2025-09-30",
+          "precio": 22013.3
+        },
+        {
+          "semana": "2025-10-07",
+          "precio": 23504.75
+        },
+        {
+          "semana": "2025-10-14",
+          "precio": 20545.19
+        },
+        {
+          "semana": "2025-10-21",
+          "precio": 20149.15
+        },
+        {
+          "semana": "2025-10-28",
+          "precio": 23846.71
+        },
+        {
+          "semana": "2025-11-04",
+          "precio": 23325.26
+        },
+        {
+          "semana": "2025-11-11",
+          "precio": 23056.98
+        },
+        {
+          "semana": "2025-11-18",
+          "precio": 22207.81
+        },
+        {
+          "semana": "2025-11-25",
+          "precio": 22913.35
+        },
+        {
+          "semana": "2025-12-02",
+          "precio": 22004.34
+        },
+        {
+          "semana": "2025-12-09",
+          "precio": 20771.83
+        },
+        {
+          "semana": "2025-12-16",
+          "precio": 23008.55
+        },
+        {
+          "semana": "2025-12-23",
+          "precio": 21458.05
+        },
+        {
+          "semana": "2025-12-30",
+          "precio": 22269.85
+        },
+        {
+          "semana": "2026-01-06",
+          "precio": 21040.87
+        },
+        {
+          "semana": "2026-01-13",
+          "precio": 20001.77
+        },
+        {
+          "semana": "2026-01-20",
+          "precio": 24577.8
+        },
+        {
+          "semana": "2026-01-27",
+          "precio": 19918.44
+        },
+        {
+          "semana": "2026-02-03",
+          "precio": 22510.0
+        }
+      ],
+      "variacion_semanal": 13.0,
+      "variacion_mensual": 12.5
+    },
+    {
+      "nombre": "Madera Cimbra",
+      "unidad": "pie2",
+      "precio_actual": 45,
+      "precios_6m": [
+        {
+          "semana": "2025-08-12",
+          "precio": 46.45
+        },
+        {
+          "semana": "2025-08-19",
+          "precio": 49.94
+        },
+        {
+          "semana": "2025-08-26",
+          "precio": 42.86
+        },
+        {
+          "semana": "2025-09-02",
+          "precio": 42.13
+        },
+        {
+          "semana": "2025-09-09",
+          "precio": 41.46
+        },
+        {
+          "semana": "2025-09-16",
+          "precio": 46.63
+        },
+        {
+          "semana": "2025-09-23",
+          "precio": 49.3
+        },
+        {
+          "semana": "2025-09-30",
+          "precio": 44.8
+        },
+        {
+          "semana": "2025-10-07",
+          "precio": 47.27
+        },
+        {
+          "semana": "2025-10-14",
+          "precio": 44.42
+        },
+        {
+          "semana": "2025-10-21",
+          "precio": 39.9
+        },
+        {
+          "semana": "2025-10-28",
+          "precio": 50.29
+        },
+        {
+          "semana": "2025-11-04",
+          "precio": 43.72
+        },
+        {
+          "semana": "2025-11-11",
+          "precio": 48.16
+        },
+        {
+          "semana": "2025-11-18",
+          "precio": 41.14
+        },
+        {
+          "semana": "2025-11-25",
+          "precio": 44.86
+        },
+        {
+          "semana": "2025-12-02",
+          "precio": 39.97
+        },
+        {
+          "semana": "2025-12-09",
+          "precio": 48.26
+        },
+        {
+          "semana": "2025-12-16",
+          "precio": 47.63
+        },
+        {
+          "semana": "2025-12-23",
+          "precio": 40.38
+        },
+        {
+          "semana": "2025-12-30",
+          "precio": 40.31
+        },
+        {
+          "semana": "2026-01-06",
+          "precio": 46.15
+        },
+        {
+          "semana": "2026-01-13",
+          "precio": 45.92
+        },
+        {
+          "semana": "2026-01-20",
+          "precio": 45.79
+        },
+        {
+          "semana": "2026-01-27",
+          "precio": 44.7
+        },
+        {
+          "semana": "2026-02-03",
+          "precio": 50.19
+        }
+      ],
+      "variacion_semanal": 12.3,
+      "variacion_mensual": 9.3
+    },
+    {
+      "nombre": "Pintura Vinilica",
+      "unidad": "cubeta",
+      "precio_actual": 1200,
+      "precios_6m": [
+        {
+          "semana": "2025-08-12",
+          "precio": 1268.2
+        },
+        {
+          "semana": "2025-08-19",
+          "precio": 1117.5
+        },
+        {
+          "semana": "2025-08-26",
+          "precio": 1319.49
+        },
+        {
+          "semana": "2025-09-02",
+          "precio": 1325.59
+        },
+        {
+          "semana": "2025-09-09",
+          "precio": 1330.41
+        },
+        {
+          "semana": "2025-09-16",
+          "precio": 1169.89
+        },
+        {
+          "semana": "2025-09-23",
+          "precio": 1063.91
+        },
+        {
+          "semana": "2025-09-30",
+          "precio": 1109.82
+        },
+        {
+          "semana": "2025-10-07",
+          "precio": 1338.1
+        },
+        {
+          "semana": "2025-10-14",
+          "precio": 1195.14
+        },
+        {
+          "semana": "2025-10-21",
+          "precio": 1156.22
+        },
+        {
+          "semana": "2025-10-28",
+          "precio": 1064.72
+        },
+        {
+          "semana": "2025-11-04",
+          "precio": 1094.2
+        },
+        {
+          "semana": "2025-11-11",
+          "precio": 1132.16
+        },
+        {
+          "semana": "2025-11-18",
+          "precio": 1191.94
+        },
+        {
+          "semana": "2025-11-25",
+          "precio": 1208.46
+        },
+        {
+          "semana": "2025-12-02",
+          "precio": 1151.94
+        },
+        {
+          "semana": "2025-12-09",
+          "precio": 1249.67
+        },
+        {
+          "semana": "2025-12-16",
+          "precio": 1236.25
+        },
+        {
+          "semana": "2025-12-23",
+          "precio": 1219.04
+        },
+        {
+          "semana": "2025-12-30",
+          "precio": 1232.52
+        },
+        {
+          "semana": "2026-01-06",
+          "precio": 1149.65
+        },
+        {
+          "semana": "2026-01-13",
+          "precio": 1325.73
+        },
+        {
+          "semana": "2026-01-20",
+          "precio": 1142.61
+        },
+        {
+          "semana": "2026-01-27",
+          "precio": 1225.1
+        },
+        {
+          "semana": "2026-02-03",
+          "precio": 1132.06
+        }
+      ],
+      "variacion_semanal": -7.6,
+      "variacion_mensual": -14.6
+    },
+    {
+      "nombre": "Impermeabilizante",
+      "unidad": "cubeta",
+      "precio_actual": 2800,
+      "precios_6m": [
+        {
+          "semana": "2025-08-12",
+          "precio": 2785.38
+        },
+        {
+          "semana": "2025-08-19",
+          "precio": 2531.16
+        },
+        {
+          "semana": "2025-08-26",
+          "precio": 2699.73
+        },
+        {
+          "semana": "2025-09-02",
+          "precio": 2982.42
+        },
+        {
+          "semana": "2025-09-09",
+          "precio": 2540.75
+        },
+        {
+          "semana": "2025-09-16",
+          "precio": 2877.79
+        },
+        {
+          "semana": "2025-09-23",
+          "precio": 2554.15
+        },
+        {
+          "semana": "2025-09-30",
+          "precio": 2469.19
+        },
+        {
+          "semana": "2025-10-07",
+          "precio": 2720.92
+        },
+        {
+          "semana": "2025-10-14",
+          "precio": 2837.26
+        },
+        {
+          "semana": "2025-10-21",
+          "precio": 2579.42
+        },
+        {
+          "semana": "2025-10-28",
+          "precio": 2737.39
+        },
+        {
+          "semana": "2025-11-04",
+          "precio": 2965.93
+        },
+        {
+          "semana": "2025-11-11",
+          "precio": 3005.4
+        },
+        {
+          "semana": "2025-11-18",
+          "precio": 2636.26
+        },
+        {
+          "semana": "2025-11-25",
+          "precio": 3029.38
+        },
+        {
+          "semana": "2025-12-02",
+          "precio": 2988.98
+        },
+        {
+          "semana": "2025-12-09",
+          "precio": 2525.36
+        },
+        {
+          "semana": "2025-12-16",
+          "precio": 2618.31
+        },
+        {
+          "semana": "2025-12-23",
+          "precio": 2475.82
+        },
+        {
+          "semana": "2025-12-30",
+          "precio": 2904.49
+        },
+        {
+          "semana": "2026-01-06",
+          "precio": 2465.89
+        },
+        {
+          "semana": "2026-01-13",
+          "precio": 2860.22
+        },
+        {
+          "semana": "2026-01-20",
+          "precio": 2781.51
+        },
+        {
+          "semana": "2026-01-27",
+          "precio": 2684.68
+        },
+        {
+          "semana": "2026-02-03",
+          "precio": 2625.23
+        }
+      ],
+      "variacion_semanal": -2.2,
+      "variacion_mensual": -8.2
+    },
+    {
+      "nombre": "Tablaroca",
+      "unidad": "placa",
+      "precio_actual": 195,
+      "precios_6m": [
+        {
+          "semana": "2025-08-12",
+          "precio": 197.38
+        },
+        {
+          "semana": "2025-08-19",
+          "precio": 188.77
+        },
+        {
+          "semana": "2025-08-26",
+          "precio": 197.28
+        },
+        {
+          "semana": "2025-09-02",
+          "precio": 195.62
+        },
+        {
+          "semana": "2025-09-09",
+          "precio": 195.31
+        },
+        {
+          "semana": "2025-09-16",
+          "precio": 197.48
+        },
+        {
+          "semana": "2025-09-23",
+          "precio": 188.3
+        },
+        {
+          "semana": "2025-09-30",
+          "precio": 216.78
+        },
+        {
+          "semana": "2025-10-07",
+          "precio": 195.48
+        },
+        {
+          "semana": "2025-10-14",
+          "precio": 200.52
+        },
+        {
+          "semana": "2025-10-21",
+          "precio": 171.94
+        },
+        {
+          "semana": "2025-10-28",
+          "precio": 205.0
+        },
+        {
+          "semana": "2025-11-04",
+          "precio": 185.62
+        },
+        {
+          "semana": "2025-11-11",
+          "precio": 185.52
+        },
+        {
+          "semana": "2025-11-18",
+          "precio": 171.61
+        },
+        {
+          "semana": "2025-11-25",
+          "precio": 184.5
+        },
+        {
+          "semana": "2025-12-02",
+          "precio": 208.39
+        },
+        {
+          "semana": "2025-12-09",
+          "precio": 204.84
+        },
+        {
+          "semana": "2025-12-16",
+          "precio": 200.99
+        },
+        {
+          "semana": "2025-12-23",
+          "precio": 207.44
+        },
+        {
+          "semana": "2025-12-30",
+          "precio": 185.02
+        },
+        {
+          "semana": "2026-01-06",
+          "precio": 216.4
+        },
+        {
+          "semana": "2026-01-13",
+          "precio": 185.38
+        },
+        {
+          "semana": "2026-01-20",
+          "precio": 178.25
+        },
+        {
+          "semana": "2026-01-27",
+          "precio": 185.15
+        },
+        {
+          "semana": "2026-02-03",
+          "precio": 176.14
+        }
+      ],
+      "variacion_semanal": -4.9,
+      "variacion_mensual": -5.0
+    }
+  ],
+  "alertas": [
+    {
+      "tipo": "costo",
+      "prioridad": "alta",
+      "titulo": "Alerta de Costo: Varilla subio 12%",
+      "descripcion": "Proyecto Cumbres: el costo de varilla 3/8\" subio 12% esta semana. Impacto estimado: +$87,000 en presupuesto restante.",
+      "proyecto": "Residencial Cumbres Elite",
+      "impacto": "$87,000",
+      "accion": "Negociar con proveedor alterno. Cotizacion de Aceros Monterrey pendiente.",
+      "fecha": "2026-02-03 07:15"
+    },
+    {
+      "tipo": "avance",
+      "prioridad": "alta",
+      "titulo": "Retraso en Hito: Estructura Torre MTY",
+      "descripcion": "La etapa de estructura debio completarse el 28 Ene. Avance actual: 92%. Retraso estimado: 8 dias.",
+      "proyecto": "Torre Monterrey Business",
+      "impacto": "8 dias de retraso",
+      "accion": "Autorizar turno nocturno para colado de losa nivel 8. Costo adicional: $45,000.",
+      "fecha": "2026-02-03 06:00"
+    },
+    {
+      "tipo": "costo",
+      "prioridad": "media",
+      "titulo": "Sobrecosto Acumulado: Villas del Poniente",
+      "descripcion": "Presupuesto ejercido excede lo planeado en 8.3%. Principal causa: incremento en mano de obra especializada.",
+      "proyecto": "Villas del Poniente",
+      "impacto": "$185,000 sobre presupuesto",
+      "accion": "Revisar tabulador de subcontratistas. Renegociar contrato de obra electrica.",
+      "fecha": "2026-02-02 14:30"
+    },
+    {
+      "tipo": "oportunidad",
+      "prioridad": "media",
+      "titulo": "Precio bajo detectado: Cemento Portland",
+      "descripcion": "Cemento bajo 5% vs promedio mensual. Oportunidad de compra anticipada para Plaza San Agustin.",
+      "proyecto": "Plaza San Agustin",
+      "impacto": "Ahorro potencial: $42,000",
+      "accion": "Pre-comprar 200 toneladas aprovechando precio actual.",
+      "fecha": "2026-02-02 09:00"
+    },
+    {
+      "tipo": "calidad",
+      "prioridad": "baja",
+      "titulo": "Revision de Calidad Programada",
+      "descripcion": "Inspeccion de estructura metalica Torre Monterrey. Certificacion requerida antes de instalacion de fachada.",
+      "proyecto": "Torre Monterrey Business",
+      "impacto": "Prerequisito para siguiente fase",
+      "accion": "Confirmar cita con laboratorio de pruebas para jueves 6 Feb.",
+      "fecha": "2026-02-01 16:00"
+    }
+  ],
+  "reporte": {
+    "titulo": "Reporte Ejecutivo Semanal",
+    "subtitulo": "Semana del 27 Ene - 2 Feb 2026",
+    "generado": "Lunes 3 Feb 2026, 6:00 AM",
+    "resumen": "Esta semana se registro avance significativo en Torre Monterrey Business (+5.2%) y progreso normal en Residencial Cumbres (+2.1%). Se identificaron alertas de costo en materiales metalicos y un retraso en hito de estructura. Se recomienda atencion inmediata a la negociacion con proveedores de acero.",
+    "secciones": [
+      {
+        "titulo": "Avance de Proyectos",
+        "contenido": [
+          "Residencial Cumbres Elite: 67% (+2.1% semanal) — En tiempo",
+          "Villas del Poniente: 45% (+1.8% semanal) — Ligero retraso",
+          "Torre Monterrey Business: 82% (+5.2% semanal) — Retraso en estructura",
+          "Plaza San Agustin: 23% (+3.0% semanal) — En tiempo"
+        ]
+      },
+      {
+        "titulo": "Presupuesto",
+        "contenido": [
+          "Presupuesto total: $108.5M — Ejercido: $74.5M (68.7%)",
+          "Variacion global: +3.2% sobre lo planeado",
+          "Principal desviacion: mano de obra (+$185k en Villas del Poniente)",
+          "Oportunidad: Cemento Portland abajo 5% — posible ahorro de $42k"
+        ]
+      },
+      {
+        "titulo": "Riesgos y Acciones",
+        "contenido": [
+          "URGENTE: Varilla subio 12% — impacto $87k en Cumbres",
+          "URGENTE: Retraso 8 dias en estructura Torre MTY — autorizar turno nocturno",
+          "MEDIO: Sobrecosto acumulado Villas del Poniente — renegociar subcontratos",
+          "BAJO: Certificacion estructura Torre MTY — agendar laboratorio"
+        ]
+      }
+    ]
+  },
+  "reglas": [
+    {
+      "id": 1,
+      "nombre": "Alerta de precio de material",
+      "condicion": "Variacion semanal > 5%",
+      "activa": true
+    },
+    {
+      "id": 2,
+      "nombre": "Retraso en hito",
+      "condicion": "Dias de retraso > 3",
+      "activa": true
+    },
+    {
+      "id": 3,
+      "nombre": "Sobrecosto acumulado",
+      "condicion": "Variacion presupuesto > 5%",
+      "activa": true
+    },
+    {
+      "id": 4,
+      "nombre": "Oportunidad de compra",
+      "condicion": "Precio < promedio mensual - 3%",
+      "activa": true
+    },
+    {
+      "id": 5,
+      "nombre": "Reporte semanal automatico",
+      "condicion": "Cada lunes 6:00 AM",
+      "activa": true
+    }
+  ]
+}

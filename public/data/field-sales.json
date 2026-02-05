@@ -1,0 +1,1034 @@
+{
+  "kpis": {
+    "vendedores_activos": 12,
+    "tiendas_totales": 300,
+    "cobertura_7d": 49.7,
+    "pedidos_hoy": 87,
+    "monto_hoy": 176173.42,
+    "meta_diaria_equipo": 180000,
+    "tiendas_sin_visita_7d": 151
+  },
+  "vendedores": [
+    {
+      "id": 1,
+      "nombre": "Juan Perez",
+      "zona": "Centro",
+      "tiendas_asignadas": 31,
+      "visitadas_7d": 15,
+      "no_visitadas_7d": 16,
+      "cobertura_pct": 48.4,
+      "pedidos_hoy": 7,
+      "monto_hoy": 21108.37,
+      "meta_diaria": 15000
+    },
+    {
+      "id": 2,
+      "nombre": "Miguel Torres",
+      "zona": "Norte",
+      "tiendas_asignadas": 17,
+      "visitadas_7d": 10,
+      "no_visitadas_7d": 7,
+      "cobertura_pct": 58.8,
+      "pedidos_hoy": 6,
+      "monto_hoy": 16880.96,
+      "meta_diaria": 15000
+    },
+    {
+      "id": 3,
+      "nombre": "Carlos Reyes",
+      "zona": "Sur",
+      "tiendas_asignadas": 34,
+      "visitadas_7d": 17,
+      "no_visitadas_7d": 17,
+      "cobertura_pct": 50.0,
+      "pedidos_hoy": 7,
+      "monto_hoy": 5443.54,
+      "meta_diaria": 15000
+    },
+    {
+      "id": 4,
+      "nombre": "Roberto Luna",
+      "zona": "Poniente",
+      "tiendas_asignadas": 26,
+      "visitadas_7d": 11,
+      "no_visitadas_7d": 15,
+      "cobertura_pct": 42.3,
+      "pedidos_hoy": 5,
+      "monto_hoy": 7929.35,
+      "meta_diaria": 15000
+    },
+    {
+      "id": 5,
+      "nombre": "Pedro Garza",
+      "zona": "Oriente",
+      "tiendas_asignadas": 29,
+      "visitadas_7d": 15,
+      "no_visitadas_7d": 14,
+      "cobertura_pct": 51.7,
+      "pedidos_hoy": 9,
+      "monto_hoy": 18793.1,
+      "meta_diaria": 15000
+    },
+    {
+      "id": 6,
+      "nombre": "Luis Mendez",
+      "zona": "Cumbres",
+      "tiendas_asignadas": 26,
+      "visitadas_7d": 9,
+      "no_visitadas_7d": 17,
+      "cobertura_pct": 34.6,
+      "pedidos_hoy": 5,
+      "monto_hoy": 22075.09,
+      "meta_diaria": 15000
+    },
+    {
+      "id": 7,
+      "nombre": "Fernando Diaz",
+      "zona": "San Pedro",
+      "tiendas_asignadas": 20,
+      "visitadas_7d": 9,
+      "no_visitadas_7d": 11,
+      "cobertura_pct": 45.0,
+      "pedidos_hoy": 8,
+      "monto_hoy": 5765.04,
+      "meta_diaria": 15000
+    },
+    {
+      "id": 8,
+      "nombre": "Andres Rios",
+      "zona": "Apodaca",
+      "tiendas_asignadas": 26,
+      "visitadas_7d": 17,
+      "no_visitadas_7d": 9,
+      "cobertura_pct": 65.4,
+      "pedidos_hoy": 9,
+      "monto_hoy": 7555.73,
+      "meta_diaria": 15000
+    },
+    {
+      "id": 9,
+      "nombre": "Oscar Silva",
+      "zona": "Escobedo",
+      "tiendas_asignadas": 28,
+      "visitadas_7d": 15,
+      "no_visitadas_7d": 13,
+      "cobertura_pct": 53.6,
+      "pedidos_hoy": 5,
+      "monto_hoy": 9233.82,
+      "meta_diaria": 15000
+    },
+    {
+      "id": 10,
+      "nombre": "Raul Flores",
+      "zona": "Santa Catarina",
+      "tiendas_asignadas": 20,
+      "visitadas_7d": 8,
+      "no_visitadas_7d": 12,
+      "cobertura_pct": 40.0,
+      "pedidos_hoy": 9,
+      "monto_hoy": 24047.06,
+      "meta_diaria": 15000
+    },
+    {
+      "id": 11,
+      "nombre": "Gabriel Cruz",
+      "zona": "Guadalupe",
+      "tiendas_asignadas": 24,
+      "visitadas_7d": 14,
+      "no_visitadas_7d": 10,
+      "cobertura_pct": 58.3,
+      "pedidos_hoy": 5,
+      "monto_hoy": 24411.82,
+      "meta_diaria": 15000
+    },
+    {
+      "id": 12,
+      "nombre": "Daniel Ortiz",
+      "zona": "San Nicolas",
+      "tiendas_asignadas": 19,
+      "visitadas_7d": 9,
+      "no_visitadas_7d": 10,
+      "cobertura_pct": 47.4,
+      "pedidos_hoy": 12,
+      "monto_hoy": 12929.54,
+      "meta_diaria": 15000
+    }
+  ],
+  "ruta_del_dia": [
+    {
+      "orden": 1,
+      "tienda": "Tienda Mi Esquina #14",
+      "direccion": "Col. Vista Hermosa, Monterrey, NL",
+      "visitada": true,
+      "hora_visita": "8:46",
+      "pedido": [
+        {
+          "producto": "Coca-Cola 2L",
+          "cajas": 3,
+          "precio_caja": 768,
+          "total": 2304
+        },
+        {
+          "producto": "Fanta Naranja 600ml",
+          "cajas": 1,
+          "precio_caja": 408,
+          "total": 408
+        },
+        {
+          "producto": "Powerade 600ml",
+          "cajas": 8,
+          "precio_caja": 528,
+          "total": 4224
+        },
+        {
+          "producto": "Coca-Cola Zero 600ml",
+          "cajas": 8,
+          "precio_caja": 432,
+          "total": 3456
+        },
+        {
+          "producto": "Agua Ciel 500ml",
+          "cajas": 3,
+          "precio_caja": 192,
+          "total": 576
+        }
+      ],
+      "total_pedido": 10968,
+      "sugerido_ia": [
+        {
+          "producto": "Sprite 600ml",
+          "cajas_sugeridas": 4,
+          "razon": "Basado en historial de compras"
+        },
+        {
+          "producto": "Fanta Naranja 600ml",
+          "cajas_sugeridas": 1,
+          "razon": "Promocion vigente"
+        },
+        {
+          "producto": "Coca-Cola 2L",
+          "cajas_sugeridas": 4,
+          "razon": "Basado en historial de compras"
+        },
+        {
+          "producto": "Sidral Mundet 600ml",
+          "cajas_sugeridas": 4,
+          "razon": "Producto de alta rotacion en la zona"
+        }
+      ],
+      "x": 298,
+      "y": 63
+    },
+    {
+      "orden": 2,
+      "tienda": "Tienda El Lupe #21",
+      "direccion": "Col. Churubusco, Monterrey, NL",
+      "visitada": true,
+      "hora_visita": "9:33",
+      "pedido": [
+        {
+          "producto": "Coca-Cola Zero 600ml",
+          "cajas": 8,
+          "precio_caja": 432,
+          "total": 3456
+        },
+        {
+          "producto": "Coca-Cola 600ml",
+          "cajas": 8,
+          "precio_caja": 432,
+          "total": 3456
+        },
+        {
+          "producto": "Del Valle Nectar 1L",
+          "cajas": 5,
+          "precio_caja": 600,
+          "total": 3000
+        },
+        {
+          "producto": "Coca-Cola Zero 600ml",
+          "cajas": 3,
+          "precio_caja": 432,
+          "total": 1296
+        }
+      ],
+      "total_pedido": 11208,
+      "sugerido_ia": [
+        {
+          "producto": "Sidral Mundet 600ml",
+          "cajas_sugeridas": 3,
+          "razon": "Reposicion estimada por consumo"
+        },
+        {
+          "producto": "Coca-Cola 2L",
+          "cajas_sugeridas": 1,
+          "razon": "Basado en historial de compras"
+        }
+      ],
+      "x": 445,
+      "y": 355
+    },
+    {
+      "orden": 3,
+      "tienda": "Tienda El Juanito #34",
+      "direccion": "Col. Contry, Monterrey, NL",
+      "visitada": true,
+      "hora_visita": "10:53",
+      "pedido": [
+        {
+          "producto": "Fanta Naranja 600ml",
+          "cajas": 4,
+          "precio_caja": 408,
+          "total": 1632
+        },
+        {
+          "producto": "Sprite 600ml",
+          "cajas": 8,
+          "precio_caja": 408,
+          "total": 3264
+        },
+        {
+          "producto": "Del Valle Nectar 1L",
+          "cajas": 6,
+          "precio_caja": 600,
+          "total": 3600
+        }
+      ],
+      "total_pedido": 8496,
+      "sugerido_ia": [
+        {
+          "producto": "Coca-Cola 600ml",
+          "cajas_sugeridas": 5,
+          "razon": "Producto de alta rotacion en la zona"
+        },
+        {
+          "producto": "Coca-Cola 600ml",
+          "cajas_sugeridas": 5,
+          "razon": "Reposicion estimada por consumo"
+        }
+      ],
+      "x": 748,
+      "y": 253
+    },
+    {
+      "orden": 4,
+      "tienda": "Tienda Don Rosita #40",
+      "direccion": "Col. Mitras, Monterrey, NL",
+      "visitada": true,
+      "hora_visita": "11:34",
+      "pedido": [
+        {
+          "producto": "Powerade 600ml",
+          "cajas": 2,
+          "precio_caja": 528,
+          "total": 1056
+        },
+        {
+          "producto": "Fanta Naranja 600ml",
+          "cajas": 3,
+          "precio_caja": 408,
+          "total": 1224
+        },
+        {
+          "producto": "Agua Ciel 1L",
+          "cajas": 2,
+          "precio_caja": 288,
+          "total": 576
+        },
+        {
+          "producto": "Agua Ciel 1L",
+          "cajas": 7,
+          "precio_caja": 288,
+          "total": 2016
+        }
+      ],
+      "total_pedido": 4872,
+      "sugerido_ia": [
+        {
+          "producto": "Sidral Mundet 600ml",
+          "cajas_sugeridas": 2,
+          "razon": "Producto de alta rotacion en la zona"
+        },
+        {
+          "producto": "Agua Ciel 1L",
+          "cajas_sugeridas": 1,
+          "razon": "Promocion vigente"
+        },
+        {
+          "producto": "Coca-Cola 600ml",
+          "cajas_sugeridas": 4,
+          "razon": "Reposicion estimada por consumo"
+        }
+      ],
+      "x": 760,
+      "y": 315
+    },
+    {
+      "orden": 5,
+      "tienda": "Tienda El Pepe #42",
+      "direccion": "Col. Centro, Monterrey, NL",
+      "visitada": true,
+      "hora_visita": "12:54",
+      "pedido": [
+        {
+          "producto": "Agua Ciel 1L",
+          "cajas": 7,
+          "precio_caja": 288,
+          "total": 2016
+        },
+        {
+          "producto": "Coca-Cola 600ml",
+          "cajas": 2,
+          "precio_caja": 432,
+          "total": 864
+        }
+      ],
+      "total_pedido": 2880,
+      "sugerido_ia": [
+        {
+          "producto": "Coca-Cola Zero 600ml",
+          "cajas_sugeridas": 2,
+          "razon": "Promocion vigente"
+        },
+        {
+          "producto": "Fanta Naranja 600ml",
+          "cajas_sugeridas": 5,
+          "razon": "Producto de alta rotacion en la zona"
+        },
+        {
+          "producto": "Coca-Cola 2L",
+          "cajas_sugeridas": 2,
+          "razon": "Reposicion estimada por consumo"
+        }
+      ],
+      "x": 601,
+      "y": 356
+    },
+    {
+      "orden": 6,
+      "tienda": "Tienda El Carmen #44",
+      "direccion": "Col. Anáhuac, Monterrey, NL",
+      "visitada": true,
+      "hora_visita": "13:12",
+      "pedido": [
+        {
+          "producto": "Sprite 600ml",
+          "cajas": 4,
+          "precio_caja": 408,
+          "total": 1632
+        },
+        {
+          "producto": "Agua Ciel 500ml",
+          "cajas": 1,
+          "precio_caja": 192,
+          "total": 192
+        },
+        {
+          "producto": "Coca-Cola 600ml",
+          "cajas": 5,
+          "precio_caja": 432,
+          "total": 2160
+        }
+      ],
+      "total_pedido": 3984,
+      "sugerido_ia": [
+        {
+          "producto": "Powerade 600ml",
+          "cajas_sugeridas": 2,
+          "razon": "Producto de alta rotacion en la zona"
+        },
+        {
+          "producto": "Powerade 600ml",
+          "cajas_sugeridas": 4,
+          "razon": "Basado en historial de compras"
+        }
+      ],
+      "x": 634,
+      "y": 296
+    },
+    {
+      "orden": 7,
+      "tienda": "Tienda El Juanito #48",
+      "direccion": "Col. Cumbres, Monterrey, NL",
+      "visitada": true,
+      "hora_visita": "14:43",
+      "pedido": [
+        {
+          "producto": "Agua Ciel 1L",
+          "cajas": 7,
+          "precio_caja": 288,
+          "total": 2016
+        },
+        {
+          "producto": "Powerade 600ml",
+          "cajas": 4,
+          "precio_caja": 528,
+          "total": 2112
+        }
+      ],
+      "total_pedido": 4128,
+      "sugerido_ia": [
+        {
+          "producto": "Coca-Cola 2L",
+          "cajas_sugeridas": 2,
+          "razon": "Producto de alta rotacion en la zona"
+        },
+        {
+          "producto": "Coca-Cola 2L",
+          "cajas_sugeridas": 1,
+          "razon": "Reposicion estimada por consumo"
+        },
+        {
+          "producto": "Agua Ciel 1L",
+          "cajas_sugeridas": 2,
+          "razon": "Reposicion estimada por consumo"
+        }
+      ],
+      "x": 227,
+      "y": 418
+    },
+    {
+      "orden": 8,
+      "tienda": "Tienda El Rosita #57",
+      "direccion": "Col. Industrial, Monterrey, NL",
+      "visitada": false,
+      "hora_visita": null,
+      "pedido": [],
+      "total_pedido": 0,
+      "sugerido_ia": [
+        {
+          "producto": "Sprite 600ml",
+          "cajas_sugeridas": 1,
+          "razon": "Basado en historial de compras"
+        },
+        {
+          "producto": "Sprite 600ml",
+          "cajas_sugeridas": 2,
+          "razon": "Reposicion estimada por consumo"
+        },
+        {
+          "producto": "Fanta Naranja 600ml",
+          "cajas_sugeridas": 3,
+          "razon": "Producto de alta rotacion en la zona"
+        },
+        {
+          "producto": "Coca-Cola 600ml",
+          "cajas_sugeridas": 1,
+          "razon": "Basado en historial de compras"
+        }
+      ],
+      "x": 76,
+      "y": 428
+    },
+    {
+      "orden": 9,
+      "tienda": "Tienda La Juanito #65",
+      "direccion": "Col. Vista Hermosa, Monterrey, NL",
+      "visitada": false,
+      "hora_visita": null,
+      "pedido": [],
+      "total_pedido": 0,
+      "sugerido_ia": [
+        {
+          "producto": "Sprite 600ml",
+          "cajas_sugeridas": 4,
+          "razon": "Promocion vigente"
+        },
+        {
+          "producto": "Coca-Cola 600ml",
+          "cajas_sugeridas": 1,
+          "razon": "Reposicion estimada por consumo"
+        },
+        {
+          "producto": "Del Valle Nectar 1L",
+          "cajas_sugeridas": 4,
+          "razon": "Basado en historial de compras"
+        },
+        {
+          "producto": "Coca-Cola 600ml",
+          "cajas_sugeridas": 3,
+          "razon": "Reposicion estimada por consumo"
+        }
+      ],
+      "x": 559,
+      "y": 276
+    },
+    {
+      "orden": 10,
+      "tienda": "Tienda La Carmen #66",
+      "direccion": "Col. Obispado, Monterrey, NL",
+      "visitada": false,
+      "hora_visita": null,
+      "pedido": [],
+      "total_pedido": 0,
+      "sugerido_ia": [
+        {
+          "producto": "Powerade 600ml",
+          "cajas_sugeridas": 2,
+          "razon": "Promocion vigente"
+        },
+        {
+          "producto": "Sprite 600ml",
+          "cajas_sugeridas": 5,
+          "razon": "Basado en historial de compras"
+        },
+        {
+          "producto": "Coca-Cola 2L",
+          "cajas_sugeridas": 1,
+          "razon": "Reposicion estimada por consumo"
+        }
+      ],
+      "x": 465,
+      "y": 175
+    },
+    {
+      "orden": 11,
+      "tienda": "Tienda La Esquina #84",
+      "direccion": "Col. Moderna, Monterrey, NL",
+      "visitada": false,
+      "hora_visita": null,
+      "pedido": [],
+      "total_pedido": 0,
+      "sugerido_ia": [
+        {
+          "producto": "Sprite 600ml",
+          "cajas_sugeridas": 4,
+          "razon": "Reposicion estimada por consumo"
+        },
+        {
+          "producto": "Sidral Mundet 600ml",
+          "cajas_sugeridas": 3,
+          "razon": "Basado en historial de compras"
+        },
+        {
+          "producto": "Coca-Cola 2L",
+          "cajas_sugeridas": 1,
+          "razon": "Reposicion estimada por consumo"
+        }
+      ],
+      "x": 324,
+      "y": 233
+    },
+    {
+      "orden": 12,
+      "tienda": "Tienda Mi Carmen #110",
+      "direccion": "Col. Contry, Monterrey, NL",
+      "visitada": false,
+      "hora_visita": null,
+      "pedido": [],
+      "total_pedido": 0,
+      "sugerido_ia": [
+        {
+          "producto": "Coca-Cola 600ml",
+          "cajas_sugeridas": 2,
+          "razon": "Basado en historial de compras"
+        },
+        {
+          "producto": "Agua Ciel 500ml",
+          "cajas_sugeridas": 4,
+          "razon": "Promocion vigente"
+        },
+        {
+          "producto": "Coca-Cola 2L",
+          "cajas_sugeridas": 1,
+          "razon": "Reposicion estimada por consumo"
+        }
+      ],
+      "x": 372,
+      "y": 43
+    }
+  ],
+  "tiendas_sin_visita": [
+    {
+      "id": 8,
+      "nombre": "Tienda El Carmen #8",
+      "direccion": "Col. Cumbres, Monterrey, NL",
+      "vendedor_id": 4,
+      "ultima_visita_dias": 15,
+      "frecuencia_visita_dias": 7,
+      "pedido_promedio": 2550.08,
+      "x": 730,
+      "y": 207
+    },
+    {
+      "id": 38,
+      "nombre": "Tienda Doña Pepe #38",
+      "direccion": "Col. Tecnologico, Monterrey, NL",
+      "vendedor_id": 11,
+      "ultima_visita_dias": 15,
+      "frecuencia_visita_dias": 7,
+      "pedido_promedio": 718.41,
+      "x": 739,
+      "y": 67
+    },
+    {
+      "id": 54,
+      "nombre": "Tienda Don Carmen #54",
+      "direccion": "Col. Mitras, Monterrey, NL",
+      "vendedor_id": 7,
+      "ultima_visita_dias": 15,
+      "frecuencia_visita_dias": 7,
+      "pedido_promedio": 3014.86,
+      "x": 654,
+      "y": 153
+    },
+    {
+      "id": 93,
+      "nombre": "Tienda Mi Carmen #93",
+      "direccion": "Col. Vista Hermosa, Monterrey, NL",
+      "vendedor_id": 5,
+      "ultima_visita_dias": 15,
+      "frecuencia_visita_dias": 7,
+      "pedido_promedio": 3900.82,
+      "x": 31,
+      "y": 214
+    },
+    {
+      "id": 98,
+      "nombre": "Tienda La Mary #98",
+      "direccion": "Col. Vista Hermosa, Monterrey, NL",
+      "vendedor_id": 8,
+      "ultima_visita_dias": 15,
+      "frecuencia_visita_dias": 7,
+      "pedido_promedio": 4301.75,
+      "x": 168,
+      "y": 265
+    },
+    {
+      "id": 107,
+      "nombre": "Tienda Mi Pepe #107",
+      "direccion": "Col. Centro, Monterrey, NL",
+      "vendedor_id": 4,
+      "ultima_visita_dias": 15,
+      "frecuencia_visita_dias": 7,
+      "pedido_promedio": 3026.28,
+      "x": 653,
+      "y": 272
+    },
+    {
+      "id": 116,
+      "nombre": "Tienda La Lupe #116",
+      "direccion": "Col. Vista Hermosa, Monterrey, NL",
+      "vendedor_id": 5,
+      "ultima_visita_dias": 15,
+      "frecuencia_visita_dias": 7,
+      "pedido_promedio": 3854.91,
+      "x": 379,
+      "y": 362
+    },
+    {
+      "id": 119,
+      "nombre": "Tienda Don Carmen #119",
+      "direccion": "Col. Vista Hermosa, Monterrey, NL",
+      "vendedor_id": 10,
+      "ultima_visita_dias": 15,
+      "frecuencia_visita_dias": 7,
+      "pedido_promedio": 1857.88,
+      "x": 94,
+      "y": 76
+    },
+    {
+      "id": 140,
+      "nombre": "Tienda Mi Lupe #140",
+      "direccion": "Col. Centro, Monterrey, NL",
+      "vendedor_id": 3,
+      "ultima_visita_dias": 15,
+      "frecuencia_visita_dias": 7,
+      "pedido_promedio": 2842.16,
+      "x": 725,
+      "y": 211
+    },
+    {
+      "id": 150,
+      "nombre": "Tienda Mi Carmen #150",
+      "direccion": "Col. Anáhuac, Monterrey, NL",
+      "vendedor_id": 8,
+      "ultima_visita_dias": 15,
+      "frecuencia_visita_dias": 7,
+      "pedido_promedio": 4899.76,
+      "x": 560,
+      "y": 43
+    },
+    {
+      "id": 169,
+      "nombre": "Tienda La Carmen #169",
+      "direccion": "Col. Del Valle, Monterrey, NL",
+      "vendedor_id": 9,
+      "ultima_visita_dias": 15,
+      "frecuencia_visita_dias": 7,
+      "pedido_promedio": 1824.78,
+      "x": 487,
+      "y": 182
+    },
+    {
+      "id": 177,
+      "nombre": "Tienda La Abarrotes #177",
+      "direccion": "Col. Churubusco, Monterrey, NL",
+      "vendedor_id": 6,
+      "ultima_visita_dias": 15,
+      "frecuencia_visita_dias": 7,
+      "pedido_promedio": 1211.0,
+      "x": 287,
+      "y": 184
+    },
+    {
+      "id": 222,
+      "nombre": "Tienda Mi Esquina #222",
+      "direccion": "Col. Tecnologico, Monterrey, NL",
+      "vendedor_id": 6,
+      "ultima_visita_dias": 15,
+      "frecuencia_visita_dias": 7,
+      "pedido_promedio": 1800.72,
+      "x": 190,
+      "y": 172
+    },
+    {
+      "id": 226,
+      "nombre": "Tienda Doña Carmen #226",
+      "direccion": "Col. Churubusco, Monterrey, NL",
+      "vendedor_id": 6,
+      "ultima_visita_dias": 15,
+      "frecuencia_visita_dias": 7,
+      "pedido_promedio": 2632.14,
+      "x": 743,
+      "y": 101
+    },
+    {
+      "id": 229,
+      "nombre": "Tienda La Lupe #229",
+      "direccion": "Col. Moderna, Monterrey, NL",
+      "vendedor_id": 12,
+      "ultima_visita_dias": 15,
+      "frecuencia_visita_dias": 7,
+      "pedido_promedio": 2226.29,
+      "x": 91,
+      "y": 160
+    },
+    {
+      "id": 232,
+      "nombre": "Tienda Doña Lupe #232",
+      "direccion": "Col. Obispado, Monterrey, NL",
+      "vendedor_id": 6,
+      "ultima_visita_dias": 15,
+      "frecuencia_visita_dias": 7,
+      "pedido_promedio": 1145.28,
+      "x": 379,
+      "y": 132
+    },
+    {
+      "id": 264,
+      "nombre": "Tienda Don Rosita #264",
+      "direccion": "Col. Vista Hermosa, Monterrey, NL",
+      "vendedor_id": 5,
+      "ultima_visita_dias": 15,
+      "frecuencia_visita_dias": 7,
+      "pedido_promedio": 678.2,
+      "x": 241,
+      "y": 85
+    },
+    {
+      "id": 278,
+      "nombre": "Tienda La Rosita #278",
+      "direccion": "Col. Vista Hermosa, Monterrey, NL",
+      "vendedor_id": 11,
+      "ultima_visita_dias": 15,
+      "frecuencia_visita_dias": 7,
+      "pedido_promedio": 4301.45,
+      "x": 295,
+      "y": 130
+    },
+    {
+      "id": 279,
+      "nombre": "Tienda Doña Pepe #279",
+      "direccion": "Col. San Jeronimo, Monterrey, NL",
+      "vendedor_id": 1,
+      "ultima_visita_dias": 15,
+      "frecuencia_visita_dias": 7,
+      "pedido_promedio": 4808.74,
+      "x": 597,
+      "y": 437
+    },
+    {
+      "id": 291,
+      "nombre": "Tienda Doña Lupe #291",
+      "direccion": "Col. Industrial, Monterrey, NL",
+      "vendedor_id": 11,
+      "ultima_visita_dias": 15,
+      "frecuencia_visita_dias": 7,
+      "pedido_promedio": 4399.03,
+      "x": 581,
+      "y": 381
+    },
+    {
+      "id": 22,
+      "nombre": "Tienda El Juanito #22",
+      "direccion": "Col. Moderna, Monterrey, NL",
+      "vendedor_id": 11,
+      "ultima_visita_dias": 14,
+      "frecuencia_visita_dias": 7,
+      "pedido_promedio": 1488.72,
+      "x": 190,
+      "y": 384
+    },
+    {
+      "id": 31,
+      "nombre": "Tienda La Abarrotes #31",
+      "direccion": "Col. Anáhuac, Monterrey, NL",
+      "vendedor_id": 10,
+      "ultima_visita_dias": 14,
+      "frecuencia_visita_dias": 7,
+      "pedido_promedio": 2733.47,
+      "x": 416,
+      "y": 276
+    },
+    {
+      "id": 39,
+      "nombre": "Tienda La Juanito #39",
+      "direccion": "Col. Mitras, Monterrey, NL",
+      "vendedor_id": 3,
+      "ultima_visita_dias": 14,
+      "frecuencia_visita_dias": 7,
+      "pedido_promedio": 1665.49,
+      "x": 266,
+      "y": 301
+    },
+    {
+      "id": 52,
+      "nombre": "Tienda La Carmen #52",
+      "direccion": "Col. Churubusco, Monterrey, NL",
+      "vendedor_id": 4,
+      "ultima_visita_dias": 14,
+      "frecuencia_visita_dias": 7,
+      "pedido_promedio": 555.49,
+      "x": 114,
+      "y": 126
+    },
+    {
+      "id": 61,
+      "nombre": "Tienda La Pepe #61",
+      "direccion": "Col. Cumbres, Monterrey, NL",
+      "vendedor_id": 2,
+      "ultima_visita_dias": 14,
+      "frecuencia_visita_dias": 7,
+      "pedido_promedio": 3325.63,
+      "x": 292,
+      "y": 127
+    },
+    {
+      "id": 72,
+      "nombre": "Tienda Doña Mary #72",
+      "direccion": "Col. Roma, Monterrey, NL",
+      "vendedor_id": 6,
+      "ultima_visita_dias": 14,
+      "frecuencia_visita_dias": 7,
+      "pedido_promedio": 4207.95,
+      "x": 241,
+      "y": 215
+    },
+    {
+      "id": 131,
+      "nombre": "Tienda La Juanito #131",
+      "direccion": "Col. Centro, Monterrey, NL",
+      "vendedor_id": 11,
+      "ultima_visita_dias": 14,
+      "frecuencia_visita_dias": 7,
+      "pedido_promedio": 4347.53,
+      "x": 201,
+      "y": 68
+    },
+    {
+      "id": 132,
+      "nombre": "Tienda La Lupe #132",
+      "direccion": "Col. Centro, Monterrey, NL",
+      "vendedor_id": 6,
+      "ultima_visita_dias": 14,
+      "frecuencia_visita_dias": 7,
+      "pedido_promedio": 1774.71,
+      "x": 77,
+      "y": 313
+    },
+    {
+      "id": 151,
+      "nombre": "Tienda Doña Esquina #151",
+      "direccion": "Col. Tecnologico, Monterrey, NL",
+      "vendedor_id": 2,
+      "ultima_visita_dias": 14,
+      "frecuencia_visita_dias": 7,
+      "pedido_promedio": 3113.81,
+      "x": 308,
+      "y": 301
+    },
+    {
+      "id": 166,
+      "nombre": "Tienda El Juanito #166",
+      "direccion": "Col. Moderna, Monterrey, NL",
+      "vendedor_id": 6,
+      "ultima_visita_dias": 14,
+      "frecuencia_visita_dias": 7,
+      "pedido_promedio": 1503.5,
+      "x": 729,
+      "y": 361
+    }
+  ],
+  "skus": [
+    {
+      "id": 1,
+      "nombre": "Coca-Cola 600ml",
+      "precio": 18,
+      "categoria": "Refresco"
+    },
+    {
+      "id": 2,
+      "nombre": "Coca-Cola 2L",
+      "precio": 32,
+      "categoria": "Refresco"
+    },
+    {
+      "id": 3,
+      "nombre": "Sprite 600ml",
+      "precio": 17,
+      "categoria": "Refresco"
+    },
+    {
+      "id": 4,
+      "nombre": "Fanta Naranja 600ml",
+      "precio": 17,
+      "categoria": "Refresco"
+    },
+    {
+      "id": 5,
+      "nombre": "Agua Ciel 1L",
+      "precio": 12,
+      "categoria": "Agua"
+    },
+    {
+      "id": 6,
+      "nombre": "Agua Ciel 500ml",
+      "precio": 8,
+      "categoria": "Agua"
+    },
+    {
+      "id": 7,
+      "nombre": "Powerade 600ml",
+      "precio": 22,
+      "categoria": "Deportiva"
+    },
+    {
+      "id": 8,
+      "nombre": "Del Valle Nectar 1L",
+      "precio": 25,
+      "categoria": "Jugo"
+    },
+    {
+      "id": 9,
+      "nombre": "Coca-Cola Zero 600ml",
+      "precio": 18,
+      "categoria": "Refresco"
+    },
+    {
+      "id": 10,
+      "nombre": "Sidral Mundet 600ml",
+      "precio": 16,
+      "categoria": "Refresco"
+    }
+  ]
+}

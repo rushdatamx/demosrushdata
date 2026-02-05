@@ -1,0 +1,427 @@
+{
+  "kpis": {
+    "total_hectareas": 500,
+    "parcelas_sanas": 1,
+    "parcelas_estres": 5,
+    "parcelas_criticas": 2,
+    "ndvi_promedio": 0.47,
+    "alertas_activas": 4,
+    "rendimiento_estimado_ton": 10.3
+  },
+  "parcelas": [
+    {
+      "id": 1,
+      "nombre": "Parcela Norte A",
+      "hectareas": 80,
+      "cultivo": "Tomate Saladette",
+      "etapa": "Fructificacion",
+      "salud_index": 70.9,
+      "estado": "estres",
+      "ndvi": 0.4,
+      "humedad_suelo": 74.1,
+      "temperatura_suelo": 26.8,
+      "rendimiento_estimado": 30.8,
+      "rendimiento_anterior": 31.1,
+      "x": 399,
+      "y": 401,
+      "width": 96,
+      "height": 72
+    },
+    {
+      "id": 2,
+      "nombre": "Parcela Norte B",
+      "hectareas": 60,
+      "cultivo": "Tomate Saladette",
+      "etapa": "Cosecha",
+      "salud_index": 73.6,
+      "estado": "estres",
+      "ndvi": 0.42,
+      "humedad_suelo": 77.1,
+      "temperatura_suelo": 27.6,
+      "rendimiento_estimado": 33.1,
+      "rendimiento_anterior": 30.9,
+      "x": 381,
+      "y": 392,
+      "width": 72,
+      "height": 54
+    },
+    {
+      "id": 3,
+      "nombre": "Parcela Sur A",
+      "hectareas": 70,
+      "cultivo": "Aguacate Hass",
+      "etapa": "Desarrollo",
+      "salud_index": 72.4,
+      "estado": "estres",
+      "ndvi": 0.47,
+      "humedad_suelo": 27.2,
+      "temperatura_suelo": 29.5,
+      "rendimiento_estimado": 10.7,
+      "rendimiento_anterior": 9.1,
+      "x": 303,
+      "y": 276,
+      "width": 84,
+      "height": 63
+    },
+    {
+      "id": 4,
+      "nombre": "Parcela Sur B",
+      "hectareas": 65,
+      "cultivo": "Aguacate Hass",
+      "etapa": "Floracion",
+      "salud_index": 90.2,
+      "estado": "sano",
+      "ndvi": 0.42,
+      "humedad_suelo": 75.2,
+      "temperatura_suelo": 31.8,
+      "rendimiento_estimado": 15.8,
+      "rendimiento_anterior": 15.7,
+      "x": 514,
+      "y": 320,
+      "width": 78,
+      "height": 58
+    },
+    {
+      "id": 5,
+      "nombre": "Parcela Este",
+      "hectareas": 55,
+      "cultivo": "Tomate Saladette",
+      "etapa": "Vegetativa",
+      "salud_index": 56.0,
+      "estado": "critico",
+      "ndvi": 0.57,
+      "humedad_suelo": 42.7,
+      "temperatura_suelo": 23.4,
+      "rendimiento_estimado": 30.0,
+      "rendimiento_anterior": 28.4,
+      "x": 441,
+      "y": 56,
+      "width": 66,
+      "height": 49
+    },
+    {
+      "id": 6,
+      "nombre": "Parcela Oeste A",
+      "hectareas": 75,
+      "cultivo": "Aguacate Hass",
+      "etapa": "Cosecha",
+      "salud_index": 60.5,
+      "estado": "estres",
+      "ndvi": 0.54,
+      "humedad_suelo": 38.7,
+      "temperatura_suelo": 29.9,
+      "rendimiento_estimado": 8.2,
+      "rendimiento_anterior": 6.9,
+      "x": 617,
+      "y": 314,
+      "width": 90,
+      "height": 67
+    },
+    {
+      "id": 7,
+      "nombre": "Parcela Oeste B",
+      "hectareas": 50,
+      "cultivo": "Tomate Saladette",
+      "etapa": "Fructificacion",
+      "salud_index": 58.4,
+      "estado": "critico",
+      "ndvi": 0.46,
+      "humedad_suelo": 62.4,
+      "temperatura_suelo": 31.7,
+      "rendimiento_estimado": 26.0,
+      "rendimiento_anterior": 21.0,
+      "x": 525,
+      "y": 411,
+      "width": 60,
+      "height": 45
+    },
+    {
+      "id": 8,
+      "nombre": "Parcela Central",
+      "hectareas": 45,
+      "cultivo": "Aguacate Hass",
+      "etapa": "Desarrollo",
+      "salud_index": 69.3,
+      "estado": "estres",
+      "ndvi": 0.48,
+      "humedad_suelo": 57.4,
+      "temperatura_suelo": 23.4,
+      "rendimiento_estimado": 10.8,
+      "rendimiento_anterior": 10.9,
+      "x": 581,
+      "y": 436,
+      "width": 54,
+      "height": 40
+    }
+  ],
+  "clima": [
+    {
+      "fecha": "2026-02-03",
+      "dia": "Tuesday",
+      "temp_max": 26.0,
+      "temp_min": 7.7,
+      "humedad": 56.2,
+      "precipitacion_mm": 14.4,
+      "viento_kmh": 29.0,
+      "riesgo_helada": false,
+      "unidades_calor": 6.9,
+      "condicion": "Lluvia ligera"
+    },
+    {
+      "fecha": "2026-02-04",
+      "dia": "Wednesday",
+      "temp_max": 29.5,
+      "temp_min": 4.4,
+      "humedad": 47.7,
+      "precipitacion_mm": 0,
+      "viento_kmh": 18.5,
+      "riesgo_helada": true,
+      "unidades_calor": 6.9,
+      "condicion": "Helada probable"
+    },
+    {
+      "fecha": "2026-02-05",
+      "dia": "Thursday",
+      "temp_max": 28.8,
+      "temp_min": 11.8,
+      "humedad": 34.5,
+      "precipitacion_mm": 0,
+      "viento_kmh": 14.3,
+      "riesgo_helada": false,
+      "unidades_calor": 10.3,
+      "condicion": "Soleado"
+    },
+    {
+      "fecha": "2026-02-06",
+      "dia": "Friday",
+      "temp_max": 22.9,
+      "temp_min": 13.8,
+      "humedad": 81.2,
+      "precipitacion_mm": 3.3,
+      "viento_kmh": 5.5,
+      "riesgo_helada": false,
+      "unidades_calor": 8.4,
+      "condicion": "Lluvia ligera"
+    },
+    {
+      "fecha": "2026-02-07",
+      "dia": "Saturday",
+      "temp_max": 30.7,
+      "temp_min": 11.0,
+      "humedad": 32.5,
+      "precipitacion_mm": 14.2,
+      "viento_kmh": 20.5,
+      "riesgo_helada": false,
+      "unidades_calor": 10.9,
+      "condicion": "Parcialmente nublado"
+    },
+    {
+      "fecha": "2026-02-08",
+      "dia": "Sunday",
+      "temp_max": 28.4,
+      "temp_min": 12.6,
+      "humedad": 56.6,
+      "precipitacion_mm": 9.3,
+      "viento_kmh": 7.7,
+      "riesgo_helada": false,
+      "unidades_calor": 10.5,
+      "condicion": "Nublado"
+    },
+    {
+      "fecha": "2026-02-09",
+      "dia": "Monday",
+      "temp_max": 25.4,
+      "temp_min": 10.2,
+      "humedad": 54.2,
+      "precipitacion_mm": 0,
+      "viento_kmh": 5.1,
+      "riesgo_helada": false,
+      "unidades_calor": 7.8,
+      "condicion": "Nublado"
+    }
+  ],
+  "sensores": [
+    {
+      "parcela_id": 1,
+      "parcela": "Parcela Norte A",
+      "humedad_suelo": 74.1,
+      "temperatura_suelo": 26.8,
+      "humedad_ambiente": 46.6,
+      "temperatura_ambiente": 25.3,
+      "radiacion_solar": 836.0,
+      "ph_suelo": 7.0,
+      "ultima_lectura": "Hace 5 min"
+    },
+    {
+      "parcela_id": 2,
+      "parcela": "Parcela Norte B",
+      "humedad_suelo": 77.1,
+      "temperatura_suelo": 27.6,
+      "humedad_ambiente": 59.0,
+      "temperatura_ambiente": 26.2,
+      "radiacion_solar": 603.0,
+      "ph_suelo": 7.1,
+      "ultima_lectura": "Hace 5 min"
+    },
+    {
+      "parcela_id": 3,
+      "parcela": "Parcela Sur A",
+      "humedad_suelo": 27.2,
+      "temperatura_suelo": 29.5,
+      "humedad_ambiente": 55.4,
+      "temperatura_ambiente": 25.3,
+      "radiacion_solar": 657.0,
+      "ph_suelo": 6.1,
+      "ultima_lectura": "Hace 5 min"
+    },
+    {
+      "parcela_id": 4,
+      "parcela": "Parcela Sur B",
+      "humedad_suelo": 75.2,
+      "temperatura_suelo": 31.8,
+      "humedad_ambiente": 79.6,
+      "temperatura_ambiente": 29.9,
+      "radiacion_solar": 893.0,
+      "ph_suelo": 6.3,
+      "ultima_lectura": "Hace 5 min"
+    },
+    {
+      "parcela_id": 5,
+      "parcela": "Parcela Este",
+      "humedad_suelo": 42.7,
+      "temperatura_suelo": 23.4,
+      "humedad_ambiente": 54.8,
+      "temperatura_ambiente": 20.9,
+      "radiacion_solar": 646.0,
+      "ph_suelo": 7.2,
+      "ultima_lectura": "Hace 5 min"
+    },
+    {
+      "parcela_id": 6,
+      "parcela": "Parcela Oeste A",
+      "humedad_suelo": 38.7,
+      "temperatura_suelo": 29.9,
+      "humedad_ambiente": 61.8,
+      "temperatura_ambiente": 24.0,
+      "radiacion_solar": 311.0,
+      "ph_suelo": 5.9,
+      "ultima_lectura": "Hace 5 min"
+    },
+    {
+      "parcela_id": 7,
+      "parcela": "Parcela Oeste B",
+      "humedad_suelo": 62.4,
+      "temperatura_suelo": 31.7,
+      "humedad_ambiente": 73.9,
+      "temperatura_ambiente": 25.4,
+      "radiacion_solar": 547.0,
+      "ph_suelo": 6.3,
+      "ultima_lectura": "Hace 5 min"
+    },
+    {
+      "parcela_id": 8,
+      "parcela": "Parcela Central",
+      "humedad_suelo": 57.4,
+      "temperatura_suelo": 23.4,
+      "humedad_ambiente": 60.8,
+      "temperatura_ambiente": 25.2,
+      "radiacion_solar": 605.0,
+      "ph_suelo": 6.3,
+      "ultima_lectura": "Hace 5 min"
+    }
+  ],
+  "alertas": [
+    {
+      "tipo": "helada",
+      "prioridad": "alta",
+      "titulo": "Riesgo de Helada - Jueves 5 Feb",
+      "descripcion": "Temperatura minima pronosticada: 3.2°C. Parcelas 3 y 7 en zona de mayor riesgo.",
+      "accion": "Activar riego anti-helada en Parcela Sur A y Parcela Oeste B a partir de las 2:00 AM",
+      "parcelas_afectadas": [
+        3,
+        7
+      ]
+    },
+    {
+      "tipo": "plaga",
+      "prioridad": "media",
+      "titulo": "Deteccion de Mosca Blanca - Parcela Este",
+      "descripcion": "NDVI bajo en sector noreste. Posible infestacion temprana de mosca blanca en tomate.",
+      "accion": "Programar aplicacion de insecticida biologico. Monitorear parcelas adyacentes.",
+      "parcelas_afectadas": [
+        5
+      ]
+    },
+    {
+      "tipo": "riego",
+      "prioridad": "media",
+      "titulo": "Humedad Baja - Parcela Central",
+      "descripcion": "Humedad del suelo al 22%. Umbral minimo para aguacate: 35%.",
+      "accion": "Aumentar frecuencia de riego. Verificar sistema de goteo en zona central.",
+      "parcelas_afectadas": [
+        8
+      ]
+    },
+    {
+      "tipo": "cosecha",
+      "prioridad": "baja",
+      "titulo": "Ventana Optima de Cosecha - Parcela Norte B",
+      "descripcion": "Tomate Saladette en punto optimo de madurez. Ventana estimada: 3-5 dias.",
+      "accion": "Coordinar cuadrilla de 15 jornaleros para cosecha martes-jueves.",
+      "parcelas_afectadas": [
+        2
+      ]
+    }
+  ],
+  "plan_actividades": [
+    {
+      "fecha": "2026-02-04",
+      "actividad": "Riego anti-helada preventivo",
+      "parcelas": "Sur A, Oeste B",
+      "personal": 4,
+      "estado": "programado"
+    },
+    {
+      "fecha": "2026-02-05",
+      "actividad": "Cosecha tomate Parcela Norte B",
+      "parcelas": "Norte B",
+      "personal": 15,
+      "estado": "programado"
+    },
+    {
+      "fecha": "2026-02-06",
+      "actividad": "Aplicacion insecticida biologico",
+      "parcelas": "Este",
+      "personal": 3,
+      "estado": "programado"
+    },
+    {
+      "fecha": "2026-02-07",
+      "actividad": "Cosecha tomate (continuacion)",
+      "parcelas": "Norte B",
+      "personal": 15,
+      "estado": "programado"
+    },
+    {
+      "fecha": "2026-02-08",
+      "actividad": "Revision sistema riego",
+      "parcelas": "Central",
+      "personal": 2,
+      "estado": "programado"
+    },
+    {
+      "fecha": "2026-02-10",
+      "actividad": "Fertilizacion aguacate",
+      "parcelas": "Sur A, Sur B, Oeste A",
+      "personal": 6,
+      "estado": "pendiente"
+    },
+    {
+      "fecha": "2026-02-12",
+      "actividad": "Poda de formacion",
+      "parcelas": "Central, Sur B",
+      "personal": 8,
+      "estado": "pendiente"
+    }
+  ]
+}

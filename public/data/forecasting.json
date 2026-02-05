@@ -1,0 +1,2032 @@
+{
+  "kpis": {
+    "desperdicio_actual": 6.8,
+    "desperdicio_anterior": 18.1,
+    "reduccion_desperdicio": 62.0,
+    "precision_forecast": 92.4,
+    "ahorro_mensual": 75143.54,
+    "sucursales_activas": 5,
+    "ingredientes_monitoreados": 15
+  },
+  "sucursales": [
+    {
+      "id": 1,
+      "nombre": "FreshMex Cumbres",
+      "zona": "Cumbres"
+    },
+    {
+      "id": 2,
+      "nombre": "FreshMex San Pedro",
+      "zona": "San Pedro"
+    },
+    {
+      "id": 3,
+      "nombre": "FreshMex Valle",
+      "zona": "Valle Oriente"
+    },
+    {
+      "id": 4,
+      "nombre": "FreshMex Centro",
+      "zona": "Centro"
+    },
+    {
+      "id": 5,
+      "nombre": "FreshMex Apodaca",
+      "zona": "Apodaca"
+    }
+  ],
+  "ingredientes": [
+    {
+      "id": 1,
+      "nombre": "Pechuga de Pollo",
+      "unidad": "kg",
+      "precio_kg": 89,
+      "perecedero": true
+    },
+    {
+      "id": 2,
+      "nombre": "Aguacate Hass",
+      "unidad": "kg",
+      "precio_kg": 65,
+      "perecedero": true
+    },
+    {
+      "id": 3,
+      "nombre": "Tortilla de Harina",
+      "unidad": "kg",
+      "precio_kg": 35,
+      "perecedero": true
+    },
+    {
+      "id": 4,
+      "nombre": "Queso Oaxaca",
+      "unidad": "kg",
+      "precio_kg": 120,
+      "perecedero": true
+    },
+    {
+      "id": 5,
+      "nombre": "Carne de Res",
+      "unidad": "kg",
+      "precio_kg": 185,
+      "perecedero": true
+    },
+    {
+      "id": 6,
+      "nombre": "Camarones",
+      "unidad": "kg",
+      "precio_kg": 220,
+      "perecedero": true
+    },
+    {
+      "id": 7,
+      "nombre": "Crema Acida",
+      "unidad": "lt",
+      "precio_kg": 45,
+      "perecedero": true
+    },
+    {
+      "id": 8,
+      "nombre": "Chile Poblano",
+      "unidad": "kg",
+      "precio_kg": 38,
+      "perecedero": true
+    },
+    {
+      "id": 9,
+      "nombre": "Tomate",
+      "unidad": "kg",
+      "precio_kg": 28,
+      "perecedero": true
+    },
+    {
+      "id": 10,
+      "nombre": "Cebolla",
+      "unidad": "kg",
+      "precio_kg": 22,
+      "perecedero": true
+    },
+    {
+      "id": 11,
+      "nombre": "Limon",
+      "unidad": "kg",
+      "precio_kg": 32,
+      "perecedero": true
+    },
+    {
+      "id": 12,
+      "nombre": "Arroz",
+      "unidad": "kg",
+      "precio_kg": 18,
+      "perecedero": false
+    },
+    {
+      "id": 13,
+      "nombre": "Frijol Negro",
+      "unidad": "kg",
+      "precio_kg": 25,
+      "perecedero": false
+    },
+    {
+      "id": 14,
+      "nombre": "Aceite Vegetal",
+      "unidad": "lt",
+      "precio_kg": 42,
+      "perecedero": false
+    },
+    {
+      "id": 15,
+      "nombre": "Salsa Chipotle",
+      "unidad": "lt",
+      "precio_kg": 55,
+      "perecedero": false
+    }
+  ],
+  "forecast_7d": [
+    {
+      "fecha": "2026-02-03",
+      "dia_semana": "Tuesday",
+      "factor_demanda": 0.85,
+      "evento": null,
+      "items": [
+        {
+          "ingrediente": "Pechuga de Pollo",
+          "unidad": "kg",
+          "predicho": 25.4,
+          "real": 27.9,
+          "banda_inferior": 19.0,
+          "banda_superior": 31.8,
+          "precio_unitario": 89,
+          "costo_estimado": 2260.6
+        },
+        {
+          "ingrediente": "Aguacate Hass",
+          "unidad": "kg",
+          "predicho": 16.0,
+          "real": 17.9,
+          "banda_inferior": 12.0,
+          "banda_superior": 20.0,
+          "precio_unitario": 65,
+          "costo_estimado": 1040.0
+        },
+        {
+          "ingrediente": "Tortilla de Harina",
+          "unidad": "kg",
+          "predicho": 33.2,
+          "real": 37.5,
+          "banda_inferior": 24.9,
+          "banda_superior": 41.5,
+          "precio_unitario": 35,
+          "costo_estimado": 1162.0
+        },
+        {
+          "ingrediente": "Queso Oaxaca",
+          "unidad": "kg",
+          "predicho": 26.2,
+          "real": 31.1,
+          "banda_inferior": 19.6,
+          "banda_superior": 32.8,
+          "precio_unitario": 120,
+          "costo_estimado": 3144.0
+        },
+        {
+          "ingrediente": "Carne de Res",
+          "unidad": "kg",
+          "predicho": 23.2,
+          "real": 27.6,
+          "banda_inferior": 17.4,
+          "banda_superior": 29.0,
+          "precio_unitario": 185,
+          "costo_estimado": 4292.0
+        },
+        {
+          "ingrediente": "Camarones",
+          "unidad": "kg",
+          "predicho": 25.7,
+          "real": 24.7,
+          "banda_inferior": 19.3,
+          "banda_superior": 32.1,
+          "precio_unitario": 220,
+          "costo_estimado": 5654.0
+        },
+        {
+          "ingrediente": "Crema Acida",
+          "unidad": "lt",
+          "predicho": 20.4,
+          "real": 23.4,
+          "banda_inferior": 15.3,
+          "banda_superior": 25.5,
+          "precio_unitario": 45,
+          "costo_estimado": 918.0
+        },
+        {
+          "ingrediente": "Chile Poblano",
+          "unidad": "kg",
+          "predicho": 29.5,
+          "real": 34.1,
+          "banda_inferior": 22.1,
+          "banda_superior": 36.9,
+          "precio_unitario": 38,
+          "costo_estimado": 1121.0
+        },
+        {
+          "ingrediente": "Tomate",
+          "unidad": "kg",
+          "predicho": 36.4,
+          "real": 38.6,
+          "banda_inferior": 27.3,
+          "banda_superior": 45.5,
+          "precio_unitario": 28,
+          "costo_estimado": 1019.2
+        },
+        {
+          "ingrediente": "Cebolla",
+          "unidad": "kg",
+          "predicho": 9.6,
+          "real": 12.5,
+          "banda_inferior": 7.2,
+          "banda_superior": 12.0,
+          "precio_unitario": 22,
+          "costo_estimado": 211.2
+        },
+        {
+          "ingrediente": "Limon",
+          "unidad": "kg",
+          "predicho": 14.8,
+          "real": 18.2,
+          "banda_inferior": 11.1,
+          "banda_superior": 18.5,
+          "precio_unitario": 32,
+          "costo_estimado": 473.6
+        },
+        {
+          "ingrediente": "Arroz",
+          "unidad": "kg",
+          "predicho": 28.1,
+          "real": 28.2,
+          "banda_inferior": 21.1,
+          "banda_superior": 35.1,
+          "precio_unitario": 18,
+          "costo_estimado": 505.8
+        },
+        {
+          "ingrediente": "Frijol Negro",
+          "unidad": "kg",
+          "predicho": 13.8,
+          "real": 11.6,
+          "banda_inferior": 10.4,
+          "banda_superior": 17.2,
+          "precio_unitario": 25,
+          "costo_estimado": 345.0
+        },
+        {
+          "ingrediente": "Aceite Vegetal",
+          "unidad": "lt",
+          "predicho": 22.4,
+          "real": 22.3,
+          "banda_inferior": 16.8,
+          "banda_superior": 28.0,
+          "precio_unitario": 42,
+          "costo_estimado": 940.8
+        },
+        {
+          "ingrediente": "Salsa Chipotle",
+          "unidad": "lt",
+          "predicho": 11.6,
+          "real": 10.3,
+          "banda_inferior": 8.7,
+          "banda_superior": 14.5,
+          "precio_unitario": 55,
+          "costo_estimado": 638.0
+        }
+      ]
+    },
+    {
+      "fecha": "2026-02-04",
+      "dia_semana": "Wednesday",
+      "factor_demanda": 0.9,
+      "evento": null,
+      "items": [
+        {
+          "ingrediente": "Pechuga de Pollo",
+          "unidad": "kg",
+          "predicho": 38.1,
+          "real": 37.1,
+          "banda_inferior": 28.6,
+          "banda_superior": 47.6,
+          "precio_unitario": 89,
+          "costo_estimado": 3390.9
+        },
+        {
+          "ingrediente": "Aguacate Hass",
+          "unidad": "kg",
+          "predicho": 10.5,
+          "real": 9.6,
+          "banda_inferior": 7.9,
+          "banda_superior": 13.1,
+          "precio_unitario": 65,
+          "costo_estimado": 682.5
+        },
+        {
+          "ingrediente": "Tortilla de Harina",
+          "unidad": "kg",
+          "predicho": 16.2,
+          "real": 16.1,
+          "banda_inferior": 12.1,
+          "banda_superior": 20.2,
+          "precio_unitario": 35,
+          "costo_estimado": 567.0
+        },
+        {
+          "ingrediente": "Queso Oaxaca",
+          "unidad": "kg",
+          "predicho": 13.1,
+          "real": 14.8,
+          "banda_inferior": 9.8,
+          "banda_superior": 16.4,
+          "precio_unitario": 120,
+          "costo_estimado": 1572.0
+        },
+        {
+          "ingrediente": "Carne de Res",
+          "unidad": "kg",
+          "predicho": 22.3,
+          "real": 21.2,
+          "banda_inferior": 16.7,
+          "banda_superior": 27.9,
+          "precio_unitario": 185,
+          "costo_estimado": 4125.5
+        },
+        {
+          "ingrediente": "Camarones",
+          "unidad": "kg",
+          "predicho": 26.6,
+          "real": 23.2,
+          "banda_inferior": 20.0,
+          "banda_superior": 33.2,
+          "precio_unitario": 220,
+          "costo_estimado": 5852.0
+        },
+        {
+          "ingrediente": "Crema Acida",
+          "unidad": "lt",
+          "predicho": 9.5,
+          "real": 9.1,
+          "banda_inferior": 7.1,
+          "banda_superior": 11.9,
+          "precio_unitario": 45,
+          "costo_estimado": 427.5
+        },
+        {
+          "ingrediente": "Chile Poblano",
+          "unidad": "kg",
+          "predicho": 30.6,
+          "real": 38.1,
+          "banda_inferior": 23.0,
+          "banda_superior": 38.2,
+          "precio_unitario": 38,
+          "costo_estimado": 1162.8
+        },
+        {
+          "ingrediente": "Tomate",
+          "unidad": "kg",
+          "predicho": 7.8,
+          "real": 7.5,
+          "banda_inferior": 5.8,
+          "banda_superior": 9.8,
+          "precio_unitario": 28,
+          "costo_estimado": 218.4
+        },
+        {
+          "ingrediente": "Cebolla",
+          "unidad": "kg",
+          "predicho": 19.1,
+          "real": 19.1,
+          "banda_inferior": 14.3,
+          "banda_superior": 23.9,
+          "precio_unitario": 22,
+          "costo_estimado": 420.2
+        },
+        {
+          "ingrediente": "Limon",
+          "unidad": "kg",
+          "predicho": 12.6,
+          "real": 13.2,
+          "banda_inferior": 9.4,
+          "banda_superior": 15.8,
+          "precio_unitario": 32,
+          "costo_estimado": 403.2
+        },
+        {
+          "ingrediente": "Arroz",
+          "unidad": "kg",
+          "predicho": 7.6,
+          "real": 8.7,
+          "banda_inferior": 5.7,
+          "banda_superior": 9.5,
+          "precio_unitario": 18,
+          "costo_estimado": 136.8
+        },
+        {
+          "ingrediente": "Frijol Negro",
+          "unidad": "kg",
+          "predicho": 31.3,
+          "real": 30.5,
+          "banda_inferior": 23.5,
+          "banda_superior": 39.1,
+          "precio_unitario": 25,
+          "costo_estimado": 782.5
+        },
+        {
+          "ingrediente": "Aceite Vegetal",
+          "unidad": "lt",
+          "predicho": 22.9,
+          "real": 27.7,
+          "banda_inferior": 17.2,
+          "banda_superior": 28.6,
+          "precio_unitario": 42,
+          "costo_estimado": 961.8
+        },
+        {
+          "ingrediente": "Salsa Chipotle",
+          "unidad": "lt",
+          "predicho": 39.1,
+          "real": 31.7,
+          "banda_inferior": 29.3,
+          "banda_superior": 48.9,
+          "precio_unitario": 55,
+          "costo_estimado": 2150.5
+        }
+      ]
+    },
+    {
+      "fecha": "2026-02-05",
+      "dia_semana": "Thursday",
+      "factor_demanda": 1.0,
+      "evento": null,
+      "items": [
+        {
+          "ingrediente": "Pechuga de Pollo",
+          "unidad": "kg",
+          "predicho": 24.1,
+          "real": null,
+          "banda_inferior": 18.1,
+          "banda_superior": 30.1,
+          "precio_unitario": 89,
+          "costo_estimado": 2144.9
+        },
+        {
+          "ingrediente": "Aguacate Hass",
+          "unidad": "kg",
+          "predicho": 18.4,
+          "real": null,
+          "banda_inferior": 13.8,
+          "banda_superior": 23.0,
+          "precio_unitario": 65,
+          "costo_estimado": 1196.0
+        },
+        {
+          "ingrediente": "Tortilla de Harina",
+          "unidad": "kg",
+          "predicho": 15.5,
+          "real": null,
+          "banda_inferior": 11.6,
+          "banda_superior": 19.4,
+          "precio_unitario": 35,
+          "costo_estimado": 542.5
+        },
+        {
+          "ingrediente": "Queso Oaxaca",
+          "unidad": "kg",
+          "predicho": 29.7,
+          "real": null,
+          "banda_inferior": 22.3,
+          "banda_superior": 37.1,
+          "precio_unitario": 120,
+          "costo_estimado": 3564.0
+        },
+        {
+          "ingrediente": "Carne de Res",
+          "unidad": "kg",
+          "predicho": 32.7,
+          "real": null,
+          "banda_inferior": 24.5,
+          "banda_superior": 40.9,
+          "precio_unitario": 185,
+          "costo_estimado": 6049.5
+        },
+        {
+          "ingrediente": "Camarones",
+          "unidad": "kg",
+          "predicho": 46.6,
+          "real": null,
+          "banda_inferior": 35.0,
+          "banda_superior": 58.2,
+          "precio_unitario": 220,
+          "costo_estimado": 10252.0
+        },
+        {
+          "ingrediente": "Crema Acida",
+          "unidad": "lt",
+          "predicho": 25.5,
+          "real": null,
+          "banda_inferior": 19.1,
+          "banda_superior": 31.9,
+          "precio_unitario": 45,
+          "costo_estimado": 1147.5
+        },
+        {
+          "ingrediente": "Chile Poblano",
+          "unidad": "kg",
+          "predicho": 45.4,
+          "real": null,
+          "banda_inferior": 34.0,
+          "banda_superior": 56.8,
+          "precio_unitario": 38,
+          "costo_estimado": 1725.2
+        },
+        {
+          "ingrediente": "Tomate",
+          "unidad": "kg",
+          "predicho": 36.4,
+          "real": null,
+          "banda_inferior": 27.3,
+          "banda_superior": 45.5,
+          "precio_unitario": 28,
+          "costo_estimado": 1019.2
+        },
+        {
+          "ingrediente": "Cebolla",
+          "unidad": "kg",
+          "predicho": 28.8,
+          "real": null,
+          "banda_inferior": 21.6,
+          "banda_superior": 36.0,
+          "precio_unitario": 22,
+          "costo_estimado": 633.6
+        },
+        {
+          "ingrediente": "Limon",
+          "unidad": "kg",
+          "predicho": 32.5,
+          "real": null,
+          "banda_inferior": 24.4,
+          "banda_superior": 40.6,
+          "precio_unitario": 32,
+          "costo_estimado": 1040.0
+        },
+        {
+          "ingrediente": "Arroz",
+          "unidad": "kg",
+          "predicho": 15.1,
+          "real": null,
+          "banda_inferior": 11.3,
+          "banda_superior": 18.9,
+          "precio_unitario": 18,
+          "costo_estimado": 271.8
+        },
+        {
+          "ingrediente": "Frijol Negro",
+          "unidad": "kg",
+          "predicho": 18.3,
+          "real": null,
+          "banda_inferior": 13.7,
+          "banda_superior": 22.9,
+          "precio_unitario": 25,
+          "costo_estimado": 457.5
+        },
+        {
+          "ingrediente": "Aceite Vegetal",
+          "unidad": "lt",
+          "predicho": 27.4,
+          "real": null,
+          "banda_inferior": 20.5,
+          "banda_superior": 34.2,
+          "precio_unitario": 42,
+          "costo_estimado": 1150.8
+        },
+        {
+          "ingrediente": "Salsa Chipotle",
+          "unidad": "lt",
+          "predicho": 16.3,
+          "real": null,
+          "banda_inferior": 12.2,
+          "banda_superior": 20.4,
+          "precio_unitario": 55,
+          "costo_estimado": 896.5
+        }
+      ]
+    },
+    {
+      "fecha": "2026-02-06",
+      "dia_semana": "Friday",
+      "factor_demanda": 2.99,
+      "evento": "Partido Tigres vs America",
+      "items": [
+        {
+          "ingrediente": "Pechuga de Pollo",
+          "unidad": "kg",
+          "predicho": 34.5,
+          "real": null,
+          "banda_inferior": 25.9,
+          "banda_superior": 43.1,
+          "precio_unitario": 89,
+          "costo_estimado": 3070.5
+        },
+        {
+          "ingrediente": "Aguacate Hass",
+          "unidad": "kg",
+          "predicho": 110.9,
+          "real": null,
+          "banda_inferior": 83.2,
+          "banda_superior": 138.6,
+          "precio_unitario": 65,
+          "costo_estimado": 7208.5
+        },
+        {
+          "ingrediente": "Tortilla de Harina",
+          "unidad": "kg",
+          "predicho": 138.9,
+          "real": null,
+          "banda_inferior": 104.2,
+          "banda_superior": 173.6,
+          "precio_unitario": 35,
+          "costo_estimado": 4861.5
+        },
+        {
+          "ingrediente": "Queso Oaxaca",
+          "unidad": "kg",
+          "predicho": 26.8,
+          "real": null,
+          "banda_inferior": 20.1,
+          "banda_superior": 33.5,
+          "precio_unitario": 120,
+          "costo_estimado": 3216.0
+        },
+        {
+          "ingrediente": "Carne de Res",
+          "unidad": "kg",
+          "predicho": 75.5,
+          "real": null,
+          "banda_inferior": 56.6,
+          "banda_superior": 94.4,
+          "precio_unitario": 185,
+          "costo_estimado": 13967.5
+        },
+        {
+          "ingrediente": "Camarones",
+          "unidad": "kg",
+          "predicho": 105.7,
+          "real": null,
+          "banda_inferior": 79.3,
+          "banda_superior": 132.1,
+          "precio_unitario": 220,
+          "costo_estimado": 23254.0
+        },
+        {
+          "ingrediente": "Crema Acida",
+          "unidad": "lt",
+          "predicho": 25.6,
+          "real": null,
+          "banda_inferior": 19.2,
+          "banda_superior": 32.0,
+          "precio_unitario": 45,
+          "costo_estimado": 1152.0
+        },
+        {
+          "ingrediente": "Chile Poblano",
+          "unidad": "kg",
+          "predicho": 116.7,
+          "real": null,
+          "banda_inferior": 87.5,
+          "banda_superior": 145.9,
+          "precio_unitario": 38,
+          "costo_estimado": 4434.6
+        },
+        {
+          "ingrediente": "Tomate",
+          "unidad": "kg",
+          "predicho": 45.3,
+          "real": null,
+          "banda_inferior": 34.0,
+          "banda_superior": 56.6,
+          "precio_unitario": 28,
+          "costo_estimado": 1268.4
+        },
+        {
+          "ingrediente": "Cebolla",
+          "unidad": "kg",
+          "predicho": 68.3,
+          "real": null,
+          "banda_inferior": 51.2,
+          "banda_superior": 85.4,
+          "precio_unitario": 22,
+          "costo_estimado": 1502.6
+        },
+        {
+          "ingrediente": "Limon",
+          "unidad": "kg",
+          "predicho": 113.6,
+          "real": null,
+          "banda_inferior": 85.2,
+          "banda_superior": 142.0,
+          "precio_unitario": 32,
+          "costo_estimado": 3635.2
+        },
+        {
+          "ingrediente": "Arroz",
+          "unidad": "kg",
+          "predicho": 137.7,
+          "real": null,
+          "banda_inferior": 103.3,
+          "banda_superior": 172.1,
+          "precio_unitario": 18,
+          "costo_estimado": 2478.6
+        },
+        {
+          "ingrediente": "Frijol Negro",
+          "unidad": "kg",
+          "predicho": 105.1,
+          "real": null,
+          "banda_inferior": 78.8,
+          "banda_superior": 131.4,
+          "precio_unitario": 25,
+          "costo_estimado": 2627.5
+        },
+        {
+          "ingrediente": "Aceite Vegetal",
+          "unidad": "lt",
+          "predicho": 26.4,
+          "real": null,
+          "banda_inferior": 19.8,
+          "banda_superior": 33.0,
+          "precio_unitario": 42,
+          "costo_estimado": 1108.8
+        },
+        {
+          "ingrediente": "Salsa Chipotle",
+          "unidad": "lt",
+          "predicho": 89.2,
+          "real": null,
+          "banda_inferior": 66.9,
+          "banda_superior": 111.5,
+          "precio_unitario": 55,
+          "costo_estimado": 4906.0
+        }
+      ]
+    },
+    {
+      "fecha": "2026-02-07",
+      "dia_semana": "Saturday",
+      "factor_demanda": 1.5,
+      "evento": null,
+      "items": [
+        {
+          "ingrediente": "Pechuga de Pollo",
+          "unidad": "kg",
+          "predicho": 18.5,
+          "real": null,
+          "banda_inferior": 13.9,
+          "banda_superior": 23.1,
+          "precio_unitario": 89,
+          "costo_estimado": 1646.5
+        },
+        {
+          "ingrediente": "Aguacate Hass",
+          "unidad": "kg",
+          "predicho": 30.8,
+          "real": null,
+          "banda_inferior": 23.1,
+          "banda_superior": 38.5,
+          "precio_unitario": 65,
+          "costo_estimado": 2002.0
+        },
+        {
+          "ingrediente": "Tortilla de Harina",
+          "unidad": "kg",
+          "predicho": 34.8,
+          "real": null,
+          "banda_inferior": 26.1,
+          "banda_superior": 43.5,
+          "precio_unitario": 35,
+          "costo_estimado": 1218.0
+        },
+        {
+          "ingrediente": "Queso Oaxaca",
+          "unidad": "kg",
+          "predicho": 15.6,
+          "real": null,
+          "banda_inferior": 11.7,
+          "banda_superior": 19.5,
+          "precio_unitario": 120,
+          "costo_estimado": 1872.0
+        },
+        {
+          "ingrediente": "Carne de Res",
+          "unidad": "kg",
+          "predicho": 17.6,
+          "real": null,
+          "banda_inferior": 13.2,
+          "banda_superior": 22.0,
+          "precio_unitario": 185,
+          "costo_estimado": 3256.0
+        },
+        {
+          "ingrediente": "Camarones",
+          "unidad": "kg",
+          "predicho": 32.4,
+          "real": null,
+          "banda_inferior": 24.3,
+          "banda_superior": 40.5,
+          "precio_unitario": 220,
+          "costo_estimado": 7128.0
+        },
+        {
+          "ingrediente": "Crema Acida",
+          "unidad": "lt",
+          "predicho": 56.9,
+          "real": null,
+          "banda_inferior": 42.7,
+          "banda_superior": 71.1,
+          "precio_unitario": 45,
+          "costo_estimado": 2560.5
+        },
+        {
+          "ingrediente": "Chile Poblano",
+          "unidad": "kg",
+          "predicho": 38.6,
+          "real": null,
+          "banda_inferior": 29.0,
+          "banda_superior": 48.2,
+          "precio_unitario": 38,
+          "costo_estimado": 1466.8
+        },
+        {
+          "ingrediente": "Tomate",
+          "unidad": "kg",
+          "predicho": 22.6,
+          "real": null,
+          "banda_inferior": 17.0,
+          "banda_superior": 28.2,
+          "precio_unitario": 28,
+          "costo_estimado": 632.8
+        },
+        {
+          "ingrediente": "Cebolla",
+          "unidad": "kg",
+          "predicho": 15.8,
+          "real": null,
+          "banda_inferior": 11.9,
+          "banda_superior": 19.8,
+          "precio_unitario": 22,
+          "costo_estimado": 347.6
+        },
+        {
+          "ingrediente": "Limon",
+          "unidad": "kg",
+          "predicho": 30.5,
+          "real": null,
+          "banda_inferior": 22.9,
+          "banda_superior": 38.1,
+          "precio_unitario": 32,
+          "costo_estimado": 976.0
+        },
+        {
+          "ingrediente": "Arroz",
+          "unidad": "kg",
+          "predicho": 30.9,
+          "real": null,
+          "banda_inferior": 23.2,
+          "banda_superior": 38.6,
+          "precio_unitario": 18,
+          "costo_estimado": 556.2
+        },
+        {
+          "ingrediente": "Frijol Negro",
+          "unidad": "kg",
+          "predicho": 12.4,
+          "real": null,
+          "banda_inferior": 9.3,
+          "banda_superior": 15.5,
+          "precio_unitario": 25,
+          "costo_estimado": 310.0
+        },
+        {
+          "ingrediente": "Aceite Vegetal",
+          "unidad": "lt",
+          "predicho": 31.8,
+          "real": null,
+          "banda_inferior": 23.9,
+          "banda_superior": 39.8,
+          "precio_unitario": 42,
+          "costo_estimado": 1335.6
+        },
+        {
+          "ingrediente": "Salsa Chipotle",
+          "unidad": "lt",
+          "predicho": 49.3,
+          "real": null,
+          "banda_inferior": 37.0,
+          "banda_superior": 61.6,
+          "precio_unitario": 55,
+          "costo_estimado": 2711.5
+        }
+      ]
+    },
+    {
+      "fecha": "2026-02-08",
+      "dia_semana": "Sunday",
+      "factor_demanda": 2.2,
+      "evento": "Super Bowl",
+      "items": [
+        {
+          "ingrediente": "Pechuga de Pollo",
+          "unidad": "kg",
+          "predicho": 19.6,
+          "real": null,
+          "banda_inferior": 14.7,
+          "banda_superior": 24.5,
+          "precio_unitario": 89,
+          "costo_estimado": 1744.4
+        },
+        {
+          "ingrediente": "Aguacate Hass",
+          "unidad": "kg",
+          "predicho": 94.2,
+          "real": null,
+          "banda_inferior": 70.7,
+          "banda_superior": 117.8,
+          "precio_unitario": 65,
+          "costo_estimado": 6123.0
+        },
+        {
+          "ingrediente": "Tortilla de Harina",
+          "unidad": "kg",
+          "predicho": 29.7,
+          "real": null,
+          "banda_inferior": 22.3,
+          "banda_superior": 37.1,
+          "precio_unitario": 35,
+          "costo_estimado": 1039.5
+        },
+        {
+          "ingrediente": "Queso Oaxaca",
+          "unidad": "kg",
+          "predicho": 76.5,
+          "real": null,
+          "banda_inferior": 57.4,
+          "banda_superior": 95.6,
+          "precio_unitario": 120,
+          "costo_estimado": 9180.0
+        },
+        {
+          "ingrediente": "Carne de Res",
+          "unidad": "kg",
+          "predicho": 47.3,
+          "real": null,
+          "banda_inferior": 35.5,
+          "banda_superior": 59.1,
+          "precio_unitario": 185,
+          "costo_estimado": 8750.5
+        },
+        {
+          "ingrediente": "Camarones",
+          "unidad": "kg",
+          "predicho": 19.9,
+          "real": null,
+          "banda_inferior": 14.9,
+          "banda_superior": 24.9,
+          "precio_unitario": 220,
+          "costo_estimado": 4378.0
+        },
+        {
+          "ingrediente": "Crema Acida",
+          "unidad": "lt",
+          "predicho": 82.5,
+          "real": null,
+          "banda_inferior": 61.9,
+          "banda_superior": 103.1,
+          "precio_unitario": 45,
+          "costo_estimado": 3712.5
+        },
+        {
+          "ingrediente": "Chile Poblano",
+          "unidad": "kg",
+          "predicho": 80.0,
+          "real": null,
+          "banda_inferior": 60.0,
+          "banda_superior": 100.0,
+          "precio_unitario": 38,
+          "costo_estimado": 3040.0
+        },
+        {
+          "ingrediente": "Tomate",
+          "unidad": "kg",
+          "predicho": 81.4,
+          "real": null,
+          "banda_inferior": 61.1,
+          "banda_superior": 101.8,
+          "precio_unitario": 28,
+          "costo_estimado": 2279.2
+        },
+        {
+          "ingrediente": "Cebolla",
+          "unidad": "kg",
+          "predicho": 64.1,
+          "real": null,
+          "banda_inferior": 48.1,
+          "banda_superior": 80.1,
+          "precio_unitario": 22,
+          "costo_estimado": 1410.2
+        },
+        {
+          "ingrediente": "Limon",
+          "unidad": "kg",
+          "predicho": 36.4,
+          "real": null,
+          "banda_inferior": 27.3,
+          "banda_superior": 45.5,
+          "precio_unitario": 32,
+          "costo_estimado": 1164.8
+        },
+        {
+          "ingrediente": "Arroz",
+          "unidad": "kg",
+          "predicho": 55.9,
+          "real": null,
+          "banda_inferior": 41.9,
+          "banda_superior": 69.9,
+          "precio_unitario": 18,
+          "costo_estimado": 1006.2
+        },
+        {
+          "ingrediente": "Frijol Negro",
+          "unidad": "kg",
+          "predicho": 42.6,
+          "real": null,
+          "banda_inferior": 32.0,
+          "banda_superior": 53.2,
+          "precio_unitario": 25,
+          "costo_estimado": 1065.0
+        },
+        {
+          "ingrediente": "Aceite Vegetal",
+          "unidad": "lt",
+          "predicho": 93.8,
+          "real": null,
+          "banda_inferior": 70.3,
+          "banda_superior": 117.2,
+          "precio_unitario": 42,
+          "costo_estimado": 3939.6
+        },
+        {
+          "ingrediente": "Salsa Chipotle",
+          "unidad": "lt",
+          "predicho": 37.9,
+          "real": null,
+          "banda_inferior": 28.4,
+          "banda_superior": 47.4,
+          "precio_unitario": 55,
+          "costo_estimado": 2084.5
+        }
+      ]
+    },
+    {
+      "fecha": "2026-02-09",
+      "dia_semana": "Monday",
+      "factor_demanda": 0.8,
+      "evento": null,
+      "items": [
+        {
+          "ingrediente": "Pechuga de Pollo",
+          "unidad": "kg",
+          "predicho": 36.6,
+          "real": null,
+          "banda_inferior": 27.5,
+          "banda_superior": 45.8,
+          "precio_unitario": 89,
+          "costo_estimado": 3257.4
+        },
+        {
+          "ingrediente": "Aguacate Hass",
+          "unidad": "kg",
+          "predicho": 19.1,
+          "real": null,
+          "banda_inferior": 14.3,
+          "banda_superior": 23.9,
+          "precio_unitario": 65,
+          "costo_estimado": 1241.5
+        },
+        {
+          "ingrediente": "Tortilla de Harina",
+          "unidad": "kg",
+          "predicho": 9.8,
+          "real": null,
+          "banda_inferior": 7.4,
+          "banda_superior": 12.2,
+          "precio_unitario": 35,
+          "costo_estimado": 343.0
+        },
+        {
+          "ingrediente": "Queso Oaxaca",
+          "unidad": "kg",
+          "predicho": 10.5,
+          "real": null,
+          "banda_inferior": 7.9,
+          "banda_superior": 13.1,
+          "precio_unitario": 120,
+          "costo_estimado": 1260.0
+        },
+        {
+          "ingrediente": "Carne de Res",
+          "unidad": "kg",
+          "predicho": 6.9,
+          "real": null,
+          "banda_inferior": 5.2,
+          "banda_superior": 8.6,
+          "precio_unitario": 185,
+          "costo_estimado": 1276.5
+        },
+        {
+          "ingrediente": "Camarones",
+          "unidad": "kg",
+          "predicho": 17.7,
+          "real": null,
+          "banda_inferior": 13.3,
+          "banda_superior": 22.1,
+          "precio_unitario": 220,
+          "costo_estimado": 3894.0
+        },
+        {
+          "ingrediente": "Crema Acida",
+          "unidad": "lt",
+          "predicho": 11.4,
+          "real": null,
+          "banda_inferior": 8.6,
+          "banda_superior": 14.2,
+          "precio_unitario": 45,
+          "costo_estimado": 513.0
+        },
+        {
+          "ingrediente": "Chile Poblano",
+          "unidad": "kg",
+          "predicho": 26.5,
+          "real": null,
+          "banda_inferior": 19.9,
+          "banda_superior": 33.1,
+          "precio_unitario": 38,
+          "costo_estimado": 1007.0
+        },
+        {
+          "ingrediente": "Tomate",
+          "unidad": "kg",
+          "predicho": 10.5,
+          "real": null,
+          "banda_inferior": 7.9,
+          "banda_superior": 13.1,
+          "precio_unitario": 28,
+          "costo_estimado": 294.0
+        },
+        {
+          "ingrediente": "Cebolla",
+          "unidad": "kg",
+          "predicho": 35.9,
+          "real": null,
+          "banda_inferior": 26.9,
+          "banda_superior": 44.9,
+          "precio_unitario": 22,
+          "costo_estimado": 789.8
+        },
+        {
+          "ingrediente": "Limon",
+          "unidad": "kg",
+          "predicho": 21.3,
+          "real": null,
+          "banda_inferior": 16.0,
+          "banda_superior": 26.6,
+          "precio_unitario": 32,
+          "costo_estimado": 681.6
+        },
+        {
+          "ingrediente": "Arroz",
+          "unidad": "kg",
+          "predicho": 35.4,
+          "real": null,
+          "banda_inferior": 26.5,
+          "banda_superior": 44.2,
+          "precio_unitario": 18,
+          "costo_estimado": 637.2
+        },
+        {
+          "ingrediente": "Frijol Negro",
+          "unidad": "kg",
+          "predicho": 33.2,
+          "real": null,
+          "banda_inferior": 24.9,
+          "banda_superior": 41.5,
+          "precio_unitario": 25,
+          "costo_estimado": 830.0
+        },
+        {
+          "ingrediente": "Aceite Vegetal",
+          "unidad": "lt",
+          "predicho": 18.0,
+          "real": null,
+          "banda_inferior": 13.5,
+          "banda_superior": 22.5,
+          "precio_unitario": 42,
+          "costo_estimado": 756.0
+        },
+        {
+          "ingrediente": "Salsa Chipotle",
+          "unidad": "lt",
+          "predicho": 32.7,
+          "real": null,
+          "banda_inferior": 24.5,
+          "banda_superior": 40.9,
+          "precio_unitario": 55,
+          "costo_estimado": 1798.5
+        }
+      ]
+    }
+  ],
+  "ordenes_compra": [
+    {
+      "ingrediente": "Camarones",
+      "unidad": "kg",
+      "stock_actual": 15.4,
+      "demanda_7d": 274.6,
+      "cantidad_sugerida": 285.1,
+      "precio_unitario": 220,
+      "costo_total": 62726.4,
+      "proveedor": "Distribuidora Norte",
+      "prioridad": "media"
+    },
+    {
+      "ingrediente": "Carne de Res",
+      "unidad": "kg",
+      "stock_actual": 16.5,
+      "demanda_7d": 225.5,
+      "cantidad_sugerida": 229.9,
+      "precio_unitario": 185,
+      "costo_total": 42531.5,
+      "proveedor": "Abarrotes Garza",
+      "prioridad": "media"
+    },
+    {
+      "ingrediente": "Queso Oaxaca",
+      "unidad": "kg",
+      "stock_actual": 15.8,
+      "demanda_7d": 198.4,
+      "cantidad_sugerida": 200.9,
+      "precio_unitario": 120,
+      "costo_total": 24103.2,
+      "proveedor": "Lacteos Premium",
+      "prioridad": "media"
+    },
+    {
+      "ingrediente": "Aguacate Hass",
+      "unidad": "kg",
+      "stock_actual": 26.3,
+      "demanda_7d": 299.9,
+      "cantidad_sugerida": 301.0,
+      "precio_unitario": 65,
+      "costo_total": 19562.4,
+      "proveedor": "Abarrotes Garza",
+      "prioridad": "media"
+    },
+    {
+      "ingrediente": "Pechuga de Pollo",
+      "unidad": "kg",
+      "stock_actual": 17.3,
+      "demanda_7d": 196.8,
+      "cantidad_sugerida": 197.5,
+      "precio_unitario": 89,
+      "costo_total": 17573.05,
+      "proveedor": "Lacteos Premium",
+      "prioridad": "media"
+    },
+    {
+      "ingrediente": "Salsa Chipotle",
+      "unidad": "lt",
+      "stock_actual": 13.8,
+      "demanda_7d": 276.1,
+      "cantidad_sugerida": 288.5,
+      "precio_unitario": 55,
+      "costo_total": 15869.15,
+      "proveedor": "Distribuidora Norte",
+      "prioridad": "baja"
+    },
+    {
+      "ingrediente": "Chile Poblano",
+      "unidad": "kg",
+      "stock_actual": 12.6,
+      "demanda_7d": 367.3,
+      "cantidad_sugerida": 390.2,
+      "precio_unitario": 38,
+      "costo_total": 14826.46,
+      "proveedor": "Distribuidora Norte",
+      "prioridad": "media"
+    },
+    {
+      "ingrediente": "Crema Acida",
+      "unidad": "lt",
+      "stock_actual": 12.6,
+      "demanda_7d": 231.8,
+      "cantidad_sugerida": 241.1,
+      "precio_unitario": 45,
+      "costo_total": 10850.4,
+      "proveedor": "Carnes Select",
+      "prioridad": "media"
+    },
+    {
+      "ingrediente": "Tortilla de Harina",
+      "unidad": "kg",
+      "stock_actual": 18.5,
+      "demanda_7d": 278.1,
+      "cantidad_sugerida": 285.6,
+      "precio_unitario": 35,
+      "costo_total": 9994.6,
+      "proveedor": "Lacteos Premium",
+      "prioridad": "media"
+    },
+    {
+      "ingrediente": "Aceite Vegetal",
+      "unidad": "lt",
+      "stock_actual": 26.8,
+      "demanda_7d": 242.7,
+      "cantidad_sugerida": 237.5,
+      "precio_unitario": 42,
+      "costo_total": 9974.58,
+      "proveedor": "Frutas y Verduras MTY",
+      "prioridad": "baja"
+    },
+    {
+      "ingrediente": "Limon",
+      "unidad": "kg",
+      "stock_actual": 12.6,
+      "demanda_7d": 261.7,
+      "cantidad_sugerida": 274.0,
+      "precio_unitario": 32,
+      "costo_total": 8768.32,
+      "proveedor": "Distribuidora Norte",
+      "prioridad": "media"
+    },
+    {
+      "ingrediente": "Frijol Negro",
+      "unidad": "kg",
+      "stock_actual": 11.3,
+      "demanda_7d": 256.7,
+      "cantidad_sugerida": 269.9,
+      "precio_unitario": 25,
+      "costo_total": 6748.5,
+      "proveedor": "Carnes Select",
+      "prioridad": "baja"
+    },
+    {
+      "ingrediente": "Tomate",
+      "unidad": "kg",
+      "stock_actual": 28.2,
+      "demanda_7d": 240.4,
+      "cantidad_sugerida": 233.4,
+      "precio_unitario": 28,
+      "costo_total": 6535.76,
+      "proveedor": "Frutas y Verduras MTY",
+      "prioridad": "media"
+    },
+    {
+      "ingrediente": "Arroz",
+      "unidad": "kg",
+      "stock_actual": 25.6,
+      "demanda_7d": 310.7,
+      "cantidad_sugerida": 313.6,
+      "precio_unitario": 18,
+      "costo_total": 5644.98,
+      "proveedor": "Abarrotes Garza",
+      "prioridad": "baja"
+    },
+    {
+      "ingrediente": "Cebolla",
+      "unidad": "kg",
+      "stock_actual": 25.1,
+      "demanda_7d": 241.6,
+      "cantidad_sugerida": 238.2,
+      "precio_unitario": 22,
+      "costo_total": 5239.3,
+      "proveedor": "Abarrotes Garza",
+      "prioridad": "media"
+    }
+  ],
+  "desperdicio_historico": [
+    {
+      "fecha": "2025-11-06",
+      "desperdicio_pct": 16.8,
+      "costo_desperdicio": 5139.75,
+      "kg_desperdiciados": 15.1
+    },
+    {
+      "fecha": "2025-11-07",
+      "desperdicio_pct": 18.8,
+      "costo_desperdicio": 7228.7,
+      "kg_desperdiciados": 49.5
+    },
+    {
+      "fecha": "2025-11-08",
+      "desperdicio_pct": 18.7,
+      "costo_desperdicio": 9750.41,
+      "kg_desperdiciados": 32.0
+    },
+    {
+      "fecha": "2025-11-09",
+      "desperdicio_pct": 18.9,
+      "costo_desperdicio": 4503.96,
+      "kg_desperdiciados": 7.6
+    },
+    {
+      "fecha": "2025-11-10",
+      "desperdicio_pct": 18.5,
+      "costo_desperdicio": 3821.85,
+      "kg_desperdiciados": 28.4
+    },
+    {
+      "fecha": "2025-11-11",
+      "desperdicio_pct": 16.2,
+      "costo_desperdicio": 7665.35,
+      "kg_desperdiciados": 16.3
+    },
+    {
+      "fecha": "2025-11-12",
+      "desperdicio_pct": 18.5,
+      "costo_desperdicio": 6299.67,
+      "kg_desperdiciados": 20.0
+    },
+    {
+      "fecha": "2025-11-13",
+      "desperdicio_pct": 15.5,
+      "costo_desperdicio": 7236.94,
+      "kg_desperdiciados": 29.2
+    },
+    {
+      "fecha": "2025-11-14",
+      "desperdicio_pct": 18.1,
+      "costo_desperdicio": 4953.57,
+      "kg_desperdiciados": 46.6
+    },
+    {
+      "fecha": "2025-11-15",
+      "desperdicio_pct": 17.2,
+      "costo_desperdicio": 5951.77,
+      "kg_desperdiciados": 24.6
+    },
+    {
+      "fecha": "2025-11-16",
+      "desperdicio_pct": 18.0,
+      "costo_desperdicio": 3044.74,
+      "kg_desperdiciados": 24.9
+    },
+    {
+      "fecha": "2025-11-17",
+      "desperdicio_pct": 15.7,
+      "costo_desperdicio": 4136.12,
+      "kg_desperdiciados": 27.5
+    },
+    {
+      "fecha": "2025-11-18",
+      "desperdicio_pct": 17.3,
+      "costo_desperdicio": 4989.25,
+      "kg_desperdiciados": 11.6
+    },
+    {
+      "fecha": "2025-11-19",
+      "desperdicio_pct": 15.5,
+      "costo_desperdicio": 6513.88,
+      "kg_desperdiciados": 22.1
+    },
+    {
+      "fecha": "2025-11-20",
+      "desperdicio_pct": 17.3,
+      "costo_desperdicio": 4735.61,
+      "kg_desperdiciados": 36.0
+    },
+    {
+      "fecha": "2025-11-21",
+      "desperdicio_pct": 15.1,
+      "costo_desperdicio": 6039.33,
+      "kg_desperdiciados": 5.1
+    },
+    {
+      "fecha": "2025-11-22",
+      "desperdicio_pct": 14.5,
+      "costo_desperdicio": 7421.94,
+      "kg_desperdiciados": 18.9
+    },
+    {
+      "fecha": "2025-11-23",
+      "desperdicio_pct": 16.7,
+      "costo_desperdicio": 7943.59,
+      "kg_desperdiciados": 12.7
+    },
+    {
+      "fecha": "2025-11-24",
+      "desperdicio_pct": 14.2,
+      "costo_desperdicio": 4698.61,
+      "kg_desperdiciados": 8.9
+    },
+    {
+      "fecha": "2025-11-25",
+      "desperdicio_pct": 14.4,
+      "costo_desperdicio": 7480.64,
+      "kg_desperdiciados": 34.0
+    },
+    {
+      "fecha": "2025-11-26",
+      "desperdicio_pct": 15.7,
+      "costo_desperdicio": 4792.19,
+      "kg_desperdiciados": 37.8
+    },
+    {
+      "fecha": "2025-11-27",
+      "desperdicio_pct": 15.9,
+      "costo_desperdicio": 5236.13,
+      "kg_desperdiciados": 9.9
+    },
+    {
+      "fecha": "2025-11-28",
+      "desperdicio_pct": 15.5,
+      "costo_desperdicio": 5847.49,
+      "kg_desperdiciados": 10.9
+    },
+    {
+      "fecha": "2025-11-29",
+      "desperdicio_pct": 15.1,
+      "costo_desperdicio": 3691.05,
+      "kg_desperdiciados": 26.6
+    },
+    {
+      "fecha": "2025-11-30",
+      "desperdicio_pct": 14.7,
+      "costo_desperdicio": 6211.9,
+      "kg_desperdiciados": 10.8
+    },
+    {
+      "fecha": "2025-12-01",
+      "desperdicio_pct": 13.8,
+      "costo_desperdicio": 5793.53,
+      "kg_desperdiciados": 32.2
+    },
+    {
+      "fecha": "2025-12-02",
+      "desperdicio_pct": 13.0,
+      "costo_desperdicio": 2089.89,
+      "kg_desperdiciados": 5.2
+    },
+    {
+      "fecha": "2025-12-03",
+      "desperdicio_pct": 13.1,
+      "costo_desperdicio": 2484.32,
+      "kg_desperdiciados": 24.8
+    },
+    {
+      "fecha": "2025-12-04",
+      "desperdicio_pct": 14.4,
+      "costo_desperdicio": 2635.17,
+      "kg_desperdiciados": 20.6
+    },
+    {
+      "fecha": "2025-12-05",
+      "desperdicio_pct": 12.9,
+      "costo_desperdicio": 1815.4,
+      "kg_desperdiciados": 28.8
+    },
+    {
+      "fecha": "2025-12-06",
+      "desperdicio_pct": 15.6,
+      "costo_desperdicio": 5778.43,
+      "kg_desperdiciados": 25.5
+    },
+    {
+      "fecha": "2025-12-07",
+      "desperdicio_pct": 13.6,
+      "costo_desperdicio": 1982.69,
+      "kg_desperdiciados": 21.9
+    },
+    {
+      "fecha": "2025-12-08",
+      "desperdicio_pct": 11.8,
+      "costo_desperdicio": 3696.02,
+      "kg_desperdiciados": 6.4
+    },
+    {
+      "fecha": "2025-12-09",
+      "desperdicio_pct": 12.4,
+      "costo_desperdicio": 2396.11,
+      "kg_desperdiciados": 8.6
+    },
+    {
+      "fecha": "2025-12-10",
+      "desperdicio_pct": 14.4,
+      "costo_desperdicio": 7545.67,
+      "kg_desperdiciados": 15.6
+    },
+    {
+      "fecha": "2025-12-11",
+      "desperdicio_pct": 14.7,
+      "costo_desperdicio": 6305.83,
+      "kg_desperdiciados": 22.6
+    },
+    {
+      "fecha": "2025-12-12",
+      "desperdicio_pct": 13.8,
+      "costo_desperdicio": 2652.73,
+      "kg_desperdiciados": 22.9
+    },
+    {
+      "fecha": "2025-12-13",
+      "desperdicio_pct": 11.9,
+      "costo_desperdicio": 3118.68,
+      "kg_desperdiciados": 29.6
+    },
+    {
+      "fecha": "2025-12-14",
+      "desperdicio_pct": 14.1,
+      "costo_desperdicio": 7356.54,
+      "kg_desperdiciados": 9.1
+    },
+    {
+      "fecha": "2025-12-15",
+      "desperdicio_pct": 11.2,
+      "costo_desperdicio": 2504.86,
+      "kg_desperdiciados": 14.1
+    },
+    {
+      "fecha": "2025-12-16",
+      "desperdicio_pct": 12.5,
+      "costo_desperdicio": 2050.1,
+      "kg_desperdiciados": 21.4
+    },
+    {
+      "fecha": "2025-12-17",
+      "desperdicio_pct": 11.6,
+      "costo_desperdicio": 3114.28,
+      "kg_desperdiciados": 17.6
+    },
+    {
+      "fecha": "2025-12-18",
+      "desperdicio_pct": 10.7,
+      "costo_desperdicio": 4920.99,
+      "kg_desperdiciados": 7.4
+    },
+    {
+      "fecha": "2025-12-19",
+      "desperdicio_pct": 11.4,
+      "costo_desperdicio": 5045.55,
+      "kg_desperdiciados": 6.7
+    },
+    {
+      "fecha": "2025-12-20",
+      "desperdicio_pct": 10.6,
+      "costo_desperdicio": 2970.06,
+      "kg_desperdiciados": 6.9
+    },
+    {
+      "fecha": "2025-12-21",
+      "desperdicio_pct": 12.2,
+      "costo_desperdicio": 1928.23,
+      "kg_desperdiciados": 31.0
+    },
+    {
+      "fecha": "2025-12-22",
+      "desperdicio_pct": 12.5,
+      "costo_desperdicio": 5238.28,
+      "kg_desperdiciados": 5.1
+    },
+    {
+      "fecha": "2025-12-23",
+      "desperdicio_pct": 11.9,
+      "costo_desperdicio": 3204.22,
+      "kg_desperdiciados": 27.5
+    },
+    {
+      "fecha": "2025-12-24",
+      "desperdicio_pct": 11.1,
+      "costo_desperdicio": 3008.53,
+      "kg_desperdiciados": 16.8
+    },
+    {
+      "fecha": "2025-12-25",
+      "desperdicio_pct": 11.5,
+      "costo_desperdicio": 3281.45,
+      "kg_desperdiciados": 6.5
+    },
+    {
+      "fecha": "2025-12-26",
+      "desperdicio_pct": 12.1,
+      "costo_desperdicio": 3104.53,
+      "kg_desperdiciados": 11.4
+    },
+    {
+      "fecha": "2025-12-27",
+      "desperdicio_pct": 12.1,
+      "costo_desperdicio": 5741.7,
+      "kg_desperdiciados": 20.1
+    },
+    {
+      "fecha": "2025-12-28",
+      "desperdicio_pct": 10.8,
+      "costo_desperdicio": 4731.52,
+      "kg_desperdiciados": 14.8
+    },
+    {
+      "fecha": "2025-12-29",
+      "desperdicio_pct": 10.0,
+      "costo_desperdicio": 4474.33,
+      "kg_desperdiciados": 19.7
+    },
+    {
+      "fecha": "2025-12-30",
+      "desperdicio_pct": 9.6,
+      "costo_desperdicio": 5032.08,
+      "kg_desperdiciados": 16.5
+    },
+    {
+      "fecha": "2025-12-31",
+      "desperdicio_pct": 12.1,
+      "costo_desperdicio": 4164.48,
+      "kg_desperdiciados": 16.2
+    },
+    {
+      "fecha": "2026-01-01",
+      "desperdicio_pct": 9.2,
+      "costo_desperdicio": 2591.8,
+      "kg_desperdiciados": 4.2
+    },
+    {
+      "fecha": "2026-01-02",
+      "desperdicio_pct": 11.3,
+      "costo_desperdicio": 2298.74,
+      "kg_desperdiciados": 17.9
+    },
+    {
+      "fecha": "2026-01-03",
+      "desperdicio_pct": 9.6,
+      "costo_desperdicio": 2519.01,
+      "kg_desperdiciados": 10.0
+    },
+    {
+      "fecha": "2026-01-04",
+      "desperdicio_pct": 9.4,
+      "costo_desperdicio": 2619.03,
+      "kg_desperdiciados": 20.0
+    },
+    {
+      "fecha": "2026-01-05",
+      "desperdicio_pct": 11.6,
+      "costo_desperdicio": 5041.42,
+      "kg_desperdiciados": 28.4
+    },
+    {
+      "fecha": "2026-01-06",
+      "desperdicio_pct": 10.2,
+      "costo_desperdicio": 2975.18,
+      "kg_desperdiciados": 15.7
+    },
+    {
+      "fecha": "2026-01-07",
+      "desperdicio_pct": 8.6,
+      "costo_desperdicio": 2959.39,
+      "kg_desperdiciados": 13.2
+    },
+    {
+      "fecha": "2026-01-08",
+      "desperdicio_pct": 10.6,
+      "costo_desperdicio": 3709.14,
+      "kg_desperdiciados": 24.7
+    },
+    {
+      "fecha": "2026-01-09",
+      "desperdicio_pct": 9.5,
+      "costo_desperdicio": 3197.55,
+      "kg_desperdiciados": 9.3
+    },
+    {
+      "fecha": "2026-01-10",
+      "desperdicio_pct": 10.4,
+      "costo_desperdicio": 2609.15,
+      "kg_desperdiciados": 23.6
+    },
+    {
+      "fecha": "2026-01-11",
+      "desperdicio_pct": 10.5,
+      "costo_desperdicio": 4727.03,
+      "kg_desperdiciados": 27.3
+    },
+    {
+      "fecha": "2026-01-12",
+      "desperdicio_pct": 7.1,
+      "costo_desperdicio": 3622.11,
+      "kg_desperdiciados": 8.9
+    },
+    {
+      "fecha": "2026-01-13",
+      "desperdicio_pct": 9.3,
+      "costo_desperdicio": 2523.99,
+      "kg_desperdiciados": 16.4
+    },
+    {
+      "fecha": "2026-01-14",
+      "desperdicio_pct": 9.3,
+      "costo_desperdicio": 4553.64,
+      "kg_desperdiciados": 20.9
+    },
+    {
+      "fecha": "2026-01-15",
+      "desperdicio_pct": 8.2,
+      "costo_desperdicio": 3310.26,
+      "kg_desperdiciados": 21.4
+    },
+    {
+      "fecha": "2026-01-16",
+      "desperdicio_pct": 10.2,
+      "costo_desperdicio": 3708.7,
+      "kg_desperdiciados": 6.6
+    },
+    {
+      "fecha": "2026-01-17",
+      "desperdicio_pct": 7.9,
+      "costo_desperdicio": 2193.75,
+      "kg_desperdiciados": 14.8
+    },
+    {
+      "fecha": "2026-01-18",
+      "desperdicio_pct": 7.0,
+      "costo_desperdicio": 2580.62,
+      "kg_desperdiciados": 2.5
+    },
+    {
+      "fecha": "2026-01-19",
+      "desperdicio_pct": 8.6,
+      "costo_desperdicio": 3746.08,
+      "kg_desperdiciados": 21.3
+    },
+    {
+      "fecha": "2026-01-20",
+      "desperdicio_pct": 7.3,
+      "costo_desperdicio": 1718.19,
+      "kg_desperdiciados": 4.8
+    },
+    {
+      "fecha": "2026-01-21",
+      "desperdicio_pct": 9.9,
+      "costo_desperdicio": 2720.92,
+      "kg_desperdiciados": 19.8
+    },
+    {
+      "fecha": "2026-01-22",
+      "desperdicio_pct": 7.5,
+      "costo_desperdicio": 3616.93,
+      "kg_desperdiciados": 14.5
+    },
+    {
+      "fecha": "2026-01-23",
+      "desperdicio_pct": 5.8,
+      "costo_desperdicio": 1932.42,
+      "kg_desperdiciados": 2.2
+    },
+    {
+      "fecha": "2026-01-24",
+      "desperdicio_pct": 8.3,
+      "costo_desperdicio": 4074.31,
+      "kg_desperdiciados": 21.1
+    },
+    {
+      "fecha": "2026-01-25",
+      "desperdicio_pct": 8.5,
+      "costo_desperdicio": 2324.13,
+      "kg_desperdiciados": 4.1
+    },
+    {
+      "fecha": "2026-01-26",
+      "desperdicio_pct": 5.5,
+      "costo_desperdicio": 1183.43,
+      "kg_desperdiciados": 13.1
+    },
+    {
+      "fecha": "2026-01-27",
+      "desperdicio_pct": 5.5,
+      "costo_desperdicio": 1091.01,
+      "kg_desperdiciados": 3.2
+    },
+    {
+      "fecha": "2026-01-28",
+      "desperdicio_pct": 7.9,
+      "costo_desperdicio": 1357.82,
+      "kg_desperdiciados": 8.7
+    },
+    {
+      "fecha": "2026-01-29",
+      "desperdicio_pct": 7.8,
+      "costo_desperdicio": 1185.93,
+      "kg_desperdiciados": 5.4
+    },
+    {
+      "fecha": "2026-01-30",
+      "desperdicio_pct": 7.1,
+      "costo_desperdicio": 2884.27,
+      "kg_desperdiciados": 3.3
+    },
+    {
+      "fecha": "2026-01-31",
+      "desperdicio_pct": 5.2,
+      "costo_desperdicio": 2092.89,
+      "kg_desperdiciados": 11.6
+    },
+    {
+      "fecha": "2026-02-01",
+      "desperdicio_pct": 7.3,
+      "costo_desperdicio": 2991.65,
+      "kg_desperdiciados": 9.1
+    },
+    {
+      "fecha": "2026-02-02",
+      "desperdicio_pct": 7.0,
+      "costo_desperdicio": 2588.49,
+      "kg_desperdiciados": 12.5
+    },
+    {
+      "fecha": "2026-02-03",
+      "desperdicio_pct": 5.3,
+      "costo_desperdicio": 1788.81,
+      "kg_desperdiciados": 3.8
+    }
+  ],
+  "alertas": [
+    {
+      "tipo": "demanda_anomala",
+      "prioridad": "alta",
+      "titulo": "Demanda anomala: Pechuga de Pollo",
+      "descripcion": "Se espera 2.3x la demanda normal de pollo para el viernes 6 Feb — Partido Tigres + quincena proxima.",
+      "ingrediente": "Pechuga de Pollo",
+      "fecha": "2026-02-06",
+      "accion": "Aumentar pedido a 47kg (normal: 20kg)"
+    },
+    {
+      "tipo": "demanda_anomala",
+      "prioridad": "alta",
+      "titulo": "Super Bowl: Alitas y Nachos",
+      "descripcion": "Demanda de alitas esperada 2x. Asegurar stock de pollo, queso y tortilla para el domingo.",
+      "ingrediente": "Pechuga de Pollo",
+      "fecha": "2026-02-08",
+      "accion": "Pedido especial: 55kg pollo, 20kg queso oaxaca"
+    },
+    {
+      "tipo": "stock_bajo",
+      "prioridad": "media",
+      "titulo": "Stock bajo: Aguacate Hass",
+      "descripcion": "Stock actual cubre solo 1.5 dias. Precio spot subio 8% esta semana.",
+      "ingrediente": "Aguacate Hass",
+      "fecha": "2026-02-04",
+      "accion": "Comprar 25kg hoy. Considerar proveedor alterno."
+    },
+    {
+      "tipo": "oportunidad",
+      "prioridad": "baja",
+      "titulo": "San Valentin: Menu Especial",
+      "descripcion": "Historicamente las ventas suben 80% el 14 de Feb. Preparar menu especial con camarones y carne premium.",
+      "ingrediente": "Camarones",
+      "fecha": "2026-02-14",
+      "accion": "Planear menu especial. Pre-ordenar 30kg camarones y 15kg carne res."
+    }
+  ],
+  "eventos": [
+    {
+      "fecha": "2026-02-06",
+      "evento": "Partido Tigres vs America",
+      "impacto": 2.3,
+      "tipo": "deporte"
+    },
+    {
+      "fecha": "2026-02-14",
+      "evento": "San Valentin",
+      "impacto": 1.8,
+      "tipo": "festivo"
+    },
+    {
+      "fecha": "2026-02-15",
+      "evento": "Quincena",
+      "impacto": 1.5,
+      "tipo": "economico"
+    },
+    {
+      "fecha": "2026-02-28",
+      "evento": "Quincena fin de mes",
+      "impacto": 1.4,
+      "tipo": "economico"
+    },
+    {
+      "fecha": "2026-02-08",
+      "evento": "Super Bowl",
+      "impacto": 2.0,
+      "tipo": "deporte"
+    }
+  ]
+}

@@ -1,0 +1,1278 @@
+{
+  "kpis": {
+    "total_conversaciones": 200,
+    "tasa_conversion": 33.5,
+    "ventas_totales": 306052.45,
+    "ventas_fuera_horario": 186789.79,
+    "pct_fuera_horario": 52.5,
+    "ticket_promedio": 4567.95,
+    "tiempo_respuesta_promedio": "2.3 seg",
+    "conversaciones_activas": 33,
+    "cotizaciones_pendientes": 68,
+    "satisfaccion": 4.7
+  },
+  "conversation_flows": [
+    {
+      "id": "cotizacion_balatas",
+      "title": "Cotizacion de balatas",
+      "messages": [
+        {
+          "role": "user",
+          "text": "Hola, necesito balatas para un Jetta 2019"
+        },
+        {
+          "role": "bot",
+          "text": "Hola! Con gusto te ayudo. Para un VW Jetta 2019, tengo estas opciones de balatas:\n\n1. **Brembo Delanteras Ceramicas** - $1,250.00\n   Stock: 12 piezas\n\n2. **Wagner Traseras Semi-Metalicas** - $890.00\n   Stock: 8 piezas\n\n3. **Brembo Kit Completo** (del. + tras.) - $2,890.00\n   Stock: 5 kits\n\nTodas con garantia de 20,000 km. Cual te interesa?"
+        },
+        {
+          "role": "user",
+          "text": "El kit completo Brembo, cuanto me queda con IVA?"
+        },
+        {
+          "role": "bot",
+          "text": "El **Kit Completo Brembo** para Jetta 2019:\n\nSubtotal: $2,890.00\nIVA (16%): $462.40\n**Total: $3,352.40 MXN**\n\nIncluye:\n- Balatas delanteras ceramicas\n- Balatas traseras semi-metalicas\n- Accesorios de instalacion\n- Garantia 20,000 km\n\nTe genero la cotizacion en PDF?"
+        },
+        {
+          "role": "user",
+          "text": "Si, por favor"
+        },
+        {
+          "role": "bot",
+          "text": "Listo! Aqui tienes tu cotizacion:\n\n📄 **COT-2026-0847.pdf**\nAutoPartes Express\nCotizacion para: Cliente\nFecha: 03/Feb/2026\nVigencia: 7 dias\n\nPuedes pagar por transferencia o pasar a recoger a sucursal. Te comparto el link de pago:\n\n💳 https://pago.autopartesexpress.mx/cot-0847\n\nAlgo mas en lo que te pueda ayudar?"
+        }
+      ]
+    },
+    {
+      "id": "disponibilidad_filtro",
+      "title": "Consulta de disponibilidad",
+      "messages": [
+        {
+          "role": "user",
+          "text": "Tienen filtro de aceite para Aveo 2018?"
+        },
+        {
+          "role": "bot",
+          "text": "Si! Para Chevrolet Aveo 2018 tengo:\n\n1. **Bosch Aceite Premium** - $185.00\n   Stock: 23 piezas ✅\n\n2. **ACDelco Aceite Sintetico** - $220.00\n   Stock: 15 piezas ✅\n\n3. **Bosch Filtro Gasolina** (complemento) - $165.00\n   Stock: 18 piezas ✅\n\nTe recomiendo cambiar aceite + gasolina juntos. El combo queda en $340.00 + IVA."
+        },
+        {
+          "role": "user",
+          "text": "Dame el combo"
+        },
+        {
+          "role": "bot",
+          "text": "Excelente eleccion!\n\n🛒 **Tu pedido:**\n- Bosch Aceite Premium: $185.00\n- Bosch Filtro Gasolina: $165.00\n\nSubtotal: $350.00\nDescuento combo: -$10.00\nIVA: $54.40\n**Total: $394.40 MXN**\n\nEnvio gratis a zona metropolitana. Entrega manana entre 10-2pm.\n\nConfirmo el pedido?"
+        }
+      ]
+    },
+    {
+      "id": "fuera_horario",
+      "title": "Venta fuera de horario (11:47 PM)",
+      "messages": [
+        {
+          "role": "user",
+          "text": "Buenas noches, urgente necesito amortiguadores para Tsuru 2015"
+        },
+        {
+          "role": "bot",
+          "text": "Buenas noches! Aunque estamos fuera de horario, puedo ayudarte.\n\nPara Nissan Tsuru 2015:\n\n1. **Monroe Delantero Gas** (par) - $1,680.00\n   Stock: 6 piezas ✅\n\n2. **KYB Sport Reforzado** (par) - $2,150.00\n   Stock: 4 piezas ✅\n\n3. **KYB Kit 4 Piezas** - $3,800.00\n   Stock: 2 kits ✅\n\nLos Monroe son los mas populares para Tsuru. Quieres cotizacion?"
+        },
+        {
+          "role": "user",
+          "text": "Los Monroe, si genera la cotizacion"
+        },
+        {
+          "role": "bot",
+          "text": "📄 **COT-2026-0848.pdf**\n\n**Monroe Delantero Gas** x2 (par)\nSubtotal: $1,680.00\nIVA: $268.80\n**Total: $1,948.80 MXN**\n\nPuedes pagar ahora y recoger manana a primera hora (8:00 AM):\n\n💳 https://pago.autopartesexpress.mx/cot-0848\n\nEl pago se procesa al instante. Tu pedido estara listo en mostrador. 🕐"
+        }
+      ]
+    }
+  ],
+  "conversaciones": [
+    {
+      "id": 196,
+      "cliente": "Fernando Diaz",
+      "telefono": "+52 81 4524 6781",
+      "fecha": "2026-02-03 17:35",
+      "producto_consultado": "KYB Sport Reforzado",
+      "categoria": "amortiguadores",
+      "estado": "cotizada",
+      "fuera_horario": false,
+      "monto_venta": 0,
+      "mensajes": 3,
+      "tiempo_respuesta_seg": 1
+    },
+    {
+      "id": 162,
+      "cliente": "Sergio Romero",
+      "telefono": "+52 81 9647 7934",
+      "fecha": "2026-02-03 11:47",
+      "producto_consultado": "Monroe Delantero HD",
+      "categoria": "amortiguadores",
+      "estado": "cotizada",
+      "fuera_horario": false,
+      "monto_venta": 0,
+      "mensajes": 4,
+      "tiempo_respuesta_seg": 3
+    },
+    {
+      "id": 151,
+      "cliente": "Antonio Castillo",
+      "telefono": "+52 81 8967 4145",
+      "fecha": "2026-02-03 08:41",
+      "producto_consultado": "NGK Platinum Plus",
+      "categoria": "bujias",
+      "estado": "en_proceso",
+      "fuera_horario": false,
+      "monto_venta": 0,
+      "mensajes": 6,
+      "tiempo_respuesta_seg": 2
+    },
+    {
+      "id": 102,
+      "cliente": "Roberto Gonzalez",
+      "telefono": "+52 81 9138 5689",
+      "fecha": "2026-02-03 01:05",
+      "producto_consultado": "ACDelco Cabina Carbon",
+      "categoria": "filtros",
+      "estado": "sin_respuesta",
+      "fuera_horario": true,
+      "monto_venta": 0,
+      "mensajes": 6,
+      "tiempo_respuesta_seg": 2
+    },
+    {
+      "id": 31,
+      "cliente": "Alejandro Flores",
+      "telefono": "+52 81 6753 9346",
+      "fecha": "2026-02-02 22:48",
+      "producto_consultado": "Denso 12V 90A",
+      "categoria": "alternadores",
+      "estado": "completada",
+      "fuera_horario": true,
+      "monto_venta": 1212.53,
+      "mensajes": 9,
+      "tiempo_respuesta_seg": 5
+    },
+    {
+      "id": 110,
+      "cliente": "Pedro Sanchez",
+      "telefono": "+52 81 7367 8432",
+      "fecha": "2026-02-02 10:29",
+      "producto_consultado": "Monroe Sport Reforzado",
+      "categoria": "amortiguadores",
+      "estado": "completada",
+      "fuera_horario": false,
+      "monto_venta": 7971.44,
+      "mensajes": 8,
+      "tiempo_respuesta_seg": 5
+    },
+    {
+      "id": 10,
+      "cliente": "Miguel Hernandez",
+      "telefono": "+52 81 5073 4139",
+      "fecha": "2026-02-02 07:14",
+      "producto_consultado": "Gates Tiempo",
+      "categoria": "bandas",
+      "estado": "en_proceso",
+      "fuera_horario": true,
+      "monto_venta": 0,
+      "mensajes": 6,
+      "tiempo_respuesta_seg": 5
+    },
+    {
+      "id": 104,
+      "cliente": "Antonio Castillo",
+      "telefono": "+52 81 7807 3877",
+      "fecha": "2026-02-02 01:37",
+      "producto_consultado": "Champion Platinum Plus",
+      "categoria": "bujias",
+      "estado": "completada",
+      "fuera_horario": true,
+      "monto_venta": 10883.96,
+      "mensajes": 6,
+      "tiempo_respuesta_seg": 2
+    },
+    {
+      "id": 95,
+      "cliente": "Ricardo Morales",
+      "telefono": "+52 81 4727 2480",
+      "fecha": "2026-02-02 00:56",
+      "producto_consultado": "Bosch Aceite Premium",
+      "categoria": "filtros",
+      "estado": "cotizada",
+      "fuera_horario": true,
+      "monto_venta": 0,
+      "mensajes": 9,
+      "tiempo_respuesta_seg": 1
+    },
+    {
+      "id": 190,
+      "cliente": "Jorge Torres",
+      "telefono": "+52 81 7825 1496",
+      "fecha": "2026-02-01 18:19",
+      "producto_consultado": "Champion Doble Platino",
+      "categoria": "bujias",
+      "estado": "cotizada",
+      "fuera_horario": false,
+      "monto_venta": 0,
+      "mensajes": 10,
+      "tiempo_respuesta_seg": 5
+    },
+    {
+      "id": 184,
+      "cliente": "Francisco Cruz",
+      "telefono": "+52 81 7730 7708",
+      "fecha": "2026-02-01 10:35",
+      "producto_consultado": "Champion Iridium Premium",
+      "categoria": "bujias",
+      "estado": "sin_respuesta",
+      "fuera_horario": false,
+      "monto_venta": 0,
+      "mensajes": 12,
+      "tiempo_respuesta_seg": 1
+    },
+    {
+      "id": 160,
+      "cliente": "Antonio Castillo",
+      "telefono": "+52 81 3392 3254",
+      "fecha": "2026-02-01 08:46",
+      "producto_consultado": "Brembo Traseras Semi-Metalicas",
+      "categoria": "balatas",
+      "estado": "completada",
+      "fuera_horario": false,
+      "monto_venta": 1512.51,
+      "mensajes": 3,
+      "tiempo_respuesta_seg": 3
+    },
+    {
+      "id": 142,
+      "cliente": "Roberto Gonzalez",
+      "telefono": "+52 81 6766 9312",
+      "fecha": "2026-02-01 04:32",
+      "producto_consultado": "ACDelco Aceite Premium",
+      "categoria": "filtros",
+      "estado": "completada",
+      "fuera_horario": true,
+      "monto_venta": 5725.49,
+      "mensajes": 4,
+      "tiempo_respuesta_seg": 3
+    },
+    {
+      "id": 71,
+      "cliente": "Daniel Silva",
+      "telefono": "+52 81 5978 2395",
+      "fecha": "2026-02-01 01:20",
+      "producto_consultado": "ACDelco Cabina Carbon",
+      "categoria": "filtros",
+      "estado": "completada",
+      "fuera_horario": true,
+      "monto_venta": 3351.46,
+      "mensajes": 6,
+      "tiempo_respuesta_seg": 1
+    },
+    {
+      "id": 46,
+      "cliente": "Alberto Ortiz",
+      "telefono": "+52 81 2320 3267",
+      "fecha": "2026-01-31 21:42",
+      "producto_consultado": "Bosch Aceite Premium",
+      "categoria": "filtros",
+      "estado": "completada",
+      "fuera_horario": true,
+      "monto_venta": 3348.37,
+      "mensajes": 5,
+      "tiempo_respuesta_seg": 2
+    },
+    {
+      "id": 134,
+      "cliente": "Pedro Sanchez",
+      "telefono": "+52 81 7229 9725",
+      "fecha": "2026-01-31 19:29",
+      "producto_consultado": "Champion Standard",
+      "categoria": "bujias",
+      "estado": "cotizada",
+      "fuera_horario": false,
+      "monto_venta": 0,
+      "mensajes": 6,
+      "tiempo_respuesta_seg": 5
+    },
+    {
+      "id": 20,
+      "cliente": "Pedro Sanchez",
+      "telefono": "+52 81 6718 2127",
+      "fecha": "2026-01-31 17:26",
+      "producto_consultado": "NGK Racing",
+      "categoria": "bujias",
+      "estado": "cotizada",
+      "fuera_horario": false,
+      "monto_venta": 0,
+      "mensajes": 6,
+      "tiempo_respuesta_seg": 3
+    },
+    {
+      "id": 101,
+      "cliente": "Ricardo Morales",
+      "telefono": "+52 81 5837 1359",
+      "fecha": "2026-01-31 12:36",
+      "producto_consultado": "Wagner Traseras Semi-Metalicas",
+      "categoria": "balatas",
+      "estado": "cotizada",
+      "fuera_horario": false,
+      "monto_venta": 0,
+      "mensajes": 9,
+      "tiempo_respuesta_seg": 3
+    },
+    {
+      "id": 3,
+      "cliente": "Daniel Silva",
+      "telefono": "+52 81 2290 2403",
+      "fecha": "2026-01-31 08:04",
+      "producto_consultado": "Bosch Aceite Sintetico",
+      "categoria": "filtros",
+      "estado": "completada",
+      "fuera_horario": false,
+      "monto_venta": 4246.18,
+      "mensajes": 10,
+      "tiempo_respuesta_seg": 1
+    },
+    {
+      "id": 83,
+      "cliente": "Carlos Martinez",
+      "telefono": "+52 81 9889 8569",
+      "fecha": "2026-01-31 07:05",
+      "producto_consultado": "KYB Sport Reforzado",
+      "categoria": "amortiguadores",
+      "estado": "en_proceso",
+      "fuera_horario": true,
+      "monto_venta": 0,
+      "mensajes": 9,
+      "tiempo_respuesta_seg": 1
+    },
+    {
+      "id": 148,
+      "cliente": "Sergio Romero",
+      "telefono": "+52 81 3463 6461",
+      "fecha": "2026-01-31 02:17",
+      "producto_consultado": "Gates Micro-V",
+      "categoria": "bandas",
+      "estado": "completada",
+      "fuera_horario": true,
+      "monto_venta": 7543.53,
+      "mensajes": 4,
+      "tiempo_respuesta_seg": 5
+    },
+    {
+      "id": 40,
+      "cliente": "Sergio Romero",
+      "telefono": "+52 81 2193 8461",
+      "fecha": "2026-01-30 19:58",
+      "producto_consultado": "Bosch Aceite Premium",
+      "categoria": "filtros",
+      "estado": "en_proceso",
+      "fuera_horario": false,
+      "monto_venta": 0,
+      "mensajes": 9,
+      "tiempo_respuesta_seg": 5
+    },
+    {
+      "id": 177,
+      "cliente": "Eduardo Reyes",
+      "telefono": "+52 81 7272 1530",
+      "fecha": "2026-01-30 17:45",
+      "producto_consultado": "Champion Doble Platino",
+      "categoria": "bujias",
+      "estado": "cotizada",
+      "fuera_horario": false,
+      "monto_venta": 0,
+      "mensajes": 12,
+      "tiempo_respuesta_seg": 2
+    },
+    {
+      "id": 152,
+      "cliente": "Alberto Ortiz",
+      "telefono": "+52 81 9626 1618",
+      "fecha": "2026-01-30 17:42",
+      "producto_consultado": "Monroe Trasero Gas",
+      "categoria": "amortiguadores",
+      "estado": "cotizada",
+      "fuera_horario": false,
+      "monto_venta": 0,
+      "mensajes": 8,
+      "tiempo_respuesta_seg": 5
+    },
+    {
+      "id": 140,
+      "cliente": "Juan Lopez",
+      "telefono": "+52 81 3902 9095",
+      "fecha": "2026-01-30 11:48",
+      "producto_consultado": "NGK Platinum Plus",
+      "categoria": "bujias",
+      "estado": "cotizada",
+      "fuera_horario": false,
+      "monto_venta": 0,
+      "mensajes": 10,
+      "tiempo_respuesta_seg": 5
+    },
+    {
+      "id": 185,
+      "cliente": "Francisco Cruz",
+      "telefono": "+52 81 6644 3102",
+      "fecha": "2026-01-30 09:19",
+      "producto_consultado": "Brembo Disco Ventilado",
+      "categoria": "balatas",
+      "estado": "cotizada",
+      "fuera_horario": false,
+      "monto_venta": 0,
+      "mensajes": 11,
+      "tiempo_respuesta_seg": 5
+    },
+    {
+      "id": 2,
+      "cliente": "Francisco Cruz",
+      "telefono": "+52 81 1009 6310",
+      "fecha": "2026-01-30 08:12",
+      "producto_consultado": "NGK Iridium Premium",
+      "categoria": "bujias",
+      "estado": "cotizada",
+      "fuera_horario": false,
+      "monto_venta": 0,
+      "mensajes": 10,
+      "tiempo_respuesta_seg": 1
+    },
+    {
+      "id": 153,
+      "cliente": "Sergio Romero",
+      "telefono": "+52 81 3712 8170",
+      "fecha": "2026-01-30 00:36",
+      "producto_consultado": "Monroe Delantero HD",
+      "categoria": "amortiguadores",
+      "estado": "completada",
+      "fuera_horario": true,
+      "monto_venta": 9425.02,
+      "mensajes": 3,
+      "tiempo_respuesta_seg": 4
+    },
+    {
+      "id": 52,
+      "cliente": "Antonio Castillo",
+      "telefono": "+52 81 7211 5558",
+      "fecha": "2026-01-29 18:44",
+      "producto_consultado": "Gates Micro-V",
+      "categoria": "bandas",
+      "estado": "completada",
+      "fuera_horario": false,
+      "monto_venta": 5844.26,
+      "mensajes": 9,
+      "tiempo_respuesta_seg": 3
+    },
+    {
+      "id": 186,
+      "cliente": "Roberto Gonzalez",
+      "telefono": "+52 81 3034 9488",
+      "fecha": "2026-01-29 15:33",
+      "producto_consultado": "KYB Sport Reforzado",
+      "categoria": "amortiguadores",
+      "estado": "en_proceso",
+      "fuera_horario": false,
+      "monto_venta": 0,
+      "mensajes": 5,
+      "tiempo_respuesta_seg": 3
+    },
+    {
+      "id": 187,
+      "cliente": "Francisco Cruz",
+      "telefono": "+52 81 5653 2292",
+      "fecha": "2026-01-29 14:40",
+      "producto_consultado": "Champion Iridium Premium",
+      "categoria": "bujias",
+      "estado": "completada",
+      "fuera_horario": false,
+      "monto_venta": 8694.77,
+      "mensajes": 7,
+      "tiempo_respuesta_seg": 2
+    },
+    {
+      "id": 68,
+      "cliente": "Alejandro Flores",
+      "telefono": "+52 81 1745 1893",
+      "fecha": "2026-01-29 11:00",
+      "producto_consultado": "Champion Iridium Premium",
+      "categoria": "bujias",
+      "estado": "cotizada",
+      "fuera_horario": false,
+      "monto_venta": 0,
+      "mensajes": 11,
+      "tiempo_respuesta_seg": 3
+    },
+    {
+      "id": 77,
+      "cliente": "Ricardo Morales",
+      "telefono": "+52 81 8195 3037",
+      "fecha": "2026-01-29 10:22",
+      "producto_consultado": "Champion Standard",
+      "categoria": "bujias",
+      "estado": "en_proceso",
+      "fuera_horario": false,
+      "monto_venta": 0,
+      "mensajes": 10,
+      "tiempo_respuesta_seg": 3
+    },
+    {
+      "id": 192,
+      "cliente": "Antonio Castillo",
+      "telefono": "+52 81 3353 6121",
+      "fecha": "2026-01-29 05:34",
+      "producto_consultado": "KYB Delantero Gas",
+      "categoria": "amortiguadores",
+      "estado": "cotizada",
+      "fuera_horario": true,
+      "monto_venta": 0,
+      "mensajes": 8,
+      "tiempo_respuesta_seg": 3
+    },
+    {
+      "id": 15,
+      "cliente": "Antonio Castillo",
+      "telefono": "+52 81 1936 1821",
+      "fecha": "2026-01-28 18:23",
+      "producto_consultado": "Champion Standard",
+      "categoria": "bujias",
+      "estado": "cotizada",
+      "fuera_horario": false,
+      "monto_venta": 0,
+      "mensajes": 12,
+      "tiempo_respuesta_seg": 4
+    },
+    {
+      "id": 9,
+      "cliente": "Oscar Gutierrez",
+      "telefono": "+52 81 7735 8651",
+      "fecha": "2026-01-28 16:54",
+      "producto_consultado": "ACDelco Gasolina",
+      "categoria": "filtros",
+      "estado": "cotizada",
+      "fuera_horario": false,
+      "monto_venta": 0,
+      "mensajes": 3,
+      "tiempo_respuesta_seg": 1
+    },
+    {
+      "id": 181,
+      "cliente": "Raul Vargas",
+      "telefono": "+52 81 2438 6236",
+      "fecha": "2026-01-28 16:52",
+      "producto_consultado": "Brembo Disco Ventilado",
+      "categoria": "balatas",
+      "estado": "cotizada",
+      "fuera_horario": false,
+      "monto_venta": 0,
+      "mensajes": 8,
+      "tiempo_respuesta_seg": 1
+    },
+    {
+      "id": 183,
+      "cliente": "Eduardo Reyes",
+      "telefono": "+52 81 8657 3126",
+      "fecha": "2026-01-28 15:45",
+      "producto_consultado": "KYB Trasero Gas",
+      "categoria": "amortiguadores",
+      "estado": "completada",
+      "fuera_horario": false,
+      "monto_venta": 3829.05,
+      "mensajes": 12,
+      "tiempo_respuesta_seg": 1
+    },
+    {
+      "id": 48,
+      "cliente": "Carlos Martinez",
+      "telefono": "+52 81 7232 8814",
+      "fecha": "2026-01-28 06:36",
+      "producto_consultado": "Champion Doble Platino",
+      "categoria": "bujias",
+      "estado": "cotizada",
+      "fuera_horario": true,
+      "monto_venta": 0,
+      "mensajes": 3,
+      "tiempo_respuesta_seg": 3
+    },
+    {
+      "id": 132,
+      "cliente": "Ricardo Morales",
+      "telefono": "+52 81 8972 9633",
+      "fecha": "2026-01-28 03:53",
+      "producto_consultado": "Gates Alternador",
+      "categoria": "bandas",
+      "estado": "cotizada",
+      "fuera_horario": true,
+      "monto_venta": 0,
+      "mensajes": 7,
+      "tiempo_respuesta_seg": 1
+    },
+    {
+      "id": 84,
+      "cliente": "Raul Vargas",
+      "telefono": "+52 81 1845 4335",
+      "fecha": "2026-01-28 03:37",
+      "producto_consultado": "Wagner Disco Ventilado",
+      "categoria": "balatas",
+      "estado": "sin_respuesta",
+      "fuera_horario": true,
+      "monto_venta": 0,
+      "mensajes": 7,
+      "tiempo_respuesta_seg": 2
+    },
+    {
+      "id": 23,
+      "cliente": "Alejandro Flores",
+      "telefono": "+52 81 9280 9004",
+      "fecha": "2026-01-27 21:39",
+      "producto_consultado": "NGK Racing",
+      "categoria": "bujias",
+      "estado": "sin_respuesta",
+      "fuera_horario": true,
+      "monto_venta": 0,
+      "mensajes": 7,
+      "tiempo_respuesta_seg": 2
+    },
+    {
+      "id": 41,
+      "cliente": "Fernando Diaz",
+      "telefono": "+52 81 3417 1090",
+      "fecha": "2026-01-27 21:16",
+      "producto_consultado": "Gates Micro-V",
+      "categoria": "bandas",
+      "estado": "cotizada",
+      "fuera_horario": true,
+      "monto_venta": 0,
+      "mensajes": 4,
+      "tiempo_respuesta_seg": 4
+    },
+    {
+      "id": 42,
+      "cliente": "Roberto Gonzalez",
+      "telefono": "+52 81 5082 2988",
+      "fecha": "2026-01-27 14:09",
+      "producto_consultado": "ACDelco Aceite Sintetico",
+      "categoria": "filtros",
+      "estado": "cotizada",
+      "fuera_horario": false,
+      "monto_venta": 0,
+      "mensajes": 10,
+      "tiempo_respuesta_seg": 2
+    },
+    {
+      "id": 163,
+      "cliente": "Sergio Romero",
+      "telefono": "+52 81 8489 2029",
+      "fecha": "2026-01-27 10:53",
+      "producto_consultado": "Brembo Kit Completo",
+      "categoria": "balatas",
+      "estado": "completada",
+      "fuera_horario": false,
+      "monto_venta": 8819.84,
+      "mensajes": 4,
+      "tiempo_respuesta_seg": 4
+    },
+    {
+      "id": 155,
+      "cliente": "Jorge Torres",
+      "telefono": "+52 81 7026 8218",
+      "fecha": "2026-01-27 10:09",
+      "producto_consultado": "KYB Delantero Gas",
+      "categoria": "amortiguadores",
+      "estado": "en_proceso",
+      "fuera_horario": false,
+      "monto_venta": 0,
+      "mensajes": 10,
+      "tiempo_respuesta_seg": 3
+    },
+    {
+      "id": 133,
+      "cliente": "Jorge Torres",
+      "telefono": "+52 81 3248 5186",
+      "fecha": "2026-01-27 07:22",
+      "producto_consultado": "Brembo Kit Completo",
+      "categoria": "balatas",
+      "estado": "completada",
+      "fuera_horario": true,
+      "monto_venta": 6136.76,
+      "mensajes": 7,
+      "tiempo_respuesta_seg": 3
+    },
+    {
+      "id": 109,
+      "cliente": "Ricardo Morales",
+      "telefono": "+52 81 7689 2911",
+      "fecha": "2026-01-26 23:56",
+      "producto_consultado": "ACDelco Aceite Premium",
+      "categoria": "filtros",
+      "estado": "en_proceso",
+      "fuera_horario": true,
+      "monto_venta": 0,
+      "mensajes": 5,
+      "tiempo_respuesta_seg": 1
+    },
+    {
+      "id": 146,
+      "cliente": "Sergio Romero",
+      "telefono": "+52 81 3600 6962",
+      "fecha": "2026-01-26 21:32",
+      "producto_consultado": "Denso Remanufacturado",
+      "categoria": "alternadores",
+      "estado": "cotizada",
+      "fuera_horario": true,
+      "monto_venta": 0,
+      "mensajes": 8,
+      "tiempo_respuesta_seg": 3
+    },
+    {
+      "id": 34,
+      "cliente": "Alberto Ortiz",
+      "telefono": "+52 81 4228 6967",
+      "fecha": "2026-01-26 18:15",
+      "producto_consultado": "Denso 12V 150A",
+      "categoria": "alternadores",
+      "estado": "completada",
+      "fuera_horario": false,
+      "monto_venta": 5949.27,
+      "mensajes": 9,
+      "tiempo_respuesta_seg": 1
+    }
+  ],
+  "top_categorias": [
+    {
+      "categoria": "amortiguadores",
+      "consultas": 47
+    },
+    {
+      "categoria": "bujias",
+      "consultas": 41
+    },
+    {
+      "categoria": "filtros",
+      "consultas": 36
+    },
+    {
+      "categoria": "balatas",
+      "consultas": 33
+    },
+    {
+      "categoria": "bandas",
+      "consultas": 27
+    },
+    {
+      "categoria": "alternadores",
+      "consultas": 16
+    }
+  ],
+  "top_productos_consultados": [
+    {
+      "producto": "KYB Sport Reforzado",
+      "consultas": 8
+    },
+    {
+      "producto": "Brembo Kit Completo",
+      "consultas": 7
+    },
+    {
+      "producto": "Gates Kit Distribucion",
+      "consultas": 7
+    },
+    {
+      "producto": "Monroe Sport Reforzado",
+      "consultas": 6
+    },
+    {
+      "producto": "Gates Tiempo",
+      "consultas": 6
+    },
+    {
+      "producto": "Champion Standard",
+      "consultas": 6
+    },
+    {
+      "producto": "ACDelco Aceite Premium",
+      "consultas": 6
+    },
+    {
+      "producto": "Gates Alternador",
+      "consultas": 6
+    },
+    {
+      "producto": "Bosch Aceite Premium",
+      "consultas": 6
+    },
+    {
+      "producto": "KYB Kit 4 Piezas",
+      "consultas": 6
+    }
+  ],
+  "conversaciones_por_hora": [
+    {
+      "hora": "00:00",
+      "conversaciones": 4
+    },
+    {
+      "hora": "01:00",
+      "conversaciones": 10
+    },
+    {
+      "hora": "02:00",
+      "conversaciones": 10
+    },
+    {
+      "hora": "03:00",
+      "conversaciones": 12
+    },
+    {
+      "hora": "04:00",
+      "conversaciones": 6
+    },
+    {
+      "hora": "05:00",
+      "conversaciones": 6
+    },
+    {
+      "hora": "06:00",
+      "conversaciones": 8
+    },
+    {
+      "hora": "07:00",
+      "conversaciones": 15
+    },
+    {
+      "hora": "08:00",
+      "conversaciones": 12
+    },
+    {
+      "hora": "09:00",
+      "conversaciones": 7
+    },
+    {
+      "hora": "10:00",
+      "conversaciones": 9
+    },
+    {
+      "hora": "11:00",
+      "conversaciones": 7
+    },
+    {
+      "hora": "12:00",
+      "conversaciones": 4
+    },
+    {
+      "hora": "13:00",
+      "conversaciones": 6
+    },
+    {
+      "hora": "14:00",
+      "conversaciones": 8
+    },
+    {
+      "hora": "15:00",
+      "conversaciones": 10
+    },
+    {
+      "hora": "16:00",
+      "conversaciones": 5
+    },
+    {
+      "hora": "17:00",
+      "conversaciones": 8
+    },
+    {
+      "hora": "18:00",
+      "conversaciones": 10
+    },
+    {
+      "hora": "19:00",
+      "conversaciones": 9
+    },
+    {
+      "hora": "20:00",
+      "conversaciones": 3
+    },
+    {
+      "hora": "21:00",
+      "conversaciones": 9
+    },
+    {
+      "hora": "22:00",
+      "conversaciones": 8
+    },
+    {
+      "hora": "23:00",
+      "conversaciones": 14
+    }
+  ],
+  "tendencia": [
+    {
+      "fecha": "2026-01-04",
+      "conversaciones": 1,
+      "ventas": 1,
+      "monto": 2974.69
+    },
+    {
+      "fecha": "2026-01-05",
+      "conversaciones": 8,
+      "ventas": 3,
+      "monto": 20535.33
+    },
+    {
+      "fecha": "2026-01-06",
+      "conversaciones": 5,
+      "ventas": 2,
+      "monto": 5359.7
+    },
+    {
+      "fecha": "2026-01-07",
+      "conversaciones": 7,
+      "ventas": 4,
+      "monto": 16757.05
+    },
+    {
+      "fecha": "2026-01-08",
+      "conversaciones": 3,
+      "ventas": 1,
+      "monto": 5797.89
+    },
+    {
+      "fecha": "2026-01-09",
+      "conversaciones": 9,
+      "ventas": 3,
+      "monto": 13369.23
+    },
+    {
+      "fecha": "2026-01-10",
+      "conversaciones": 9,
+      "ventas": 3,
+      "monto": 13541.61
+    },
+    {
+      "fecha": "2026-01-11",
+      "conversaciones": 6,
+      "ventas": 1,
+      "monto": 1287.59
+    },
+    {
+      "fecha": "2026-01-12",
+      "conversaciones": 4,
+      "ventas": 1,
+      "monto": 1336.65
+    },
+    {
+      "fecha": "2026-01-13",
+      "conversaciones": 11,
+      "ventas": 4,
+      "monto": 22233.24
+    },
+    {
+      "fecha": "2026-01-14",
+      "conversaciones": 7,
+      "ventas": 1,
+      "monto": 1333.11
+    },
+    {
+      "fecha": "2026-01-15",
+      "conversaciones": 5,
+      "ventas": 3,
+      "monto": 15507.43
+    },
+    {
+      "fecha": "2026-01-16",
+      "conversaciones": 8,
+      "ventas": 2,
+      "monto": 11512.8
+    },
+    {
+      "fecha": "2026-01-17",
+      "conversaciones": 8,
+      "ventas": 1,
+      "monto": 2178.76
+    },
+    {
+      "fecha": "2026-01-18",
+      "conversaciones": 5,
+      "ventas": 0,
+      "monto": 0
+    },
+    {
+      "fecha": "2026-01-19",
+      "conversaciones": 5,
+      "ventas": 2,
+      "monto": 3977.88
+    },
+    {
+      "fecha": "2026-01-20",
+      "conversaciones": 5,
+      "ventas": 2,
+      "monto": 7931.98
+    },
+    {
+      "fecha": "2026-01-21",
+      "conversaciones": 10,
+      "ventas": 4,
+      "monto": 23690.4
+    },
+    {
+      "fecha": "2026-01-22",
+      "conversaciones": 7,
+      "ventas": 2,
+      "monto": 4094.51
+    },
+    {
+      "fecha": "2026-01-23",
+      "conversaciones": 8,
+      "ventas": 3,
+      "monto": 8065.63
+    },
+    {
+      "fecha": "2026-01-24",
+      "conversaciones": 6,
+      "ventas": 3,
+      "monto": 5459.65
+    },
+    {
+      "fecha": "2026-01-25",
+      "conversaciones": 10,
+      "ventas": 3,
+      "monto": 12358.86
+    },
+    {
+      "fecha": "2026-01-26",
+      "conversaciones": 6,
+      "ventas": 3,
+      "monto": 18203.29
+    },
+    {
+      "fecha": "2026-01-27",
+      "conversaciones": 6,
+      "ventas": 2,
+      "monto": 14956.6
+    },
+    {
+      "fecha": "2026-01-28",
+      "conversaciones": 7,
+      "ventas": 1,
+      "monto": 3829.05
+    },
+    {
+      "fecha": "2026-01-29",
+      "conversaciones": 6,
+      "ventas": 2,
+      "monto": 14539.03
+    },
+    {
+      "fecha": "2026-01-30",
+      "conversaciones": 7,
+      "ventas": 1,
+      "monto": 9425.02
+    },
+    {
+      "fecha": "2026-01-31",
+      "conversaciones": 7,
+      "ventas": 3,
+      "monto": 15138.08
+    },
+    {
+      "fecha": "2026-02-01",
+      "conversaciones": 5,
+      "ventas": 3,
+      "monto": 10589.46
+    },
+    {
+      "fecha": "2026-02-02",
+      "conversaciones": 5,
+      "ventas": 3,
+      "monto": 20067.93
+    },
+    {
+      "fecha": "2026-02-03",
+      "conversaciones": 4,
+      "ventas": 0,
+      "monto": 0
+    }
+  ],
+  "productos": [
+    {
+      "id": 1000,
+      "marca": "Brembo",
+      "categoria": "balatas",
+      "nombre": "Brembo Delanteras Ceramicas",
+      "precio": 2931.51,
+      "stock": 1,
+      "compatibilidad": "Ford Fiesta/Focus"
+    },
+    {
+      "id": 1001,
+      "marca": "Brembo",
+      "categoria": "balatas",
+      "nombre": "Brembo Traseras Semi-Metalicas",
+      "precio": 1346.38,
+      "stock": 14,
+      "compatibilidad": "Nissan Tsuru/Sentra"
+    },
+    {
+      "id": 1002,
+      "marca": "Brembo",
+      "categoria": "balatas",
+      "nombre": "Brembo Delanteras Performance",
+      "precio": 3353.65,
+      "stock": 43,
+      "compatibilidad": "Ford Fiesta/Focus"
+    },
+    {
+      "id": 1003,
+      "marca": "Brembo",
+      "categoria": "balatas",
+      "nombre": "Brembo Kit Completo",
+      "precio": 4030.98,
+      "stock": 5,
+      "compatibilidad": "Toyota Corolla/Yaris"
+    },
+    {
+      "id": 1004,
+      "marca": "Brembo",
+      "categoria": "balatas",
+      "nombre": "Brembo Disco Ventilado",
+      "precio": 1985.36,
+      "stock": 1,
+      "compatibilidad": "Universal"
+    },
+    {
+      "id": 1005,
+      "marca": "Monroe",
+      "categoria": "amortiguadores",
+      "nombre": "Monroe Delantero Gas",
+      "precio": 1101.08,
+      "stock": 32,
+      "compatibilidad": "Toyota Corolla/Yaris"
+    },
+    {
+      "id": 1006,
+      "marca": "Monroe",
+      "categoria": "amortiguadores",
+      "nombre": "Monroe Trasero Gas",
+      "precio": 265.43,
+      "stock": 12,
+      "compatibilidad": "Ford Fiesta/Focus"
+    },
+    {
+      "id": 1007,
+      "marca": "Monroe",
+      "categoria": "amortiguadores",
+      "nombre": "Monroe Sport Reforzado",
+      "precio": 2977.0,
+      "stock": 34,
+      "compatibilidad": "Chevrolet Aveo/Sonic"
+    },
+    {
+      "id": 1008,
+      "marca": "Monroe",
+      "categoria": "amortiguadores",
+      "nombre": "Monroe Kit 4 Piezas",
+      "precio": 1108.92,
+      "stock": 37,
+      "compatibilidad": "VW Jetta/Golf"
+    },
+    {
+      "id": 1009,
+      "marca": "Monroe",
+      "categoria": "amortiguadores",
+      "nombre": "Monroe Delantero HD",
+      "precio": 3671.02,
+      "stock": 0,
+      "compatibilidad": "Nissan Tsuru/Sentra"
+    },
+    {
+      "id": 1010,
+      "marca": "NGK",
+      "categoria": "bujias",
+      "nombre": "NGK Iridium Premium",
+      "precio": 3186.91,
+      "stock": 21,
+      "compatibilidad": "VW Jetta/Golf"
+    },
+    {
+      "id": 1011,
+      "marca": "NGK",
+      "categoria": "bujias",
+      "nombre": "NGK Platinum Plus",
+      "precio": 826.34,
+      "stock": 48,
+      "compatibilidad": "VW Jetta/Golf"
+    },
+    {
+      "id": 1012,
+      "marca": "NGK",
+      "categoria": "bujias",
+      "nombre": "NGK Standard",
+      "precio": 594.61,
+      "stock": 24,
+      "compatibilidad": "Universal"
+    },
+    {
+      "id": 1013,
+      "marca": "NGK",
+      "categoria": "bujias",
+      "nombre": "NGK Racing",
+      "precio": 1711.56,
+      "stock": 22,
+      "compatibilidad": "Toyota Corolla/Yaris"
+    },
+    {
+      "id": 1014,
+      "marca": "NGK",
+      "categoria": "bujias",
+      "nombre": "NGK Doble Platino",
+      "precio": 1300.67,
+      "stock": 2,
+      "compatibilidad": "Ford Fiesta/Focus"
+    },
+    {
+      "id": 1015,
+      "marca": "Bosch",
+      "categoria": "filtros",
+      "nombre": "Bosch Aceite Premium",
+      "precio": 2148.5,
+      "stock": 7,
+      "compatibilidad": "Chevrolet Aveo/Sonic"
+    },
+    {
+      "id": 1016,
+      "marca": "Bosch",
+      "categoria": "filtros",
+      "nombre": "Bosch Aire Alto Flujo",
+      "precio": 492.78,
+      "stock": 18,
+      "compatibilidad": "Ford Fiesta/Focus"
+    },
+    {
+      "id": 1017,
+      "marca": "Bosch",
+      "categoria": "filtros",
+      "nombre": "Bosch Gasolina",
+      "precio": 2840.56,
+      "stock": 23,
+      "compatibilidad": "Toyota Corolla/Yaris"
+    },
+    {
+      "id": 1018,
+      "marca": "Bosch",
+      "categoria": "filtros",
+      "nombre": "Bosch Cabina Carbon",
+      "precio": 986.46,
+      "stock": 4,
+      "compatibilidad": "Universal"
+    },
+    {
+      "id": 1019,
+      "marca": "Bosch",
+      "categoria": "filtros",
+      "nombre": "Bosch Aceite Sintetico",
+      "precio": 3026.5,
+      "stock": 49,
+      "compatibilidad": "VW Jetta/Golf"
+    }
+  ]
+}
