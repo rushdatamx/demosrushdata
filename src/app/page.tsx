@@ -9,6 +9,7 @@ import {
   Package,
   Users,
   Map,
+  UserCheck,
   ArrowUpRight,
   Sparkles,
 } from "lucide-react";
@@ -134,6 +135,21 @@ const demos = [
     accentBorder: "border-teal-100",
     ready: true,
   },
+  {
+    slug: "hr",
+    name: "GrupoNova",
+    industry: "Manufactura",
+    solutionType: "Prediccion de Rotacion",
+    problem:
+      "280 empleados, 23% de rotacion anual. RRHH se entera de renuncias cuando ya es tarde, $4.2M en costos de reemplazo.",
+    aiMoment:
+      "Predice que empleados renunciaran en 30-60 dias y recomienda acciones de retencion",
+    icon: UserCheck,
+    accent: "text-indigo-600",
+    accentBg: "bg-indigo-50",
+    accentBorder: "border-indigo-100",
+    ready: true,
+  },
 ];
 
 export default function PortfolioHome() {
@@ -172,7 +188,7 @@ export default function PortfolioHome() {
             Soluciones de IA para problemas reales
           </h1>
           <p className="text-lg text-neutral-500 mt-4 leading-relaxed">
-            8 demos interactivos. Cada uno muestra como la inteligencia artificial
+            9 demos interactivos. Cada uno muestra como la inteligencia artificial
             resuelve un problema de negocio en una industria diferente.
           </p>
           <p className="text-sm text-neutral-400 mt-2">
