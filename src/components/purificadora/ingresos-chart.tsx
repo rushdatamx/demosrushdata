@@ -14,7 +14,6 @@ interface IngresosChartProps {
   data: Array<{
     dia: string;
     monto: number;
-    garrafones: number;
   }>;
 }
 
@@ -48,11 +47,9 @@ export function IngresosChart({ data }: IngresosChartProps) {
               fontSize: "12px",
               boxShadow: "0 4px 20px rgba(0,0,0,0.1)",
             }}
-            formatter={(value, name) => [
-              name === "monto"
-                ? `$${Number(value).toLocaleString("es-MX")}`
-                : `${value} garrafones`,
-              name === "monto" ? "Ingresos" : "Garrafones",
+            formatter={(value) => [
+              `$${Number(value).toLocaleString("es-MX")}`,
+              "Ingresos",
             ]}
           />
           <Bar

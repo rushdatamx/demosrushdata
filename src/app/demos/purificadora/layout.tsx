@@ -3,11 +3,11 @@
 import { DemoSidebar } from "@/components/shared/demo-sidebar";
 import {
   LayoutDashboard,
+  ShoppingCart,
   Route,
   History,
   Users,
-  QrCode,
-  Smartphone,
+  MapPin,
 } from "lucide-react";
 
 const navigation = [
@@ -18,10 +18,22 @@ const navigation = [
     description: "KPIs e ingresos del dia",
   },
   {
+    name: "Registro de Ventas",
+    href: "/demos/purificadora/ventas",
+    icon: ShoppingCart,
+    description: "Registrar ventas del dia",
+  },
+  {
     name: "Rutas",
     href: "/demos/purificadora/rutas",
     icon: Route,
     description: "Rutas de entrega activas",
+  },
+  {
+    name: "GPS Tiburcio",
+    href: "/demos/purificadora/gps",
+    icon: MapPin,
+    description: "Ubicacion en tiempo real",
   },
   {
     name: "Historial",
@@ -34,18 +46,6 @@ const navigation = [
     href: "/demos/purificadora/clientes",
     icon: Users,
     description: "Base de clientes",
-  },
-  {
-    name: "Imprimir QRs",
-    href: "/demos/purificadora/imprimir-qr",
-    icon: QrCode,
-    description: "QRs de la ruta del dia",
-  },
-  {
-    name: "PWA Repartidor",
-    href: "/demos/purificadora/pwa",
-    icon: Smartphone,
-    description: "Vista movil de Tiburcio",
   },
 ];
 

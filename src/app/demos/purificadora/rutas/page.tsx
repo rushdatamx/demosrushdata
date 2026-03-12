@@ -8,8 +8,9 @@ import {
   CheckCircle2,
   CircleDot,
   Clock,
-  Droplets,
   MapPin,
+  MessageCircle,
+  Monitor,
 } from "lucide-react";
 import data from "../../../../../public/data/purificadora.json";
 
@@ -17,23 +18,15 @@ type TabType = "manana" | "tarde";
 
 export default function RutasPage() {
   const [activeTab, setActiveTab] = useState<TabType>("manana");
-  const { pedidos_ruta_manana, pedidos_ruta_tarde, rutas, empresa } = data;
+  const { ventas_ruta_manana, ventas_ruta_tarde, empresa } = data;
 
-  const pedidos = activeTab === "manana" ? pedidos_ruta_manana : pedidos_ruta_tarde;
+  const ventas = activeTab === "manana" ? ventas_ruta_manana : ventas_ruta_tarde;
 
-  const rutaHoy = rutas.find(
-    (r) => r.fecha === "2026-03-09" && r.tipo === activeTab
-  );
-
-  const entregados = pedidos.filter((p) => p.estado === "entregado").length;
-  const enCamino = pedidos.filter((p) => p.estado === "en_camino").length;
-  const pendientes = pedidos.filter(
-    (p) => p.estado === "pendiente" || p.estado === "asignado"
-  ).length;
-  const progreso = pedidos.length > 0 ? Math.round((entregados / pedidos.length) * 100) : 0;
-
-  const totalGarrafones = pedidos.reduce((s, p) => s + p.cantidad_garrafones, 0);
-  const totalMonto = pedidos.reduce((s, p) => s + p.monto_total, 0);
+  const entregados = ventas.filter((v) => v.estado === "entregado").length;
+  const enCamino = ventas.filter((v) => v.estado === "en_camino").length;
+  const pendientes = ventas.filter((v) => v.estado === "pendiente" || v.estado === "asignado").length;
+  const progreso = ventas.length > 0 ? Math.round((entregados / ventas.length) * 100) : 0;
+  const totalMonto = ventas.reduce((s, v) => s + v.monto_total, 0);
 
   return (
     <div className="p-6 max-w-7xl mx-auto">
@@ -54,7 +47,7 @@ export default function RutasPage() {
               : "bg-muted text-muted-foreground hover:bg-muted/80"
           }`}
         >
-          Ruta 10:00 AM ({pedidos_ruta_manana.length})
+          Ruta 10:00 AM ({ventas_ruta_manana.length})
         </button>
         <button
           onClick={() => setActiveTab("tarde")}
@@ -64,11 +57,11 @@ export default function RutasPage() {
               : "bg-muted text-muted-foreground hover:bg-muted/80"
           }`}
         >
-          Ruta 3:00 PM ({pedidos_ruta_tarde.length})
+          Ruta 3:00 PM ({ventas_ruta_tarde.length})
         </button>
       </div>
 
-      {/* Resumen de ruta */}
+      {/* Resumen */}
       <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6">
         <Card>
           <CardContent className="pt-6">
@@ -76,29 +69,15 @@ export default function RutasPage() {
               <Truck className="h-4 w-4 text-sky-500" />
               <span className="text-sm text-muted-foreground">Progreso</span>
             </div>
-            <div className="text-xl font-bold">{entregados} / {pedidos.length}</div>
+            <div className="text-xl font-bold">{entregados} / {ventas.length}</div>
             <div className="h-2 bg-muted rounded-full overflow-hidden mt-2">
-              <div
-                className="h-full bg-sky-500 rounded-full transition-all"
-                style={{ width: `${progreso}%` }}
-              />
+              <div className="h-full bg-sky-500 rounded-full transition-all" style={{ width: `${progreso}%` }} />
             </div>
           </CardContent>
         </Card>
         <Card>
           <CardContent className="pt-6">
-            <div className="flex items-center gap-2 mb-1">
-              <Droplets className="h-4 w-4 text-sky-500" />
-              <span className="text-sm text-muted-foreground">Garrafones</span>
-            </div>
-            <div className="text-xl font-bold">{totalGarrafones}</div>
-          </CardContent>
-        </Card>
-        <Card>
-          <CardContent className="pt-6">
-            <div className="flex items-center gap-2 mb-1">
-              <span className="text-sm text-muted-foreground">Monto Total</span>
-            </div>
+            <span className="text-sm text-muted-foreground">Monto Total</span>
             <div className="text-xl font-bold">${totalMonto.toLocaleString("es-MX")}</div>
           </CardContent>
         </Card>
@@ -109,14 +88,20 @@ export default function RutasPage() {
               <span className="text-sm text-muted-foreground">Estado</span>
             </div>
             <div className="flex gap-2 mt-1">
-              <Badge variant="secondary" className="text-xs">{enCamino} en camino</Badge>
+              {enCamino > 0 && <Badge variant="default" className="text-xs">{enCamino} en camino</Badge>}
               <Badge variant="outline" className="text-xs">{pendientes} pendientes</Badge>
             </div>
           </CardContent>
         </Card>
+        <Card>
+          <CardContent className="pt-6">
+            <span className="text-sm text-muted-foreground">Repartidor</span>
+            <div className="text-xl font-bold">{empresa.repartidor}</div>
+          </CardContent>
+        </Card>
       </div>
 
-      {/* Lista de pedidos */}
+      {/* Lista */}
       <Card>
         <CardHeader>
           <CardTitle className="text-base font-medium">
@@ -124,23 +109,23 @@ export default function RutasPage() {
           </CardTitle>
         </CardHeader>
         <CardContent>
-          {pedidos.length === 0 ? (
+          {ventas.length === 0 ? (
             <p className="text-sm text-muted-foreground py-8 text-center">
-              No hay pedidos asignados a esta ruta
+              No hay ventas asignadas a esta ruta
             </p>
           ) : (
             <div className="space-y-2">
-              {pedidos.map((pedido, index) => (
+              {ventas.map((venta, index) => (
                 <div
-                  key={pedido.id}
+                  key={venta.id}
                   className="flex items-center gap-4 p-3 rounded-lg border border-border/50 hover:bg-muted/30 transition-colors"
                 >
                   <div className="flex items-center justify-center w-8 h-8 rounded-full shrink-0" style={{
-                    backgroundColor: pedido.estado === "entregado" ? "#dcfce7" : pedido.estado === "en_camino" ? "#e0f2fe" : "#f5f5f4"
+                    backgroundColor: venta.estado === "entregado" ? "#dcfce7" : venta.estado === "en_camino" ? "#e0f2fe" : "#f5f5f4"
                   }}>
-                    {pedido.estado === "entregado" ? (
+                    {venta.estado === "entregado" ? (
                       <CheckCircle2 className="h-4 w-4 text-green-500" />
-                    ) : pedido.estado === "en_camino" ? (
+                    ) : venta.estado === "en_camino" ? (
                       <Truck className="h-4 w-4 text-sky-500" />
                     ) : (
                       <CircleDot className="h-4 w-4 text-neutral-400" />
@@ -150,36 +135,27 @@ export default function RutasPage() {
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center gap-2">
                       <span className="text-xs text-muted-foreground">#{index + 1}</span>
-                      <span className="text-sm font-medium truncate">{pedido.cliente_nombre}</span>
+                      <span className="text-sm font-medium truncate">{venta.cliente_nombre}</span>
+                      <Badge variant="outline" className="text-[9px] shrink-0">
+                        {venta.fuente === "tiburcio" ? "WhatsApp" : "Admin"}
+                      </Badge>
                     </div>
                     <div className="flex items-center gap-1 mt-0.5">
                       <MapPin className="h-3 w-3 text-muted-foreground shrink-0" />
-                      <span className="text-xs text-muted-foreground truncate">{pedido.cliente_direccion}</span>
+                      <span className="text-xs text-muted-foreground truncate">{venta.cliente_direccion}</span>
                     </div>
                   </div>
 
                   <div className="text-right shrink-0">
-                    <div className="text-sm font-medium">{pedido.cantidad_garrafones} garr.</div>
-                    <div className="text-xs text-muted-foreground">${pedido.monto_total}</div>
+                    <div className="text-sm font-medium">{venta.cantidad} {venta.unidad} {venta.producto_nombre}</div>
+                    <div className="text-xs text-muted-foreground">${venta.monto_total.toLocaleString("es-MX")}</div>
                   </div>
 
                   <Badge
-                    variant={
-                      pedido.estado === "entregado"
-                        ? "secondary"
-                        : pedido.estado === "en_camino"
-                          ? "default"
-                          : "outline"
-                    }
+                    variant={venta.estado === "entregado" ? "secondary" : venta.estado === "en_camino" ? "default" : "outline"}
                     className="text-[10px] shrink-0"
                   >
-                    {pedido.estado === "entregado"
-                      ? "Entregado"
-                      : pedido.estado === "en_camino"
-                        ? "En camino"
-                        : pedido.estado === "asignado"
-                          ? "Asignado"
-                          : "Pendiente"}
+                    {venta.estado === "entregado" ? "Entregado" : venta.estado === "en_camino" ? "En camino" : venta.estado === "asignado" ? "Asignado" : "Pendiente"}
                   </Badge>
                 </div>
               ))}

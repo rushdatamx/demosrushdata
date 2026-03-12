@@ -63,10 +63,9 @@ export default function ClientesPage() {
               <TableRow>
                 <TableHead>Nombre</TableHead>
                 <TableHead>Telefono</TableHead>
-                <TableHead>Direccion</TableHead>
                 <TableHead>Colonia</TableHead>
                 <TableHead className="text-right">Pedidos</TableHead>
-                <TableHead className="text-right">Garrafones</TableHead>
+                <TableHead className="text-right">Total Gastado</TableHead>
                 <TableHead>Ultimo Pedido</TableHead>
               </TableRow>
             </TableHeader>
@@ -75,12 +74,11 @@ export default function ClientesPage() {
                 <TableRow key={cliente.id}>
                   <TableCell className="text-sm font-medium">{cliente.nombre}</TableCell>
                   <TableCell className="text-sm font-mono">{cliente.telefono}</TableCell>
-                  <TableCell className="text-sm text-muted-foreground max-w-[200px] truncate">
-                    {cliente.direccion}
-                  </TableCell>
                   <TableCell className="text-sm text-muted-foreground">{cliente.colonia}</TableCell>
                   <TableCell className="text-right text-sm">{cliente.total_pedidos}</TableCell>
-                  <TableCell className="text-right text-sm">{cliente.total_garrafones}</TableCell>
+                  <TableCell className="text-right text-sm font-medium">
+                    ${(cliente.total_gastado || 0).toLocaleString("es-MX")}
+                  </TableCell>
                   <TableCell className="text-sm text-muted-foreground">
                     {cliente.ultimo_pedido || "-"}
                   </TableCell>

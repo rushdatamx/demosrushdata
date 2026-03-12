@@ -10,15 +10,18 @@ import {
   ArrowDownRight,
   CheckCircle2,
   CircleDot,
+  MessageCircle,
+  Monitor,
+  Cylinder,
 } from "lucide-react";
 import data from "../../../../public/data/purificadora.json";
 import { IngresosChart } from "@/components/purificadora/ingresos-chart";
 
 export default function PurificadoraDashboard() {
-  const { kpis, ingresos_7_dias, ruta_activa, ultimos_pedidos, empresa } = data;
+  const { kpis, ingresos_7_dias, ruta_activa, ultimas_ventas, empresa } = data;
 
   const progreso = ruta_activa
-    ? Math.round((ruta_activa.pedidos_entregados / ruta_activa.total_pedidos) * 100)
+    ? Math.round((ruta_activa.ventas_entregadas / ruta_activa.total_ventas) * 100)
     : 0;
 
   return (
@@ -68,26 +71,13 @@ export default function PurificadoraDashboard() {
 
         <Card>
           <CardHeader className="flex flex-row items-center justify-between pb-2">
-            <CardTitle className="text-sm font-medium text-muted-foreground">Garrafones Hoy</CardTitle>
-            <Droplets className="h-4 w-4 text-sky-500" />
-          </CardHeader>
-          <CardContent>
-            <div className="text-2xl font-bold">{kpis.garrafones_hoy}</div>
-            <p className="text-xs text-muted-foreground mt-1">
-              Mes: {kpis.garrafones_mes.toLocaleString()} garrafones
-            </p>
-          </CardContent>
-        </Card>
-
-        <Card>
-          <CardHeader className="flex flex-row items-center justify-between pb-2">
             <CardTitle className="text-sm font-medium text-muted-foreground">Entregas Hoy</CardTitle>
             <Truck className="h-4 w-4 text-sky-500" />
           </CardHeader>
           <CardContent>
             <div className="flex items-baseline gap-2">
               <span className="text-2xl font-bold text-green-600">{kpis.entregas_hoy}</span>
-              <span className="text-sm text-muted-foreground">/ {kpis.total_pedidos_hoy}</span>
+              <span className="text-sm text-muted-foreground">/ {kpis.total_ventas_hoy}</span>
             </div>
             <div className="flex items-center gap-1 mt-1">
               <Clock className="h-3 w-3 text-orange-500" />
@@ -95,6 +85,46 @@ export default function PurificadoraDashboard() {
             </div>
           </CardContent>
         </Card>
+
+        <Card>
+          <CardHeader className="flex flex-row items-center justify-between pb-2">
+            <CardTitle className="text-sm font-medium text-muted-foreground">Clientes Activos</CardTitle>
+            <Droplets className="h-4 w-4 text-sky-500" />
+          </CardHeader>
+          <CardContent>
+            <div className="text-2xl font-bold">{kpis.clientes_activos}</div>
+            <p className="text-xs text-muted-foreground mt-1">
+              de {kpis.total_clientes} registrados
+            </p>
+          </CardContent>
+        </Card>
+      </div>
+
+      {/* Desglose por producto */}
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-8">
+        {Object.entries(kpis.desglose_hoy).map(([id, prod]) => {
+          const p = prod as { nombre: string; cantidad: number; unidad: string; monto: number; ventas: number };
+          const iconMap: Record<string, React.ReactNode> = {
+            garrafon_20l: <Droplets className="h-4 w-4 text-sky-500" />,
+            botella_1l: <Cylinder className="h-4 w-4 text-emerald-500" />,
+            botella_500ml: <Cylinder className="h-4 w-4 text-violet-500" />,
+            cuentalitros: <Droplets className="h-4 w-4 text-amber-500" />,
+          };
+          return (
+            <Card key={id}>
+              <CardContent className="pt-4 pb-4">
+                <div className="flex items-center gap-2 mb-2">
+                  {iconMap[id]}
+                  <span className="text-xs font-medium text-muted-foreground">{p.nombre}</span>
+                </div>
+                <div className="text-xl font-bold">
+                  {p.cantidad} <span className="text-xs font-normal text-muted-foreground">{p.unidad}</span>
+                </div>
+                <p className="text-xs text-muted-foreground">${p.monto.toLocaleString("es-MX")} · {p.ventas} ventas</p>
+              </CardContent>
+            </Card>
+          );
+        })}
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
@@ -125,10 +155,9 @@ export default function PurificadoraDashboard() {
                   </Badge>
                 </div>
 
-                {/* Barra de progreso */}
                 <div>
                   <div className="flex justify-between text-xs text-muted-foreground mb-1">
-                    <span>{ruta_activa.pedidos_entregados} de {ruta_activa.total_pedidos} entregas</span>
+                    <span>{ruta_activa.ventas_entregadas} de {ruta_activa.total_ventas} entregas</span>
                     <span>{progreso}%</span>
                   </div>
                   <div className="h-3 bg-muted rounded-full overflow-hidden">
@@ -139,15 +168,9 @@ export default function PurificadoraDashboard() {
                   </div>
                 </div>
 
-                <div className="grid grid-cols-2 gap-3 pt-2">
-                  <div className="text-center p-3 bg-muted/50 rounded-lg">
-                    <div className="text-lg font-bold">{ruta_activa.total_garrafones}</div>
-                    <div className="text-xs text-muted-foreground">Garrafones</div>
-                  </div>
-                  <div className="text-center p-3 bg-muted/50 rounded-lg">
-                    <div className="text-lg font-bold">${ruta_activa.total_monto.toLocaleString("es-MX")}</div>
-                    <div className="text-xs text-muted-foreground">Monto total</div>
-                  </div>
+                <div className="text-center p-3 bg-muted/50 rounded-lg">
+                  <div className="text-lg font-bold">${ruta_activa.total_monto.toLocaleString("es-MX")}</div>
+                  <div className="text-xs text-muted-foreground">Monto total de la ruta</div>
                 </div>
 
                 <p className="text-xs text-muted-foreground">
@@ -161,56 +184,59 @@ export default function PurificadoraDashboard() {
         </Card>
       </div>
 
-      {/* Ultimos pedidos */}
+      {/* Ultimas ventas */}
       <Card>
         <CardHeader>
-          <CardTitle className="text-base font-medium">Ultimos Pedidos</CardTitle>
+          <CardTitle className="text-base font-medium">Ultimas Ventas</CardTitle>
         </CardHeader>
         <CardContent>
           <div className="space-y-3">
-            {ultimos_pedidos.map((pedido) => (
+            {ultimas_ventas.map((venta) => (
               <div
-                key={pedido.id}
+                key={venta.id}
                 className="flex items-center justify-between py-2 border-b border-border/50 last:border-0"
               >
                 <div className="flex items-center gap-3">
                   <div className="flex items-center justify-center w-8 h-8 rounded-full bg-sky-50">
-                    {pedido.estado === "entregado" ? (
+                    {venta.estado === "entregado" ? (
                       <CheckCircle2 className="h-4 w-4 text-green-500" />
-                    ) : pedido.estado === "en_camino" ? (
+                    ) : venta.estado === "en_camino" ? (
                       <Truck className="h-4 w-4 text-sky-500" />
                     ) : (
                       <CircleDot className="h-4 w-4 text-neutral-400" />
                     )}
                   </div>
                   <div>
-                    <p className="text-sm font-medium">{pedido.cliente_nombre}</p>
+                    <div className="flex items-center gap-2">
+                      <p className="text-sm font-medium">{venta.cliente_nombre}</p>
+                      <Badge variant="outline" className="text-[9px]">
+                        {venta.fuente === "tiburcio" ? "WhatsApp" : "Admin"}
+                      </Badge>
+                    </div>
                     <p className="text-xs text-muted-foreground">
-                      {pedido.cantidad_garrafones} garrafon{pedido.cantidad_garrafones > 1 ? "es" : ""} · #{pedido.numero_pedido}
+                      {venta.cantidad} {venta.unidad} {venta.producto_nombre} · #{venta.numero_venta}
                     </p>
                   </div>
                 </div>
                 <div className="text-right">
-                  <p className="text-sm font-medium">${pedido.monto_total}</p>
+                  <p className="text-sm font-medium">${venta.monto_total.toLocaleString("es-MX")}</p>
                   <Badge
                     variant={
-                      pedido.estado === "entregado"
+                      venta.estado === "entregado"
                         ? "secondary"
-                        : pedido.estado === "en_camino"
+                        : venta.estado === "en_camino"
                           ? "default"
                           : "outline"
                     }
                     className="text-[10px]"
                   >
-                    {pedido.estado === "entregado"
+                    {venta.estado === "entregado"
                       ? "Entregado"
-                      : pedido.estado === "en_camino"
+                      : venta.estado === "en_camino"
                         ? "En camino"
-                        : pedido.estado === "asignado"
+                        : venta.estado === "asignado"
                           ? "Asignado"
-                          : pedido.estado === "pendiente"
-                            ? "Pendiente"
-                            : "Cancelado"}
+                          : "Pendiente"}
                   </Badge>
                 </div>
               </div>

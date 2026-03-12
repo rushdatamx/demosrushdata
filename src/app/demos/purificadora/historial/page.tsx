@@ -25,28 +25,27 @@ export default function HistorialPage() {
     const q = search.toLowerCase();
     return historial
       .filter(
-        (p) =>
-          p.cliente_nombre.toLowerCase().includes(q) ||
-          p.cliente_colonia.toLowerCase().includes(q) ||
-          p.fecha_ruta.includes(q) ||
-          String(p.numero_pedido).includes(q)
+        (v) =>
+          v.cliente_nombre.toLowerCase().includes(q) ||
+          v.cliente_colonia.toLowerCase().includes(q) ||
+          v.producto_nombre.toLowerCase().includes(q) ||
+          v.fecha_ruta.includes(q) ||
+          String(v.numero_venta).includes(q)
       )
       .slice(0, 50);
   }, [search, historial]);
 
-  const totalGarrafones = historial.reduce((s, p) => s + p.cantidad_garrafones, 0);
-  const totalIngresos = historial.reduce((s, p) => s + p.monto_total, 0);
+  const totalIngresos = historial.reduce((s, v) => s + v.monto_total, 0);
 
   return (
     <div className="p-6 max-w-7xl mx-auto">
       <div className="mb-8">
         <h1 className="text-2xl font-semibold text-foreground">Historial de Entregas</h1>
         <p className="text-muted-foreground text-sm mt-1">
-          {historial.length} entregas completadas · {totalGarrafones.toLocaleString()} garrafones · ${totalIngresos.toLocaleString("es-MX")}
+          {historial.length} entregas completadas · ${totalIngresos.toLocaleString("es-MX")} en ingresos
         </p>
       </div>
 
-      {/* Grafica */}
       <Card className="mb-6">
         <CardHeader>
           <CardTitle className="text-base font-medium">Garrafones por Semana</CardTitle>
@@ -56,7 +55,6 @@ export default function HistorialPage() {
         </CardContent>
       </Card>
 
-      {/* Tabla */}
       <Card>
         <CardHeader>
           <div className="flex items-center justify-between">
@@ -64,7 +62,7 @@ export default function HistorialPage() {
             <div className="relative w-64">
               <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
               <Input
-                placeholder="Buscar por cliente, colonia, fecha..."
+                placeholder="Buscar por cliente, producto, fecha..."
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
                 className="pl-9 h-9"
@@ -76,27 +74,33 @@ export default function HistorialPage() {
           <Table>
             <TableHeader>
               <TableRow>
-                <TableHead className="w-[80px]"># Pedido</TableHead>
+                <TableHead className="w-[80px]"># Venta</TableHead>
                 <TableHead>Fecha</TableHead>
                 <TableHead>Cliente</TableHead>
-                <TableHead>Colonia</TableHead>
-                <TableHead className="text-right">Garrafones</TableHead>
+                <TableHead>Producto</TableHead>
+                <TableHead className="text-right">Cantidad</TableHead>
                 <TableHead className="text-right">Monto</TableHead>
                 <TableHead>Pago</TableHead>
+                <TableHead>Fuente</TableHead>
               </TableRow>
             </TableHeader>
             <TableBody>
-              {filtered.map((pedido) => (
-                <TableRow key={pedido.id}>
-                  <TableCell className="font-mono text-xs">{pedido.numero_pedido}</TableCell>
-                  <TableCell className="text-sm">{pedido.fecha_ruta}</TableCell>
-                  <TableCell className="text-sm font-medium">{pedido.cliente_nombre}</TableCell>
-                  <TableCell className="text-sm text-muted-foreground">{pedido.cliente_colonia}</TableCell>
-                  <TableCell className="text-right text-sm">{pedido.cantidad_garrafones}</TableCell>
-                  <TableCell className="text-right text-sm font-medium">${pedido.monto_total}</TableCell>
+              {filtered.map((venta) => (
+                <TableRow key={venta.id}>
+                  <TableCell className="font-mono text-xs">{venta.numero_venta}</TableCell>
+                  <TableCell className="text-sm">{venta.fecha_ruta}</TableCell>
+                  <TableCell className="text-sm font-medium">{venta.cliente_nombre}</TableCell>
+                  <TableCell className="text-sm text-muted-foreground">{venta.producto_nombre}</TableCell>
+                  <TableCell className="text-right text-sm">{venta.cantidad} {venta.unidad}</TableCell>
+                  <TableCell className="text-right text-sm font-medium">${venta.monto_total.toLocaleString("es-MX")}</TableCell>
                   <TableCell>
                     <Badge variant="outline" className="text-[10px]">
-                      {pedido.metodo_pago === "efectivo" ? "Efectivo" : "Transferencia"}
+                      {venta.metodo_pago === "efectivo" ? "Efectivo" : venta.metodo_pago === "transferencia" ? "Transferencia" : "Credito"}
+                    </Badge>
+                  </TableCell>
+                  <TableCell>
+                    <Badge variant="outline" className="text-[9px]">
+                      {venta.fuente === "tiburcio" ? "WhatsApp" : "Admin"}
                     </Badge>
                   </TableCell>
                 </TableRow>
