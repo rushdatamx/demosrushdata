@@ -4,7 +4,6 @@ import { DemoSidebar } from "@/components/shared/demo-sidebar";
 import {
   LayoutDashboard,
   ShoppingCart,
-  Route,
   History,
   Users,
   MapPin,
@@ -22,12 +21,6 @@ const navigation = [
     href: "/demos/purificadora/ventas",
     icon: ShoppingCart,
     description: "Registrar ventas del dia",
-  },
-  {
-    name: "Rutas",
-    href: "/demos/purificadora/rutas",
-    icon: Route,
-    description: "Rutas de entrega activas",
   },
   {
     name: "GPS Tiburcio",
