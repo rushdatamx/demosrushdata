@@ -4,7 +4,7 @@ import { DemoSidebar } from "@/components/shared/demo-sidebar";
 import {
   LayoutDashboard,
   ShoppingCart,
-  History,
+  ClipboardList,
   Users,
   MapPin,
 } from "lucide-react";
@@ -23,16 +23,16 @@ const navigation = [
     description: "Registrar ventas del dia",
   },
   {
+    name: "Ventas",
+    href: "/demos/purificadora/todas-ventas",
+    icon: ClipboardList,
+    description: "Consulta y filtra ventas",
+  },
+  {
     name: "GPS Tiburcio",
     href: "/demos/purificadora/gps",
     icon: MapPin,
     description: "Ubicacion en tiempo real",
-  },
-  {
-    name: "Historial",
-    href: "/demos/purificadora/historial",
-    icon: History,
-    description: "Entregas completadas",
   },
   {
     name: "Clientes",
