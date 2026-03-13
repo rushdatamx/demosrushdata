@@ -4,8 +4,6 @@ import { useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
   ShoppingCart,
-  Plus,
-  Minus,
   CheckCircle2,
   Camera,
   ImageIcon,
@@ -17,16 +15,21 @@ export default function VentasPage() {
   const productos = empresa.productos;
 
   const [clienteId, setClienteId] = useState("");
-  const [productoId, setProductoId] = useState(productos[0].id);
-  const [cantidad, setCantidad] = useState(1);
+  const [cantidades, setCantidades] = useState<Record<string, number>>(
+    () => Object.fromEntries(productos.map((p: { id: string }) => [p.id, 0]))
+  );
   const [metodoPago, setMetodoPago] = useState("efectivo");
   const [clienteSearch, setClienteSearch] = useState("");
   const [estadoPago, setEstadoPago] = useState("pagado");
   const [evidencia, setEvidencia] = useState<string | null>(null);
   const [showSuccess, setShowSuccess] = useState(false);
 
-  const productoSeleccionado = productos.find((p: { id: string }) => p.id === productoId);
-  const montoTotal = productoSeleccionado ? cantidad * productoSeleccionado.precio : 0;
+  const montoTotal = productos.reduce(
+    (sum: number, p: { id: string; precio: number }) => sum + (cantidades[p.id] || 0) * p.precio,
+    0
+  );
+
+  const tieneProductos = Object.values(cantidades).some((c) => c > 0);
 
   const clientesFiltrados = clienteSearch.length > 0
     ? clientes.filter((c: { nombre: string }) =>
@@ -40,13 +43,18 @@ export default function VentasPage() {
       setShowSuccess(false);
       setClienteId("");
       setClienteSearch("");
-      setCantidad(1);
+      setCantidades(Object.fromEntries(productos.map((p: { id: string }) => [p.id, 0])));
       setEstadoPago("pagado");
       setEvidencia(null);
     }, 2000);
   };
 
   const clienteSeleccionado = clientes.find((c: { id: string }) => c.id === clienteId);
+
+  const updateCantidad = (productoId: string, value: string) => {
+    const num = value === "" ? 0 : Math.max(0, parseInt(value) || 0);
+    setCantidades((prev) => ({ ...prev, [productoId]: num }));
+  };
 
   return (
     <div className="p-6 max-w-xl mx-auto">
@@ -117,41 +125,51 @@ export default function VentasPage() {
                 )}
               </div>
 
-              {/* Producto */}
+              {/* Productos - tabla tipo nota de remision */}
               <div>
-                <label className="text-sm font-medium text-foreground mb-1.5 block">Producto</label>
-                <select
-                  value={productoId}
-                  onChange={(e) => { setProductoId(e.target.value); setCantidad(1); }}
-                  className="w-full h-10 px-3 rounded-lg border border-border bg-background text-sm focus:outline-none focus:ring-2 focus:ring-sky-500/20 focus:border-sky-500 appearance-none"
-                >
-                  {productos.map((p: { id: string; nombre: string; precio: number; unidad: string }) => (
-                    <option key={p.id} value={p.id}>
-                      {p.nombre} — ${p.precio}/{p.unidad}
-                    </option>
-                  ))}
-                </select>
-              </div>
-
-              {/* Cantidad */}
-              <div>
-                <label className="text-sm font-medium text-foreground mb-1.5 block">
-                  Cantidad ({productoSeleccionado?.unidad || "pza"})
-                </label>
-                <div className="flex items-center gap-3">
-                  <button
-                    onClick={() => setCantidad(Math.max(1, cantidad - 1))}
-                    className="w-10 h-10 rounded-lg border border-border flex items-center justify-center hover:bg-muted transition-colors"
-                  >
-                    <Minus className="h-4 w-4" />
-                  </button>
-                  <span className="text-2xl font-bold w-16 text-center">{cantidad}</span>
-                  <button
-                    onClick={() => setCantidad(cantidad + 1)}
-                    className="w-10 h-10 rounded-lg border border-border flex items-center justify-center hover:bg-muted transition-colors"
-                  >
-                    <Plus className="h-4 w-4" />
-                  </button>
+                <label className="text-sm font-medium text-foreground mb-1.5 block">Productos</label>
+                <div className="rounded-lg border border-border overflow-hidden">
+                  {/* Header */}
+                  <div className="grid grid-cols-[1fr_80px_80px_90px] bg-muted/60 px-3 py-2 text-xs font-medium text-muted-foreground">
+                    <span>Descripcion</span>
+                    <span className="text-center">Precio</span>
+                    <span className="text-center">Cantidad</span>
+                    <span className="text-right">Importe</span>
+                  </div>
+                  {/* Rows */}
+                  {productos.map((p: { id: string; nombre: string; precio: number; unidad: string }) => {
+                    const cant = cantidades[p.id] || 0;
+                    const importe = cant * p.precio;
+                    return (
+                      <div
+                        key={p.id}
+                        className={`grid grid-cols-[1fr_80px_80px_90px] items-center px-3 py-2.5 border-t border-border/50 transition-colors ${
+                          cant > 0 ? "bg-sky-50/50" : ""
+                        }`}
+                      >
+                        <div>
+                          <span className="text-sm font-medium">{p.nombre}</span>
+                          <span className="text-xs text-muted-foreground ml-1">/{p.unidad}</span>
+                        </div>
+                        <span className="text-sm text-center text-muted-foreground">
+                          ${p.precio}
+                        </span>
+                        <div className="flex justify-center">
+                          <input
+                            type="number"
+                            min="0"
+                            value={cant || ""}
+                            onChange={(e) => updateCantidad(p.id, e.target.value)}
+                            placeholder="0"
+                            className="w-16 h-8 text-center rounded-md border border-border bg-background text-sm focus:outline-none focus:ring-2 focus:ring-sky-500/20 focus:border-sky-500 [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
+                          />
+                        </div>
+                        <span className={`text-sm text-right font-medium ${importe > 0 ? "text-foreground" : "text-muted-foreground/40"}`}>
+                          ${importe.toLocaleString("es-MX")}
+                        </span>
+                      </div>
+                    );
+                  })}
                 </div>
               </div>
 
@@ -246,7 +264,7 @@ export default function VentasPage() {
               {/* Boton registrar */}
               <button
                 onClick={handleRegistrar}
-                disabled={!clienteId}
+                disabled={!clienteId || !tieneProductos}
                 className="w-full py-3 bg-sky-500 text-white rounded-lg text-sm font-bold hover:bg-sky-600 transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
               >
                 Registrar Venta
