@@ -11,6 +11,8 @@ import {
   Droplets,
   MessageCircle,
   Monitor,
+  Camera,
+  ImageIcon,
 } from "lucide-react";
 import data from "../../../../../public/data/purificadora.json";
 
@@ -23,6 +25,8 @@ export default function VentasPage() {
   const [cantidad, setCantidad] = useState(1);
   const [metodoPago, setMetodoPago] = useState("efectivo");
   const [clienteSearch, setClienteSearch] = useState("");
+  const [estadoPago, setEstadoPago] = useState("pagado");
+  const [evidencia, setEvidencia] = useState<string | null>(null);
   const [showSuccess, setShowSuccess] = useState(false);
 
   const productoSeleccionado = productos.find((p: { id: string }) => p.id === productoId);
@@ -41,6 +45,8 @@ export default function VentasPage() {
       setClienteId("");
       setClienteSearch("");
       setCantidad(1);
+      setEstadoPago("pagado");
+      setEvidencia(null);
     }, 2000);
   };
 
@@ -181,6 +187,60 @@ export default function VentasPage() {
                       </button>
                     ))}
                   </div>
+                </div>
+
+                {/* Estado de pago */}
+                <div>
+                  <label className="text-sm font-medium text-foreground mb-1.5 block">Estado de Pago</label>
+                  <div className="flex gap-2">
+                    {[
+                      { id: "pagado", label: "Pagado" },
+                      { id: "no_pagado", label: "No Pagado" },
+                    ].map((e) => (
+                      <button
+                        key={e.id}
+                        onClick={() => setEstadoPago(e.id)}
+                        className={`flex-1 py-2 rounded-lg text-sm font-medium transition-colors border ${
+                          estadoPago === e.id
+                            ? e.id === "pagado"
+                              ? "bg-green-500 text-white border-green-500"
+                              : "bg-red-500 text-white border-red-500"
+                            : "bg-background text-muted-foreground border-border hover:border-sky-200"
+                        }`}
+                      >
+                        {e.label}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Evidencia */}
+                <div>
+                  <label className="text-sm font-medium text-foreground mb-1.5 block">Evidencia</label>
+                  {evidencia ? (
+                    <div className="relative rounded-lg border border-border overflow-hidden">
+                      <div className="h-32 bg-neutral-100 flex items-center justify-center">
+                        <ImageIcon className="h-8 w-8 text-neutral-400" />
+                      </div>
+                      <div className="flex items-center justify-between p-2 bg-muted/30">
+                        <span className="text-xs text-muted-foreground truncate">{evidencia}</span>
+                        <button
+                          onClick={() => setEvidencia(null)}
+                          className="text-xs text-red-500 hover:text-red-600 shrink-0 ml-2"
+                        >
+                          Eliminar
+                        </button>
+                      </div>
+                    </div>
+                  ) : (
+                    <button
+                      onClick={() => setEvidencia("evidencia_venta_" + Date.now() + ".jpg")}
+                      className="w-full py-3 rounded-lg border border-dashed border-border hover:border-sky-300 hover:bg-sky-50/50 transition-colors flex items-center justify-center gap-2 text-sm text-muted-foreground"
+                    >
+                      <Camera className="h-4 w-4" />
+                      Adjuntar Evidencia
+                    </button>
+                  )}
                 </div>
 
                 {/* Total */}
