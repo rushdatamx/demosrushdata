@@ -19,16 +19,14 @@ const PRODUCTOS_FISICO = [
 ];
 
 export default function VentasFisicoPage() {
-  const { clientes, empresa } = data;
+  const { empresa } = data;
 
   const [turno, setTurno] = useState("matutino");
-  const [clienteId, setClienteId] = useState("");
   const [cantidades, setCantidades] = useState<Record<string, number>>(
     () => Object.fromEntries(PRODUCTOS_FISICO.map((p) => [p.id, 0]))
   );
-  const [lecturaInicial, setLecturaInicial] = useState("");
+  const [lecturaInicial, setLecturaInicial] = useState("1883");
   const [metodoPago, setMetodoPago] = useState("efectivo");
-  const [clienteSearch, setClienteSearch] = useState("");
   const [estadoPago, setEstadoPago] = useState("pagado");
   const [evidencia, setEvidencia] = useState<string | null>(null);
   const [showSuccess, setShowSuccess] = useState(false);
@@ -50,26 +48,16 @@ export default function VentasFisicoPage() {
 
   const tieneProductos = Object.values(cantidades).some((c) => c > 0);
 
-  const clientesFiltrados = clienteSearch.length > 0
-    ? clientes.filter((c: { nombre: string }) =>
-        c.nombre.toLowerCase().includes(clienteSearch.toLowerCase())
-      ).slice(0, 8)
-    : [];
-
   const handleRegistrar = () => {
     setShowSuccess(true);
     setTimeout(() => {
       setShowSuccess(false);
-      setClienteId("");
-      setClienteSearch("");
       setCantidades(Object.fromEntries(PRODUCTOS_FISICO.map((p) => [p.id, 0])));
-      setLecturaInicial("");
+      setLecturaInicial("1883");
       setEstadoPago("pagado");
       setEvidencia(null);
     }, 2000);
   };
-
-  const clienteSeleccionado = clientes.find((c: { id: string }) => c.id === clienteId);
 
   const updateCantidad = (productoId: string, value: string) => {
     const num = value === "" ? 0 : Math.max(0, parseInt(value) || 0);
@@ -123,49 +111,6 @@ export default function VentasFisicoPage() {
                     </button>
                   ))}
                 </div>
-              </div>
-
-              {/* Cliente */}
-              <div>
-                <label className="text-sm font-medium text-foreground mb-1.5 block">Cliente</label>
-                {clienteSeleccionado ? (
-                  <div className="flex items-center justify-between p-3 bg-sky-50 rounded-lg border border-sky-100">
-                    <div>
-                      <p className="text-sm font-medium">{clienteSeleccionado.nombre}</p>
-                      <p className="text-xs text-muted-foreground">{clienteSeleccionado.direccion}</p>
-                    </div>
-                    <button
-                      onClick={() => { setClienteId(""); setClienteSearch(""); }}
-                      className="text-xs text-sky-600 hover:text-sky-700"
-                    >
-                      Cambiar
-                    </button>
-                  </div>
-                ) : (
-                  <div className="relative">
-                    <input
-                      type="text"
-                      value={clienteSearch}
-                      onChange={(e) => setClienteSearch(e.target.value)}
-                      placeholder="Buscar cliente por nombre..."
-                      className="w-full h-10 px-3 rounded-lg border border-border bg-background text-sm focus:outline-none focus:ring-2 focus:ring-sky-500/20 focus:border-sky-500"
-                    />
-                    {clientesFiltrados.length > 0 && (
-                      <div className="absolute top-full left-0 right-0 mt-1 bg-white border border-border rounded-lg shadow-lg z-10 max-h-48 overflow-auto">
-                        {clientesFiltrados.map((c: { id: string; nombre: string; colonia: string }) => (
-                          <button
-                            key={c.id}
-                            onClick={() => { setClienteId(c.id); setClienteSearch(""); }}
-                            className="w-full text-left px-3 py-2 hover:bg-muted/50 transition-colors"
-                          >
-                            <p className="text-sm font-medium">{c.nombre}</p>
-                            <p className="text-xs text-muted-foreground">{c.colonia}</p>
-                          </button>
-                        ))}
-                      </div>
-                    )}
-                  </div>
-                )}
               </div>
 
               {/* Productos - tabla tipo nota de remision */}
@@ -338,7 +283,7 @@ export default function VentasFisicoPage() {
               {/* Boton registrar */}
               <button
                 onClick={handleRegistrar}
-                disabled={!clienteId || !tieneProductos}
+                disabled={!tieneProductos}
                 className="w-full py-3 bg-sky-500 text-white rounded-lg text-sm font-bold hover:bg-sky-600 transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
               >
                 Registrar Venta
