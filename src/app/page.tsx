@@ -10,7 +10,6 @@ import {
   Users,
   Map,
   UserCheck,
-  Droplets,
   ArrowUpRight,
   Sparkles,
 } from "lucide-react";
@@ -151,21 +150,6 @@ const demos = [
     accentBorder: "border-indigo-100",
     ready: true,
   },
-  {
-    slug: "purificadora",
-    name: "Purificadora El Baluarte",
-    industry: "Agua Purificada",
-    solutionType: "Gestion de Entregas con IA",
-    problem:
-      "Purificadora con 30 entregas/dia en papel. Sin rastreo, pedidos por WhatsApp se pierden, el dueno no sabe cuanto vendio hasta contar efectivo.",
-    aiMoment:
-      "Cliente pide por WhatsApp, IA extrae datos, asigna ruta automatica y Tiburcio escanea QR al entregar",
-    icon: Droplets,
-    accent: "text-sky-600",
-    accentBg: "bg-sky-50",
-    accentBorder: "border-sky-100",
-    ready: true,
-  },
 ];
 
 export default function PortfolioHome() {
@@ -204,7 +188,7 @@ export default function PortfolioHome() {
             Soluciones de IA para problemas reales
           </h1>
           <p className="text-lg text-neutral-500 mt-4 leading-relaxed">
-            10 demos interactivos. Cada uno muestra como la inteligencia artificial
+            9 demos interactivos. Cada uno muestra como la inteligencia artificial
             resuelve un problema de negocio en una industria diferente.
           </p>
           <p className="text-sm text-neutral-400 mt-2">
