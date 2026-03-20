@@ -1,52 +1,39 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
-  ShoppingCart,
+  Truck,
   CheckCircle2,
   Camera,
   ImageIcon,
-  Gauge,
 } from "lucide-react";
 import data from "../../../../../public/data/purificadora.json";
 
-const PRODUCTOS_FISICO = [
-  { id: "llenado_garrafon_20l", nombre: "Llenado Garrafon 20L", precio: 20, unidad: "pza", litrosPorUnidad: 20 },
-  { id: "llenado_garrafon_4_10l", nombre: "Llenado Garrafon 4-10L", precio: 10, unidad: "litro", litrosPorUnidad: 1 },
-  { id: "garrafon_20l", nombre: "Garrafon 20L", precio: 110, unidad: "pza", litrosPorUnidad: 20 },
-  { id: "botella_1l", nombre: "Botella 1L", precio: 10, unidad: "pza", litrosPorUnidad: 1 },
+const PRODUCTOS_TIBURCIO = [
+  { id: "llenado_garrafon_20l", nombre: "Llenado Garrafon 20L", precio: 25, unidad: "pza" },
+  { id: "garrafon_20l", nombre: "Garrafon 20L", precio: 110, unidad: "pza" },
+  { id: "botella_1l", nombre: "Botella 1L", precio: 9, unidad: "pza" },
+  { id: "botella_500ml", nombre: "Botella 500ml", precio: 6, unidad: "pza" },
 ];
 
-export default function VentasFisicoPage() {
+export default function VentasTiburcioPage() {
   const { clientes, empresa } = data;
 
-  const [turno, setTurno] = useState("matutino");
   const [clienteId, setClienteId] = useState("");
   const [cantidades, setCantidades] = useState<Record<string, number>>(
-    () => Object.fromEntries(PRODUCTOS_FISICO.map((p) => [p.id, 0]))
+    () => Object.fromEntries(PRODUCTOS_TIBURCIO.map((p) => [p.id, 0]))
   );
-  const [lecturaInicial, setLecturaInicial] = useState("");
   const [metodoPago, setMetodoPago] = useState("efectivo");
   const [clienteSearch, setClienteSearch] = useState("");
   const [estadoPago, setEstadoPago] = useState("pagado");
   const [evidencia, setEvidencia] = useState<string | null>(null);
   const [showSuccess, setShowSuccess] = useState(false);
 
-  const montoTotal = PRODUCTOS_FISICO.reduce(
+  const montoTotal = PRODUCTOS_TIBURCIO.reduce(
     (sum, p) => sum + (cantidades[p.id] || 0) * p.precio,
     0
   );
-
-  const litrosTotales = useMemo(() => {
-    return PRODUCTOS_FISICO.reduce(
-      (sum, p) => sum + (cantidades[p.id] || 0) * p.litrosPorUnidad,
-      0
-    );
-  }, [cantidades]);
-
-  const lecturaInicialNum = parseInt(lecturaInicial) || 0;
-  const lecturaFinal = lecturaInicialNum > 0 ? lecturaInicialNum + litrosTotales : 0;
 
   const tieneProductos = Object.values(cantidades).some((c) => c > 0);
 
@@ -62,8 +49,7 @@ export default function VentasFisicoPage() {
       setShowSuccess(false);
       setClienteId("");
       setClienteSearch("");
-      setCantidades(Object.fromEntries(PRODUCTOS_FISICO.map((p) => [p.id, 0])));
-      setLecturaInicial("");
+      setCantidades(Object.fromEntries(PRODUCTOS_TIBURCIO.map((p) => [p.id, 0])));
       setEstadoPago("pagado");
       setEvidencia(null);
     }, 2000);
@@ -79,17 +65,17 @@ export default function VentasFisicoPage() {
   return (
     <div className="p-6 max-w-xl mx-auto">
       <div className="mb-8">
-        <h1 className="text-2xl font-semibold text-foreground">Ventas Fisico</h1>
+        <h1 className="text-2xl font-semibold text-foreground">Ventas Tiburcio</h1>
         <p className="text-muted-foreground text-sm mt-1">
-          Registro de ventas en punto de venta · {empresa.nombre}
+          Registro de entregas a domicilio · {empresa.nombre}
         </p>
       </div>
 
       <Card>
         <CardHeader>
           <CardTitle className="text-base font-medium flex items-center gap-2">
-            <ShoppingCart className="h-4 w-4 text-sky-500" />
-            Nueva Venta
+            <Truck className="h-4 w-4 text-sky-500" />
+            Nueva Entrega
           </CardTitle>
         </CardHeader>
         <CardContent className="space-y-5">
@@ -98,33 +84,10 @@ export default function VentasFisicoPage() {
               <div className="w-16 h-16 rounded-full bg-green-100 flex items-center justify-center mb-3">
                 <CheckCircle2 className="h-8 w-8 text-green-500" />
               </div>
-              <p className="text-sm font-medium text-green-700">Venta registrada</p>
+              <p className="text-sm font-medium text-green-700">Entrega registrada</p>
             </div>
           ) : (
             <>
-              {/* Turno */}
-              <div>
-                <label className="text-sm font-medium text-foreground mb-1.5 block">Turno</label>
-                <div className="flex gap-2">
-                  {[
-                    { id: "matutino", label: "Matutino" },
-                    { id: "vespertino", label: "Vespertino" },
-                  ].map((t) => (
-                    <button
-                      key={t.id}
-                      onClick={() => setTurno(t.id)}
-                      className={`flex-1 py-2 rounded-lg text-sm font-medium transition-colors border ${
-                        turno === t.id
-                          ? "bg-sky-500 text-white border-sky-500"
-                          : "bg-background text-muted-foreground border-border hover:border-sky-200"
-                      }`}
-                    >
-                      {t.label}
-                    </button>
-                  ))}
-                </div>
-              </div>
-
               {/* Cliente */}
               <div>
                 <label className="text-sm font-medium text-foreground mb-1.5 block">Cliente</label>
@@ -178,7 +141,7 @@ export default function VentasFisicoPage() {
                     <span className="text-center">Cantidad</span>
                     <span className="text-right">Importe</span>
                   </div>
-                  {PRODUCTOS_FISICO.map((p) => {
+                  {PRODUCTOS_TIBURCIO.map((p) => {
                     const cant = cantidades[p.id] || 0;
                     const importe = cant * p.precio;
                     return (
@@ -214,39 +177,6 @@ export default function VentasFisicoPage() {
                 </div>
               </div>
 
-              {/* Cuentalitros */}
-              <div>
-                <label className="text-sm font-medium text-foreground mb-1.5 block flex items-center gap-2">
-                  <Gauge className="h-4 w-4 text-sky-500" />
-                  Cuentalitros
-                </label>
-                <div className="rounded-lg border border-border overflow-hidden">
-                  <div className="grid grid-cols-2 gap-px bg-border">
-                    <div className="bg-background p-3">
-                      <span className="text-xs text-muted-foreground block mb-1">Lectura Inicial</span>
-                      <input
-                        type="number"
-                        min="0"
-                        value={lecturaInicial}
-                        onChange={(e) => setLecturaInicial(e.target.value)}
-                        placeholder="0"
-                        className="w-full h-9 text-center rounded-md border border-border bg-background text-lg font-bold focus:outline-none focus:ring-2 focus:ring-sky-500/20 focus:border-sky-500 [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
-                      />
-                    </div>
-                    <div className="bg-background p-3">
-                      <span className="text-xs text-muted-foreground block mb-1">Lectura Final</span>
-                      <div className="w-full h-9 flex items-center justify-center rounded-md bg-muted/50 text-lg font-bold text-sky-600">
-                        {lecturaFinal > 0 ? lecturaFinal.toLocaleString("es-MX") : "—"}
-                      </div>
-                    </div>
-                  </div>
-                  <div className="border-t border-border px-3 py-2 bg-muted/30 flex items-center justify-between">
-                    <span className="text-xs text-muted-foreground">Litros totales</span>
-                    <span className="text-sm font-bold text-sky-600">{litrosTotales.toLocaleString("es-MX")} L</span>
-                  </div>
-                </div>
-              </div>
-
               {/* Metodo de pago */}
               <div>
                 <label className="text-sm font-medium text-foreground mb-1.5 block">Metodo de Pago</label>
@@ -254,7 +184,6 @@ export default function VentasFisicoPage() {
                   {[
                     { id: "efectivo", label: "Efectivo" },
                     { id: "transferencia", label: "Transferencia" },
-                    { id: "credito", label: "Credito" },
                   ].map((m) => (
                     <button
                       key={m.id}
@@ -341,7 +270,7 @@ export default function VentasFisicoPage() {
                 disabled={!clienteId || !tieneProductos}
                 className="w-full py-3 bg-sky-500 text-white rounded-lg text-sm font-bold hover:bg-sky-600 transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
               >
-                Registrar Venta
+                Registrar Entrega
               </button>
             </>
           )}

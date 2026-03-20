@@ -3,6 +3,7 @@
 import { DemoSidebar } from "@/components/shared/demo-sidebar";
 import {
   LayoutDashboard,
+  Truck,
   ShoppingCart,
   ClipboardList,
   Users,
@@ -17,10 +18,16 @@ const navigation = [
     description: "KPIs e ingresos del dia",
   },
   {
-    name: "Registro de Ventas",
+    name: "Ventas Tiburcio",
+    href: "/demos/purificadora/ventas-tiburcio",
+    icon: Truck,
+    description: "Entregas a domicilio",
+  },
+  {
+    name: "Ventas Fisico",
     href: "/demos/purificadora/ventas",
     icon: ShoppingCart,
-    description: "Registrar ventas del dia",
+    description: "Ventas en punto de venta",
   },
   {
     name: "Ventas",
